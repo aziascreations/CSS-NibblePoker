@@ -1,0 +1,46 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Utilities > Spacing > Global */
+@mixin global-spacing-maker($type-key, $type-property, $size-key, $size-value) {
+	.#{$type-key}-#{$size-key} {
+		#{$type-property}: #{$size-value};
+	}
+}
+
+
+/* Utilities > Spacing > Global > Variable Sizes */
+@include global-spacing-maker("m", "margin", "xxs", calc(#{$margin-base-size} * 0.25));
+@include global-spacing-maker("m", "margin", "xs", calc(#{$margin-base-size} * 0.5));
+@include global-spacing-maker("m", "margin", "s", calc(#{$margin-base-size} * 0.75));
+@include global-spacing-maker("m", "margin", "m", #{$margin-base-size});
+@include global-spacing-maker("m", "margin", "l", calc(#{$margin-base-size} * 1.5));
+@include global-spacing-maker("m", "margin", "xl", calc(#{$margin-base-size} * 2.0));
+
+@include global-spacing-maker("p", "padding", "xxs", calc(#{$margin-base-size} * 0.25));
+@include global-spacing-maker("p", "padding", "xs", calc(#{$margin-base-size} * 0.5));
+@include global-spacing-maker("p", "padding", "s", calc(#{$margin-base-size} * 0.75));
+@include global-spacing-maker("p", "padding", "m", #{$margin-base-size});
+@include global-spacing-maker("p", "padding", "l", calc(#{$margin-base-size} * 1.5));
+@include global-spacing-maker("p", "padding", "xl", calc(#{$margin-base-size} * 2.0));
+
+
+/* Utilities > Spacing > Global > Fixed Sizes */
+@include global-spacing-maker("m", "margin", "0", 0);
+@include global-spacing-maker("p", "padding", "0", 0);
+
+
+/* Utilities > Spacing > Global > Others */
+@include global-spacing-maker("m", "margin", "auto", auto);
+@include global-spacing-maker("p", "padding", "auto", auto);
+
+
+/* Utilities > Spacing > Global > Manual Extras */
+.p-xxxs {
+	padding: calc(#{$margin-base-size} * 0.125);
+}
+.p-mxs {
+	padding: calc(#{$margin-base-size} * 0.375);
+}
+.p-ms {
+	padding: calc(#{$margin-base-size} * 0.625);
+}

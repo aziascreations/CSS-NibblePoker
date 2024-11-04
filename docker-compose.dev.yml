@@ -1,0 +1,17 @@
+services:
+  nibblepoker_css:
+    container_name: nibblepoker-css-dev
+    image: php:apache
+    ports:
+      - 32133:80
+      - 32134:443
+    environment:
+      - TZ=Europe/Brussels
+    volumes:
+      - ./htdocs:/var/www/html:ro
+      - ./apache2.conf:/etc/apache2/apache2.conf:ro
+    restart: unless-stopped
+    stop_grace_period: 5s
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    command: ["/bin/sh", "-c", "a2enmod headers && a2enmod rewrite && a2enmod ratelimit && apache2-foreground"]

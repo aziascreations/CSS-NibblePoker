@@ -1,0 +1,20 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Core > Overflow */
+
+@mixin overflow-maker($overflow-type) {
+	.o-#{$overflow-type} {
+		overflow: #{$overflow-type};
+	}
+	.ox-#{$overflow-type} {
+		overflow-x: #{$overflow-type};
+	}
+	.oy-#{$overflow-type} {
+		overflow-y: #{$overflow-type};
+	}
+}
+
+@include overflow-maker(auto);
+@include overflow-maker(scroll);
+@include overflow-maker(clip);
+@include overflow-maker(hidden);

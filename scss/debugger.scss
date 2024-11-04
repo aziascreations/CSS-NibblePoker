@@ -1,0 +1,17 @@
+// NibblePoker CSS Debugger - CC0 1.0 (Public Domain)
+
+.debug {
+	border: 1px dotted deeppink !important;
+	& *.debug {
+		border: 1px dotted yellow !important;
+		& *.debug {
+			border: 1px dotted cyan !important;
+			& *.debug {
+				border: 1px dotted lime !important;
+				& *.debug {
+					border: 1px dotted red !important;
+				}
+			}
+		}
+	}
+}

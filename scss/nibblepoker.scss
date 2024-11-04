@@ -1,0 +1,75 @@
+/*
+ * -----------------------------------------------------------------------------
+ * NibblePoker CSS Theme
+ * -----------------------------------------------------------------------------
+ * Author: Herwin Bozet
+ * License: CC0 1.0 (Public Domain)
+ * Source: ???
+ * -----------------------------------------------------------------------------
+ */
+
+/* Config */
+@import 'config';
+
+/* Externals */
+@import 'external/reset';  // Doesn't reset checkboxes !
+
+/* Variables */
+@import 'variables';
+
+/* Core */
+@import 'core/border'; // Border rules (.border, .bt-0, ...)
+@import 'core/float';  // Floating rules (.f-right, ...)
+@import 'core/sizing'; // Rules for setting elements size (.w-full, ...)
+@import 'core/flex';   // /!\ Needs an overhaul !!!
+@import 'core/grid';   // /!\ Needs an overhaul !!!
+@import 'core/text';   // Text-related rules (.t-bold, t-ucase, t-size-14, ...)
+//@import 'core/containers';  // Cannot remember why it was used, if ever
+@import 'core/display';   // /!\ Needs improvement !!!
+@import 'core/position';   // /!\ Needs improvement !!!
+@import 'core/overflow';   // Defines generic overflow rules (.o-hidden, .ox-scroll, ...)
+@import 'core/lists';
+
+/* Core > Rounding */
+@import 'core/rounding/global';
+@import 'core/rounding/sided';
+@import 'core/rounding/corner';
+
+/* Core > Spacing */
+@import 'core/spacing/global';
+@import 'core/spacing/axis';
+@import 'core/spacing/sided';
+
+/* Site */
+
+/* Site > Layouts */
+@import 'site/layouts/commons';  // Sets up the page's default sizing rules
+@import 'site/layouts/generic';  // Theme used for websites with a toggleable sidebar (Similar to WinUI apps)
+
+/* Site > Styles */
+@import 'site/base';  // Needs a rework, Defines some basic common broad styling/coloring rules
+@import 'site/text';  // Has some hardcoded width for font-awesome icons in sidebar and headings
+
+/* Site > Elements */
+@import 'site/hr';         // Custom horizontal rulers
+@import 'site/scrollbar';  // Personalizes the scrollbars (Horizontal is still unfinished !)
+@import 'site/input';      // Has ugly fix for download buttons
+@import 'site/table';      // Uses copied paddings for cells & ugly rounding fix
+@import 'site/code';       // Uses forced borders, roundings and paddings
+@import 'site/video';
+
+/* Site > Misc */
+@import 'site/borders';  // Applies the colors mostly, the size are in the elements !
+@import 'site/backgrounds';
+
+/* Site > Fixes */
+@import 'site/mobile';  // Has !important overrides for obvious reasons
+
+/* Site > Unsorted */
+@import 'site/image';
+@import 'site/wedge';
+@import 'site/content';  // Uses fixed sizes and floats
+@import 'site/modal';
+
+/* Extras */
+@import 'site/splide';

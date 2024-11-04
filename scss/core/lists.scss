@@ -1,0 +1,29 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Core > Lists */
+
+ul:not(.no-bullet) {
+  padding-left: 1.5rem;
+
+  &> li {
+    list-style-type: disc;
+  }
+}
+
+ol:not(.no-bullet) {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+li {
+  //list-style-type: disc;
+
+  /*&>  li {
+    list-style-type: circle;
+  }*/
+}
+
+/*ul.no-bullet, ol.no-bullet {
+  list-style-type: none;
+  padding-left: 0;
+}*/

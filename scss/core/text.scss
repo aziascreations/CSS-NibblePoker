@@ -1,0 +1,168 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Core > Text */
+
+/* Core > Text > Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: #{$text-header-weight};
+}
+
+
+/* Core > Text > Sizes */
+
+// ".t-size-6", ".t-size-8", ..., "t-size-40"
+@for $_ from 3 through 20 {
+	$sizeKey: $_ * 2;
+	$sizeValue: $sizeKey / 10;
+	
+	.t-size-#{$sizeKey} {
+		font-size: #{$sizeValue}rem !important;
+	}
+}
+
+// Adding special odd values
+.t-size-11 {
+	font-size: 1.1rem !important;
+}
+.t-size-13 {
+	font-size: 1.3rem !important;
+}
+.t-size-15 {
+	font-size: 1.5rem !important;
+}
+.t-size-17 {
+	font-size: 1.7rem !important;
+}
+
+// Jumbo sizes
+// ".t-size-35" & ".t-size-40"
+@for $_ from 7 through 8 {
+	$size: $_ * 5;
+
+	.t-size-#{$size} {
+		font-size: #{$size / 10}rem !important;
+	}
+}
+
+
+/* Core > Text > Weights */
+
+.t-w-normal, .t-normal {
+	font-weight: normal !important;
+}
+b, .t-w-bold, .t-bold {
+	font-weight: bold !important;
+}
+.t-w-bolder, .t-bolder {
+	font-weight: bolder !important;
+}
+.t-w-lighter, .t-lighter {
+	font-weight: lighter !important;
+}
+
+// ".t-w-100", ".t-w-200", ..., ".t-w-900"
+@for $_ from 1 through 9 {
+	$size: $_ * 100;
+	
+	.t-w-#{$size} {
+		font-weight: #{$size} !important;
+	}
+}
+// /!\ Firefox moment /!\
+// * The ".t-w-200" to ".t-w-500" classes barely any effect on weight...
+
+
+/* Core > Text > Styles */
+
+i, .t-italic {
+	font-style: italic;
+}
+
+.t-oblique {
+	font-style: oblique;
+}
+
+u, .t-underline {
+	text-decoration: underline;
+}
+
+s, .t-strikethrough {
+	text-decoration: line-through;
+}
+
+.t-overline {
+	text-decoration: overline;
+}
+
+
+/* Core > Text > Alignment */
+
+.t-justify {
+	text-align: justify;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.t-left {
+	text-align: left;
+}
+
+.t-right {
+	text-align: right;
+}
+
+.t-start {
+	text-align: start;
+}
+
+.t-end {
+	text-align: end;
+}
+
+
+/* Core > Text > Modifiers */
+
+.t-ucase {
+	text-transform: uppercase;
+}
+
+.t-lcase {
+	text-transform: lowercase;
+}
+
+.t-capitalize {
+	text-transform: capitalize;
+}
+
+
+/* Core > Text > Misc */
+
+.t-nowrap {
+	white-space: nowrap;
+	text-wrap: nowrap;
+}
+
+
+/* Core > Text > Helpers */
+
+.t-half-muted {
+	opacity: 65%;
+}
+
+.t-muted {
+	//@if $undefined-toggle-css-variables {
+	//	color: var(--color-white-muted);
+	//} @else {
+	//	color: #{$color-white-muted};
+	//}
+	//color: #A9A9Aa;
+	opacity: 50%;
+}
+
+.t-super-muted {
+	// Should be 35% TBH
+	opacity: 45%;
+}

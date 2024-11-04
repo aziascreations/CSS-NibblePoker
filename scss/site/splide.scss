@@ -1,0 +1,16 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Extras > Splide */
+
+// Zoom-in effect for image galleries
+.splide li {
+	transition: all 0.20s ease-in-out;
+}
+.splide li:hover {
+	transform: scale(1.05);
+}
+
+// Generic max-height rule
+.splide, .splide * {
+	max-height: 400px;
+}

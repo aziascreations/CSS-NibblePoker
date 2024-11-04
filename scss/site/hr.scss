@@ -1,0 +1,54 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Site > Elements > Horizontal Rule */
+
+hr {
+	border-color: #{$color-border-all};
+
+	&.subtle, &.hr-subtle {
+		//background-color: rgba(0,0,0,0) !important;
+		//background: #5d5f61;
+		//background: radial-gradient(circle, rgba(83, 85, 87, 0.8) 0%, rgba(65, 67, 69, 0.65) 75%, rgba(17, 20, 23, 0) 100%);
+		opacity: 0.2;
+	}
+
+	&.dashed, &.hr-dashed {
+		border-style: dashed;
+	}
+
+	&.dotted, &.hr-dotted {
+		border-style: dotted;
+	}
+
+	&.double, &.hr-double, &.thick, &.hr-thick  {
+		border-style: double;
+	}
+
+	// Default !
+	//&.inset, &.inset {
+	//	border-style: inset;
+	//}
+
+	&.outset, &.hr-outset {
+		border-style: outset;
+	}
+
+	&.cut-here, &.ht-cut-here {
+		border-width: 1px 0 0 0;
+		height: 9px;
+
+		&:after {
+			content: '\002702';
+			display: inline-block;
+			position: relative;
+			color: #{$color-border-all};
+			font-size: 18px;
+			top: -8px;
+			left: 40px;
+
+			font-family: serif;
+			//filter: grayscale(1);
+			//transform: rotate(-90deg);
+		}
+	}
+}

@@ -1,0 +1,41 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Site > Styles > Base */
+
+/* Site > Styles > Base > Coloring & Fonts (TODO: Needs a small rework) */
+
+body {
+	background-color: #{$color-background-body};
+	
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+// Overridden by a rule in background.scss !
+header, nav, footer {
+	background-color: #{$color-background-surround};
+}
+
+main {
+	background-color: #{$color-background-main};
+	
+	// FIXME: Adapt when sidebar is closed !
+	// FIXME: Move it to the proper layout file then !!!
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.375) inset;
+}
+
+
+/* Site > Styles > Base > Trash */
+
+// FIXME: Move it out too !
+// Allowed for right-align in headings with 'ml-auto' instead of 'f-right' !
+/*.heading-main {
+	> h2, > h3, > h4 {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+	}
+	&.heading-dyn-width-1 {
+		min-width: 75%;
+	}
+}*/

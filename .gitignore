@@ -1,0 +1,9 @@
+# IDEs
+.idea/
+
+# NodeJS Trash
+node_modules/
+
+# Build Artifacts
+*.css
+*.min.html

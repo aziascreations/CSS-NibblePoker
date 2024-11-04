@@ -1,0 +1,15 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Site > Layouts */
+
+/* Site > Layouts > Commons */
+
+html, body {
+	// Do not use 100vh, it includes the search bar  !
+	min-width: 100vw;
+	min-height: 100%;
+	width: 100vw !important;
+	height: 100% !important;
+	max-width: 100vw;
+	max-height: 100%;
+}
