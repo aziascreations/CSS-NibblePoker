@@ -9,7 +9,7 @@ services:
       - TZ=Europe/Brussels
     volumes:
       - ./htdocs:/var/www/html:ro
-      - ./apache2.conf:/etc/apache2/apache2.conf:ro
+      #- ./apache2.conf:/etc/apache2/apache2.conf:ro
     restart: unless-stopped
     stop_grace_period: 5s
     labels:

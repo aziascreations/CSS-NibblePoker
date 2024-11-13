@@ -96,4 +96,13 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <span class="t-size-12">Horizontal Rulers</span>
         </p>
     </a>
+
+    <hr class="subtle">
+
+    <a class="a-hidden" href="#buttons">
+        <p class="t-size-18 t-w-500 py-xs sidebar-entry">
+            <i class="fa-solid fa-stop pr-xs t-size-12 t-half-muted"></i>
+            <span class="t-size-12">Buttons</span>
+        </p>
+    </a>
 </nav>

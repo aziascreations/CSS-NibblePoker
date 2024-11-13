@@ -108,6 +108,9 @@
 
     <!-- Horizontal Rulers -->
     <?php include("./parts/horizontal_rulers.php"); ?>
+
+    <!-- Buttons -->
+    <?php include("./parts/buttons.php"); ?>
 </main>
 
 <footer class="d-flex flex-align-center w-full p-s py-xs">
