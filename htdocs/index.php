@@ -106,6 +106,9 @@
     <!-- Grids -->
     <?php include("./parts/grids.php"); ?>
 
+    <!-- Tables -->
+    <?php include("./parts/tables.php"); ?>
+
     <!-- Horizontal Rulers -->
     <?php include("./parts/horizontal_rulers.php"); ?>
 

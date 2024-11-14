@@ -88,6 +88,13 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </p>
     </a>
 
+    <a class="a-hidden" href="#tables">
+        <p class="t-size-18 t-w-500 py-xs sidebar-entry">
+            <i class="fa-solid fa-table pr-xs t-size-12 t-half-muted"></i>
+            <span class="t-size-12">Tables</span>
+        </p>
+    </a>
+
     <hr class="subtle">
 
     <a class="a-hidden" href="#horizontal-rulers">
