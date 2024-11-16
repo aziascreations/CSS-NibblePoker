@@ -3,6 +3,8 @@
 if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 	header('HTTP/1.1 403 Forbidden'); die();
 }
+
+global $root_path;
 ?>
 
 <div class="p-xs b r-s bkgd-grid">
@@ -26,25 +28,29 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 
     <h3 class="t-size-12 mb-xxs mt-m">Design philosophy</h3>
     <div class="ml-xs">
-        <h4 class="t-size-11">Core Stylesheet</h4>
-        <p>These rules apply to the "core" part of the stylesheet:</p>
-        <ul>
+        <h4 class="t-size-11 mt-s mb-xxs">Core stylesheet rules:</h4>
+        <ul class="l-bullets l-bullet-manual">
             <li>No implicit sizes, margins or paddings</li>
             <li>No styles from class-less DOM, except for styling elements</li>
             <li>Self-sufficient and embeddable as a single file or text blob</li>
             <li>Competitive minified size</li>
-            <li>Standardized naming scheme</li>
+            <li>Standardized &amp; consistent naming scheme</li>
         </ul>
-        <!-- Avoid nested divs, keep the logical DOM layout, -->
-        <h4 class="t-size-11 mt-s">Site Stylesheet</h4>
-        <ul>
+
+        <h4 class="t-size-11 mt-s mb-xxs">Site stylesheet rules:</h4>
+        <ul class="l-bullets l-bullet-manual">
             <li>Prefabs for common elements</li>
-            <ul>
+            <ul class="l-bullets l-bullet-manual">
                 <li>Bound to specific elements</li>
-                <li>???</li>
-                <li>???</li>
-                <li>No forced smooth transition</li>
-                <li><b>MUST</b> be snappy on low-end hardware, no snagging allowed</li>
+            </ul>
+            <li>No forced smooth transition</li>
+        </ul>
+
+        <h4 class="t-size-11 mt-s mb-xxs">General rules</h4>
+        <ul class="l-bullets l-bullet-manual">
+            <li><b>Must</b> be snappy on low-end hardware, no snagging or slowdowns allowed</li>
+            <ul class="l-bullets l-bullet-manual">
+                <li>Tested on an old Chuwi Ubook X internally</li>
             </ul>
         </ul>
     </div>

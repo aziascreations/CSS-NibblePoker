@@ -2,28 +2,54 @@
 
 /* Core > Lists */
 
-ul:not(.no-bullet) {
-  padding-left: 1.5rem;
-
-  &> li {
+ul {
+  &.l-bullets, &.list-bullets {
     list-style-type: disc;
   }
 }
 
-ol:not(.no-bullet) {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
+ol {
+  &.l-bullets, &.list-bullets {
+    list-style-type: decimal;
+  }
 }
 
-li {
-  //list-style-type: disc;
-
-  /*&>  li {
-    list-style-type: circle;
-  }*/
+ul, ol {
+  &.l-bullet-inside, &.list-bullet-inside {
+    list-style-position: inside;
+  }
+  &.l-bullet-outside, &.list-bullet-outside {
+    list-style-position: outside;
+  }
+  &.l-bullet-manual, &.list-bullet-manual {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+  }
 }
 
-/*ul.no-bullet, ol.no-bullet {
-  list-style-type: none;
-  padding-left: 0;
-}*/
+ul, ol, li {
+  &.list-bullet-none, &.l-bullet-none {
+    list-style-type: none;
+  }
+  &.list-bullet-disc, &.l-bullet-disc {
+    list-style-type: disc;
+  }
+  &.list-bullet-square, &.l-bullet-square {
+    list-style-type: square;
+  }
+  &.list-bullet-decimal, &.l-bullet-decimal {
+    list-style-type: decimal;
+  }
+  &.list-bullet-decimal-leading, &.l-bullet-decimal-leading {
+    list-style-type: decimal-leading-zero;
+  }
+  &.list-bullet-georgian, &.l-bullet-georgian {
+    list-style-type: georgian;
+  }
+  &.list-bullet-chinese, &.l-bullet-chinese {
+    list-style-type: trad-chinese-informal;
+  }
+  &.list-bullet-kannada, &.l-bullet-kannada {
+    list-style-type: kannada;
+  }
+}
