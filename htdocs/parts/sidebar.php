@@ -12,9 +12,6 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
              alt="Website's logo"
              draggable="false">
     </a>
-    <p class="quantum t-logo-text mb-s mt-xs t-muted ucase">
-        N<span class="t-super-muted">ibble</span>P<span class="t-super-muted">oker</span>
-    </p>
     <hr class="subtle">
 
     <p class="t-bold t-size-14 py-xxs t-half-muted _t-underline t-center">Text</p>

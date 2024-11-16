@@ -62,7 +62,7 @@ button {
 		background-color: #{$color-background-button-hover};
 	}
 	
-	&.primary {
+	&.btn-primary {
 		background-color: #{$color-background-button-primary};
 		
 		&:hover {
@@ -70,7 +70,7 @@ button {
 		}
 	}
 	
-	&.success {
+	&.btn-success {
 		background-color: #{$color-background-button-success};
 		
 		&:hover {
@@ -78,7 +78,7 @@ button {
 		}
 	}
 	
-	&.error {
+	&.btn-error {
 		background-color: #{$color-background-button-error};
 		
 		&:hover {
@@ -86,7 +86,7 @@ button {
 		}
 	}
 	
-	&.warning {
+	&.btn-warning {
 		background-color: #{$color-background-button-warning};
 		
 		&:hover {

@@ -4,13 +4,13 @@
 
 @mixin overflow-maker($overflow-type) {
 	.o-#{$overflow-type} {
-		overflow: #{$overflow-type};
+		overflow: #{$overflow-type} !important;
 	}
 	.ox-#{$overflow-type} {
-		overflow-x: #{$overflow-type};
+		overflow-x: #{$overflow-type} !important;
 	}
 	.oy-#{$overflow-type} {
-		overflow-y: #{$overflow-type};
+		overflow-y: #{$overflow-type} !important;
 	}
 }
 

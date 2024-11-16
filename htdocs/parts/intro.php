@@ -8,7 +8,7 @@ global $root_path;
 ?>
 
 <div class="p-xs b r-s bkgd-grid">
-    <h2 class="t-w-500 t-size-14">Welcome to <i class="ml-xxs">NibblePoker.com</i></h2>
+    <h2 class="t-w-500 t-size-14">Introduction</h2>
 </div>
 <section class="p-s">
     <h3 class="t-size-12 mb-xxs">About the stylesheet</h3>
@@ -70,7 +70,7 @@ global $root_path;
                        title="Download the minified full stylesheet"
                        class="a-hidden"
                        download>
-                        <button class="success p-xs b r-m">
+                        <button class="btn-success p-xs b r-m">
                             <i class="fa fa-download"></i>
                             nibblepoker.min.css
                             (<?php echo(formatBytes(filesize($root_path . "/css/nibblepoker.min.css"))) ?>)

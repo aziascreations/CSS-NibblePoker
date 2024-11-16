@@ -46,27 +46,27 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </p>
         <div class="grid col-2 grid-gap-xs">
             <div>
-                <button class="p-xs r-s border primary">Primary button</button>
+                <button class="p-xs r-s border btn-primary">Primary button</button>
                 <code class="d-block p-xxs border r-s mt-s">
-                    button.p-xs.r-s.border<b>.primary</b>
+                    button.p-xs.r-s.border<b>.btn-primary</b>
                 </code>
             </div>
             <div>
-                <button class="p-xs r-s border success">Success button</button>
+                <button class="p-xs r-s border btn-success">Success button</button>
                 <code class="d-block p-xxs border r-s mt-s">
-                    button.p-xs.r-s.border<b>.success</b>
+                    button.p-xs.r-s.border<b>.btn-success</b>
                 </code>
             </div>
             <div>
-                <button class="p-xs r-s border warning">Warning button</button>
+                <button class="p-xs r-s border btn-warning">Warning button</button>
                 <code class="d-block p-xxs border r-s mt-s">
-                    button.p-xs.r-s.border<b>.warning</b>
+                    button.p-xs.r-s.border<b>.btn-warning</b>
                 </code>
             </div>
             <div>
-                <button class="p-xs r-s border error">Danger/Error button</button>
+                <button class="p-xs r-s border btn-error">Danger/Error button</button>
                 <code class="d-block p-xxs border r-s mt-s">
-                    button.p-xs.r-s.border<b>.error</b>
+                    button.p-xs.r-s.border<b>.btn-error</b>
                 </code>
             </div>
         </div>

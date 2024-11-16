@@ -31,27 +31,8 @@
 
 <header class="w-full p-m pl-s">
     <h1 class="t-size-17 t-w-500">
-        <i class="fa-solid fa-house mr-s"></i><span np-l10n-key="header.title">Homepage</span>
+        <i class="fa-brands fa-css3-alt mr-s"></i>NibbleCSS Documentation
     </h1>
-    <details id="lang-selector" class="b p-mxs px-s bkgd-blank-dark r-m">
-        <summary>
-            <i class="fad fa-language"></i>
-            <span class="mobile-hide t-w-500">&nbsp;Language</span>
-            &nbsp;<i class="fa fa-angle-down"></i>
-        </summary>
-        <div class="p-xs border bkgd-surround r-m t-w-500">
-            <a href="/en/" class="bland-link">
-                <p class="mb-s px-xxs">English</p>
-            </a>
-            <a href="/fr/" class="bland-link">
-                <p class="my-s px-xxs">French</p>
-            </a>
-            <hr class="subtle m-0">
-            <a href="/" class="bland-link">
-                <p class="mt-xs px-xxs">Automatic</p>
-            </a>
-        </div>
-    </details>
 </header>
 
 <main id="main" class="b br-0 p-m rl-m">
