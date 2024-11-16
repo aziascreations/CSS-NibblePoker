@@ -131,5 +131,6 @@
 </footer>
 
 <script src="/js/sidebar.js"></script>
+<script src="/js/text-direction-switch.js"></script>
 </body>
 </html>

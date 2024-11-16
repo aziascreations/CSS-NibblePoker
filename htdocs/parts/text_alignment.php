@@ -20,27 +20,27 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <tbody>
         <tr>
             <td><p class="t-bold">Left</p></td>
-            <td><p class="t-left">Left</p></td>
+            <td><p class="t-left text-direction-target">Left</p></td>
             <td><span class="code">t-left</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Center</p></td>
-            <td><p class="t-center">Centered</p></td>
+            <td><p class="t-center text-direction-target">Centered</p></td>
             <td><span class="code">t-center</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Right</p></td>
-            <td><p class="t-right">Right</p></td>
+            <td><p class="t-right text-direction-target">Right</p></td>
             <td><span class="code">t-right</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Start</p></td>
-            <td><p class="t-start">Start</p></td>
+            <td><p class="t-start text-direction-target">Start</p></td>
             <td><span class="code">t-start</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">End</p></td>
-            <td><p class="t-end">End</p></td>
+            <td><p class="t-end text-direction-target">End</p></td>
             <td><span class="code">t-end</span></td>
         </tr>
         <tr>
@@ -50,5 +50,6 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </tr>
         </tbody>
     </table>
-    <button>Switch text direction</button>
+
+    <button class="p-xs r-s border primary mt-s text-direction-switch">Switch text direction</button>
 </section>
