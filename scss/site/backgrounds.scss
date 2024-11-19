@@ -2,30 +2,38 @@
 
 /* Site > Misc > Backgrounds */
 
-.bkgd-blank {
+.bkgd-dark {
 	background: #{$color-background-main-headings};
 }
 
+.bkgd-grey, .bkgd-gray {
+	background: mix($color-background-main, $color-background-surround, 50%);
+}
+
+.bkgd-light {
+	background: $color-background-main;
+}
+
 // The element rules override rules in `base.scss ~94`
-.bkgd-surround, header, nav, footer {
+.bkgd-grid10, .bkgd-surround, header, nav, footer {
 	//background: #{$color-background-surround};
 	background: #{$color-background-surround} url("#{$nibblepoker-background-root}/3px-tile-0.1.png") repeat scroll center center;
 }
 
-.bkgd-blank-dark {
-	background: mix($color-background-main, $color-background-surround, 50%);
-}
-
-.bkgd-grid {
-	background: #{$color-background-main-headings} url("#{$nibblepoker-background-root}/3px-tile-0.4.png") repeat scroll center center;
-}
-
-.bkgd-squares {
-	background: #{$color-background-main-headings} url("#{$nibblepoker-background-root}/bright-squares-p100-0.125.png") repeat scroll center center;
-}
-
-.bkgd-math {
+.bkgd-grid20 {
 	//background: #{$color-background-main-headings} url("#{$nibblepoker-background-root}/old-mathematics-v2-0.25.png") repeat scroll center center;
 	// FIXME: Fix the code using this class !!!
 	background: #{$color-background-main-headings} url("#{$nibblepoker-background-root}/3px-tile-0.2.png") repeat scroll center center;
+}
+
+.bkgd-grid30 {
+	background: #{$color-background-main-headings} url("#{$nibblepoker-background-root}/3px-tile-0.3.png") repeat scroll center center;
+}
+
+.bkgd-grid40, .bkgd-grid {
+	background: #{$color-background-main-headings} url("#{$nibblepoker-background-root}/3px-tile-0.4.png") repeat scroll center center;
+}
+
+.bkgd-transparent {
+	background: rgba(0, 0, 0, 0);
 }

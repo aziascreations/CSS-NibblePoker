@@ -94,6 +94,9 @@
     <!-- Horizontal Rulers -->
     <?php include("./parts/horizontal_rulers.php"); ?>
 
+    <!-- Backgrounds -->
+    <?php include("./parts/backgrounds.php"); ?>
+
     <!-- Buttons -->
     <?php include("./parts/buttons.php"); ?>
 </main>
