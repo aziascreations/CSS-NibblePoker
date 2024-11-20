@@ -56,12 +56,58 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </div>
     </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Other backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Special backgrounds</h3>
     <div class="grid col-3 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Transparent</p>
             <div class="p-l border r-xl bkgd-transparent my-xs"></div>
             <span class="code">.bkgd-transparent</span>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Colored backgrounds</h3>
+    <div class="grid col-4 col-medium-2 grid-gap-l px-s">
+        <div>
+            <p class="t-w-500">Blue</p>
+            <div class="p-l border r-xl bkgd-blue my-xs"></div>
+            <span class="code">.bkgd-blue</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light blue</p>
+            <div class="p-l border r-xl bkgd-blue-light my-xs"></div>
+            <span class="code">.bkgd-blue-light</span>
+        </div>
+        <div>
+            <p class="t-w-500">Green</p>
+            <div class="p-l border r-xl bkgd-green my-xs"></div>
+            <span class="code">.bkgd-green</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light green</p>
+            <div class="p-l border r-xl bkgd-green-light my-xs"></div>
+            <span class="code">.bkgd-green-light</span>
+        </div>
+    </div>
+    <div class="grid col-4 col-medium-2 grid-gap-l px-s mt-m">
+        <div>
+            <p class="t-w-500">Red</p>
+            <div class="p-l border r-xl bkgd-red my-xs"></div>
+            <span class="code">.bkgd-red</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light red</p>
+            <div class="p-l border r-xl bkgd-red-light my-xs"></div>
+            <span class="code">.bkgd-red-light</span>
+        </div>
+        <div>
+            <p class="t-w-500">Orange</p>
+            <div class="p-l border r-xl bkgd-orange my-xs"></div>
+            <span class="code">.bkgd-orange</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light orange</p>
+            <div class="p-l border r-xl bkgd-orange-light my-xs"></div>
+            <span class="code">.bkgd-orange-light</span>
         </div>
     </div>
 </section>

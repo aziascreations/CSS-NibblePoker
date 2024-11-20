@@ -47,3 +47,35 @@
 .bkgd-transparent {
 	background: rgba(0, 0, 0, 0);
 }
+
+.bkgd-blue {
+	background-color: #{$color-background-button-primary};
+}
+
+.bkgd-blue-light {
+	background-color: #{$color-background-button-primary-hover};
+}
+
+.bkgd-green {
+	background-color: #{$color-background-button-success};
+}
+
+.bkgd-green-light {
+	background-color: #{$color-background-button-success-hover};
+}
+
+.bkgd-red {
+	background-color: #{$color-background-button-error};
+}
+
+.bkgd-red-light {
+	background-color: #{$color-background-button-error-hover};
+}
+
+.bkgd-orange {
+	background-color: #{$color-background-button-warning};
+}
+
+.bkgd-orange-light {
+	background-color: #{$color-background-button-warning-hover};
+}
