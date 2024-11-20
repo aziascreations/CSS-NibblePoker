@@ -82,8 +82,11 @@
     <!-- Rounding -->
     <?php include("./parts/rounding.php"); ?>
 
-    <!-- Lists -->
-    <?php include("./parts/lists.php"); ?>
+    <!-- Lists > Base -->
+    <?php include("./parts/lists_base.php"); ?>
+
+    <!-- Lists > Composed -->
+    <?php include("./parts/lists_composed.php"); ?>
 
     <!-- Grids -->
     <?php include("./parts/grids.php"); ?>
@@ -117,5 +120,6 @@
 
 <script src="/js/sidebar.js"></script>
 <script src="/js/text-direction-switch.js"></script>
+<script src="/js/anchor-fix.js"></script>
 </body>
 </html>

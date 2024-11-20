@@ -69,10 +69,17 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 
     <hr class="subtle">
 
-    <a class="a-hidden" href="#lists">
+    <a class="a-hidden" href="#lists-basic">
         <p class="t-size-18 t-w-500 py-xs sidebar-entry">
             <i class="fa-solid fa-list pr-xs t-size-12 t-half-muted"></i>
-            <span class="t-size-12">Lists</span>
+            <span class="t-size-12">Basic</span>
+        </p>
+    </a>
+
+    <a class="a-hidden" href="#lists-composed">
+        <p class="t-size-18 t-w-500 py-xs sidebar-entry">
+            <i class="fa-solid fa-ellipsis pr-xs t-size-12 t-half-muted"></i>
+            <span class="t-size-12">Composed</span>
         </p>
     </a>
 

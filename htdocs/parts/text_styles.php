@@ -22,31 +22,31 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <tr>
             <td><p class="t-bold">Italic</p></td>
             <td><p class="t-italic">Italic text</p></td>
-            <td><span class="code">t-italic</span></td>
+            <td><span class="code">.t-italic</span></td>
             <td><span class="code">i</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Oblique</p></td>
             <td><p class="t-oblique">Oblique text</p></td>
-            <td><span class="code">t-oblique</span></td>
+            <td><span class="code">.t-oblique</span></td>
             <td><span class="t-muted">N/A</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Underline</p></td>
             <td><p class="t-underline">Underlined text</p></td>
-            <td><span class="code">t-underline</span></td>
+            <td><span class="code">.t-underline</span></td>
             <td><span class="code">u</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Strikethrough</p></td>
             <td><p class="t-strikethrough">Struck text</p></td>
-            <td><span class="code">t-strikethrough</span></td>
+            <td><span class="code">.t-strikethrough</span></td>
             <td><span class="code">s</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Overline</p></td>
             <td><p class="t-overline">Overline text</p></td>
-            <td><span class="code">t-overline</span></td>
+            <td><span class="code">.t-overline</span></td>
             <td><span class="t-muted">N/A</span></td>
         </tr>
         </tbody>

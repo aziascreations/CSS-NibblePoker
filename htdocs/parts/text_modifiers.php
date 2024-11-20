@@ -23,19 +23,19 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <td><p class="t-bold">Uppercase</p></td>
             <td><p>Regular Case</p></td>
             <td><p class="t-ucase">Regular Case</p></td>
-            <td><span class="code">t-ucase</span></td>
+            <td><span class="code">.t-ucase</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Lowercase</p></td>
             <td><p>Regular Case</p></td>
             <td><p class="t-lcase">Regular Case</p></td>
-            <td><span class="code">t-lcase</span></td>
+            <td><span class="code">.t-lcase</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Capitalize</p></td>
             <td><p>no case</p></td>
             <td><span class="t-capitalize">no case</span></td>
-            <td><span class="code">t-capitalize</span></td>
+            <td><span class="code">.t-capitalize</span></td>
         </tr>
         </tbody>
     </table>

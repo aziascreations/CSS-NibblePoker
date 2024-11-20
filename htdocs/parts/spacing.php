@@ -22,17 +22,17 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </p>
 
     <div class="grid col-3 col-medium-2 col-mobile-1 gap-xs mt-s t-center">
-        <div><div class="debug p-xxs"><div class="debug"><p><span class="code">p-xxs</span></p></div></div></div>
-        <div><div class="debug p-xs"><div class="debug"><p><span class="code">p-xs</span></p></div></div></div>
-        <div><div class="debug p-s"><div class="debug"><p><span class="code">p-s</span></p></div></div></div>
-        <div><div class="debug p-m"><div class="debug"><p><span class="code">p-m</span></p></div></div></div>
-        <div><div class="debug p-l"><div class="debug"><p><span class="code">p-l</span> </p></div></div></div>
-        <div><div class="debug p-xl"><div class="debug"><p><span class="code">p-xl</span></p></div></div></div>
+        <div><div class="debug p-xxs"><div class="debug"><p><span class="code">.p-xxs</span></p></div></div></div>
+        <div><div class="debug p-xs"><div class="debug"><p><span class="code">.p-xs</span></p></div></div></div>
+        <div><div class="debug p-s"><div class="debug"><p><span class="code">.p-s</span></p></div></div></div>
+        <div><div class="debug p-m"><div class="debug"><p><span class="code">.p-m</span></p></div></div></div>
+        <div><div class="debug p-l"><div class="debug"><p><span class="code">.p-l</span> </p></div></div></div>
+        <div><div class="debug p-xl"><div class="debug"><p><span class="code">.p-xl</span></p></div></div></div>
     </div>
 
-    <details class="border bkgd-blank r-m mt-s">
+    <details class="border bkgd-dark r-m mt-s">
         <summary class="p-xs">Click to show/hide all classes</summary>
-        <div class="p-xs bt bkgd-blank-dark">
+        <div class="p-xs bt bkgd-grey">
             <?php
             $spacingSizes = ["0", "xxs", "xs", "s", "m", "l", "xl"];
 

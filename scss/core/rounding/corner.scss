@@ -22,6 +22,7 @@
 @include corner-rounding-maker("s", calc(#{$border-base-radius} * 0.75));
 @include corner-rounding-maker("m", #{$border-base-radius});
 @include corner-rounding-maker("l", calc(#{$border-base-radius} * 1.5));
+@include corner-rounding-maker("xl", calc(#{$border-base-radius} * 2.0));
 
 
 /* Utilities > Rounding > Corner > Fixed Sizes */

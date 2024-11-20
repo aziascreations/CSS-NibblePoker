@@ -11,32 +11,26 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <i class="fa-solid fa-table-cells-large f-right"></i></h2>
 </div>
 <section class="p-s">
-    <p>
-        Grids are defined by using the <span class="code">grid</span> and <span class="code">col-X</span> class where
-        <span class="code">X</span> represents the number of columns and can be
-        <span class="code">1</span>, <span class="code">2</span>,
-        <span class="code">3</span>, <span class="code">4</span>,
-        <span class="code">6</span> or <span class="code">8</span>.
-    </p>
 
-    <!--<p>You should preferably use <span class="code">&lt;div&gt;</span> elements for the grid container and each cell.</p>-->
-    <!--<p>[Equal width for cells, maybe]</p>-->
-
-    <p class="t-bold">Examples without inter-cell gaps:</p>
-    <div class="gap-xs">
-        <p><span class="code">div.grid.col-1&gt;div</span></p>
-        <div class="grid col-1 debug p-xxs">
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Basic grids</h3>
+    <div class="px-s">
+        <p class="mb-m">
+            Grids are defined by combining the <span class="code">.grid</span> and <span class="code">.col-X</span>
+            classes where <span class="code">X</span> represents the number of columns and can be
+            <span class="code">1</span>, <span class="code">2</span>,
+            <span class="code">3</span>, <span class="code">4</span>,
+            <span class="code">6</span> or <span class="code">8</span>.
+        </p>
+        <div class="grid col-1 debug p-xxs mb-xs">
             <div class="bkgd-blank-dark debug">Cell #1</div>
         </div>
-
-        <p><span class="code">div.grid.col-2&gt;div*2</span></p>
-        <div class="grid col-2 debug p-xxs">
+        <p><span class="code">div.grid.col-1&gt;div</span></p>
+        <div class="grid col-2 debug p-xxs mb-xs mt-m">
             <div class="bkgd-blank-dark debug">Cell #1</div>
             <div class="bkgd-blank-dark debug">Cell #2</div>
         </div>
-
-        <p><span class="code">div.grid.col-6&gt;div*6</span></p>
-        <div class="grid col-6 debug p-xxs">
+        <p><span class="code">div.grid.col-2&gt;div*2</span></p>
+        <div class="grid col-6 debug p-xxs mb-xs mt-m">
             <div class="bkgd-blank-dark debug">Cell #1</div>
             <div class="bkgd-blank-dark debug">Cell #2</div>
             <div class="bkgd-blank-dark debug">Cell #3</div>
@@ -44,39 +38,38 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <div class="bkgd-blank-dark debug">Cell #5</div>
             <div class="bkgd-blank-dark debug">Cell #6</div>
         </div>
+        <p><span class="code">div.grid.col-6&gt;div*6</span></p>
     </div>
 
-    <p>
-        Inter-cell gaps can also be setup by using the <span class="code">grid-gap-X</span> or
-        <span class="code">col-gap-X</span> classes and replacing the <span class="code">X</span>
-        with the standard size suffixes.
-    </p>
-
-    <p class="t-bold">Examples with inter-cell gaps:</p>
-    <div class="gap-xs">
-        <?php
+    <h3 class="t-w-500 t-size-12 my-xs mt-l">Grid gaps</h3>
+    <div class="px-s">
+        <p class="mb-m">
+            Inter-cell gaps can also be setup by using the <span class="code">grid-gap-X</span> or
+            <span class="code">col-gap-X</span> classes and replacing the <span class="code">X</span>
+            with the standard size suffixes.
+        </p>
+        <div class="gap-xs">
+            <?php
             foreach(["xs", "m", "l"] as &$gapSize) {
-                echo('<p><span class="code">div.grid.col-3.grid-gap-' . $gapSize . '&gt;div*6</span></p>');
-                echo('<div class="grid col-3 grid-gap-' . $gapSize . ' debug p-xxs">');
+                echo('<div class="grid col-3 grid-gap-' . $gapSize . ' debug p-xxs mt-m">');
                 for($iGap = 1; $iGap <= 6; $iGap++) {
                     echo('<div class="bkgd-blank-dark debug">Cell #' . $iGap . '</div>');
                 }
                 echo('</div>');
+                echo('<p class="mt-xs"><span class="code">div.grid.col-3.grid-gap-' . $gapSize . '&gt;div*6</span></p>');
             }
-        ?>
+            ?>
+        </div>
     </div>
 
-    <b>TODO: All mobile rules, Add non-identical sizing</b>
 
-
-    <details class="border bkgd-blank r-m mt-s">
+    <details class="border bkgd-dark r-m mt-l">
         <summary class="p-xs">Click to show/hide all classes</summary>
-        <div class="p-xs bt bkgd-blank-dark">
+        <div class="p-xs bt bkgd-grey">
             <p>
                 <span class="code mr-xs">grid</span>
                 <span class="t-super-muted">Defined a grid container</span>
             </p>
-
 
             <hr class="subtle my-s">
 
@@ -134,4 +127,5 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </div>
     </details>
 
+    <p class="mt-m t-bold">TODO: All mobile rules, Add non-identical sizing</p>
 </section>

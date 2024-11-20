@@ -21,22 +21,22 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <tr>
             <td><p class="t-bold">No wrap</p></td>
             <td><p class="t-nowrap">Cannot really be shown</p></td>
-            <td><span class="code">t-nowrap</span></td>
+            <td><span class="code">.t-nowrap</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Half muted</p></td>
             <td><p class="t-half-muted">Half muted</p></td>
-            <td><span class="code">t-half-muted</span></td>
+            <td><span class="code">.t-half-muted</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Muted</p></td>
             <td><p class="t-muted">Muted text</p></td>
-            <td><span class="code">t-muted</span></td>
+            <td><span class="code">.t-muted</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Super muted</p></td>
             <td><p class="t-super-muted">Super Muted</p></td>
-            <td><span class="code">t-super-muted</span></td>
+            <td><span class="code">.t-super-muted</span></td>
         </tr>
         </tbody>
     </table>

@@ -26,6 +26,7 @@
 @include sided-rounding-maker("s", calc(#{$border-base-radius} * 0.75));
 @include sided-rounding-maker("m", #{$border-base-radius});
 @include sided-rounding-maker("l", calc(#{$border-base-radius} * 1.5));
+@include sided-rounding-maker("xl", calc(#{$border-base-radius} * 2.0));
 
 
 /* Utilities > Rounding > Sided > Fixed Sizes */

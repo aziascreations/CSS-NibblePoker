@@ -35,6 +35,21 @@ cd /d %~dp0
 copy ".\bkgds\*.png" ".\htdocs\css\"
 popd
 
+:sass-assets
+echo Copying assets...
+pushd %CD%
+cd /d %~dp0
+copy ".\bkgds\*.png" ".\htdocs\css\"
+popd
+
+:sass-compress
+echo Compressing assets...
+pushd %CD%
+cd /d %~dp0\htdocs\css
+7z a -t7z -mx=9 nibblepoker.css.7z nibblepoker.min.css *.png
+7z a -tzip -mx=9 nibblepoker.css.zip nibblepoker.min.css *.png
+popd
+
 :sass-end
 
 
