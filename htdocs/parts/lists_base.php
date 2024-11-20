@@ -11,6 +11,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <i class="fa-solid fa-list f-right"></i></h2>
 </div>
 <section class="p-s">
+
+    <div class="bkgd-orange t-bold t-center w-full r-l border p-xs mt-xxs mb-m">
+        ⚠️ These styles may change before the 1.0.0 release ⚠️
+    </div>
+
     <h3 class="t-w-500 t-size-12 my-s">Blank lists</h3>
     <div class="px-s">
         <p class="mb-s">

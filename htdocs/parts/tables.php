@@ -12,6 +12,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </h2>
 </div>
 <section class="p-s">
+
+    <div class="bkgd-red t-bold t-center w-full r-l border p-xs mt-xxs mb-m">
+        ⚠️ These styles will change before the 1.0.0 release ⚠️
+    </div>
+
     <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Unstyled table</h3>
     <div class="px-s">
         <p class="mb-s">
