@@ -21,12 +21,20 @@
 .w-half {
 	width: 50%;
 }
+.wm-half {
+	max-width: 50%;
+}
 
 .h-half {
 	height: 50%;
 }
+.hm-half {
+	max-height: 50%;
+}
 
-// Pixels Sizing (Deprecated, disabled by default, use custom rules !)
+// Pixels Sizing
+// These rules are deprecated and disabled by default.
+// You should preferably use custom site-specific or app-specific rules instead !
 @if($add-px-sizing-rules) {
 	// 50, 100, ..., 250 px
 	@for $_ from 1 through 5 {

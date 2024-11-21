@@ -85,8 +85,8 @@
     <!-- Lists > Base -->
     <?php include("./parts/lists_base.php"); ?>
 
-    <!-- Lists > Composed -->
-    <?php include("./parts/lists_composed.php"); ?>
+    <!-- Lists > Composed
+    <?php include("./parts/lists_composed.php"); ?>-->
 
     <!-- Grids -->
     <?php include("./parts/grids.php"); ?>

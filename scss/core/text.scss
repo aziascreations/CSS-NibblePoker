@@ -166,3 +166,7 @@ s, .t-strikethrough {
 	// Should be 35% TBH
 	opacity: 45%;
 }
+
+.t-noselect {
+	user-select: none;
+}
