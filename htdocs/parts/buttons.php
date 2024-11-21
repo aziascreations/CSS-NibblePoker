@@ -17,7 +17,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         for colors only.
     </p>
 
-    <div class="grid col-2 col-medium-1 grid-gap-xs">
+    <div class="grid grid-col-2 grid-col-medium-1 grid-gap-xs">
         <div>
             <h3 class="t-w-500 t-size-12 mt-s">Unstyled button</h3>
             <div class="m-s">
@@ -44,7 +44,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             Buttons can also be colored in order to give direct visual feedback
             on their intended action by simply giving them another class.
         </p>
-        <div class="grid col-2 col-medium-1 grid-gap-xs">
+        <div class="grid grid-col-2 grid-col-medium-1 grid-gap-xs">
             <div>
                 <button class="p-xs r-s border btn-primary">Primary button</button>
                 <code class="d-block p-xxs border r-s mt-s">

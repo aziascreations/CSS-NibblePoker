@@ -80,7 +80,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             Please note that the following classes must be applied to the root element and any nested
             list's root element too.
         </p>
-        <div class="grid col-3">
+        <div class="grid grid-col-3">
             <div>
                 <p><b>Outside (Default)</b></p>
                 <ul class="debug l-bullets l-bullet-outside my-xs">

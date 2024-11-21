@@ -17,7 +17,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </p>
 
     <h3 class="t-w-500 t-size-12 my-s">Regular sizes</h3>
-    <div class="grid col-4 col-medium-3 col-mobile-2 gap-xs t-center">
+    <div class="grid grid-col-4 grid-col-medium-3 grid-col-mobile-2 grid-gap-xs t-center">
         <div class="r-0 p-xs b bkgd-blank-dark debug"><span class="code">.r-0</span></div>
         <div class="r-xs p-xs b bkgd-blank-dark debug"><span class="code">.r-xs</span></div>
         <div class="r-s p-xs b bkgd-blank-dark debug"><span class="code">.r-s</span></div>
@@ -27,7 +27,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </div>
 
     <h3 class="t-w-500 t-size-12 my-s mt-l">Special size</h3>
-    <div class="grid col-4 col-medium-3 col-mobile-2 gap-xs t-center">
+    <div class="grid grid-col-4 grid-col-medium-3 grid-col-mobile-2 grid-gap-xs t-center">
         <div class="r-r p-xs b bkgd-blank-dark debug"><span class="code">.r-r</span></div>
     </div>
 

@@ -21,7 +21,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         Using margins would have the same effect, if you ignore margin folding.
     </p>
 
-    <div class="grid col-3 col-medium-2 col-mobile-1 gap-xs mt-s t-center">
+    <div class="grid grid-col-3 grid-col-medium-2 grid-col-mobile-1 grid-gap-xs mt-s t-center">
         <div><div class="debug p-xxs"><div class="debug"><p><span class="code">.p-xxs</span></p></div></div></div>
         <div><div class="debug p-xs"><div class="debug"><p><span class="code">.p-xs</span></p></div></div></div>
         <div><div class="debug p-s"><div class="debug"><p><span class="code">.p-s</span></p></div></div></div>

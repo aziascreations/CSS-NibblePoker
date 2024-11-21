@@ -14,7 +14,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 <section class="p-s">
 
     <h3 class="t-w-500 t-size-12 mb-xs mt-xxs">Simple colors</h3>
-    <div class="grid col-3 grid-gap-l px-s">
+    <div class="grid grid-col-3 grid-gap-l px-s">
         <div>
             <div class="p-l border r-xl bkgd-dark my-xs"></div>
             <span class="code mb-s">.bkgd-dark</span>
@@ -31,7 +31,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </div>
 
     <h3 class="t-w-500 t-size-12 my-s mt-l">Grid backgrounds</h3>
-    <div class="grid col-2 grid-gap-l px-s">
+    <div class="grid grid-col-2 grid-gap-l px-s">
         <div>
             <p class="t-w-500">40% opacity (Title bars)</p>
             <div class="p-l border r-xl bkgd-grid40 my-xs"></div>
@@ -57,7 +57,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </div>
 
     <h3 class="t-w-500 t-size-12 my-s mt-l">Special backgrounds</h3>
-    <div class="grid col-3 grid-gap-l px-s">
+    <div class="grid grid-col-3 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Transparent</p>
             <div class="p-l border r-xl bkgd-transparent my-xs"></div>
@@ -66,7 +66,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </div>
 
     <h3 class="t-w-500 t-size-12 my-s mt-l">Colored backgrounds</h3>
-    <div class="grid col-4 col-medium-2 grid-gap-l px-s">
+    <div class="grid grid-col-4 grid-col-medium-2 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Blue</p>
             <div class="p-l border r-xl bkgd-blue my-xs"></div>
@@ -88,7 +88,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <span class="code">.bkgd-green-light</span>
         </div>
     </div>
-    <div class="grid col-4 col-medium-2 grid-gap-l px-s mt-m">
+    <div class="grid grid-col-4 grid-col-medium-2 grid-gap-l px-s mt-m">
         <div>
             <p class="t-w-500">Red</p>
             <div class="p-l border r-xl bkgd-red my-xs"></div>

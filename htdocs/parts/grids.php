@@ -15,22 +15,22 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Basic grids</h3>
     <div class="px-s">
         <p class="mb-m">
-            Grids are defined by combining the <span class="code">.grid</span> and <span class="code">.col-X</span>
+            Grids are defined by combining the <span class="code">.grid</span> and <span class="code">.grid-col-X</span>
             classes where <span class="code">X</span> represents the number of columns and can be
             <span class="code">1</span>, <span class="code">2</span>,
             <span class="code">3</span>, <span class="code">4</span>,
             <span class="code">6</span> or <span class="code">8</span>.
         </p>
-        <div class="grid col-1 debug p-xxs mb-xs">
+        <div class="grid grid-col-1 debug p-xxs mb-xs">
             <div class="bkgd-blank-dark debug">Cell #1</div>
         </div>
-        <p><span class="code">div.grid.col-1&gt;div</span></p>
-        <div class="grid col-2 debug p-xxs mb-xs mt-m">
+        <p><span class="code">div.grid.grid-col-1&gt;div</span></p>
+        <div class="grid grid-col-2 debug p-xxs mb-xs mt-m">
             <div class="bkgd-blank-dark debug">Cell #1</div>
             <div class="bkgd-blank-dark debug">Cell #2</div>
         </div>
-        <p><span class="code">div.grid.col-2&gt;div*2</span></p>
-        <div class="grid col-6 debug p-xxs mb-xs mt-m">
+        <p><span class="code">div.grid.grid-col-2&gt;div*2</span></p>
+        <div class="grid grid-col-6 debug p-xxs mb-xs mt-m">
             <div class="bkgd-blank-dark debug">Cell #1</div>
             <div class="bkgd-blank-dark debug">Cell #2</div>
             <div class="bkgd-blank-dark debug">Cell #3</div>
@@ -38,25 +38,24 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <div class="bkgd-blank-dark debug">Cell #5</div>
             <div class="bkgd-blank-dark debug">Cell #6</div>
         </div>
-        <p><span class="code">div.grid.col-6&gt;div*6</span></p>
+        <p><span class="code">div.grid.grid-col-6&gt;div*6</span></p>
     </div>
 
     <h3 class="t-w-500 t-size-12 my-xs mt-l">Grid gaps</h3>
     <div class="px-s">
         <p class="mb-m">
-            Inter-cell gaps can also be setup by using the <span class="code">grid-gap-X</span> or
-            <span class="code">col-gap-X</span> classes and replacing the <span class="code">X</span>
-            with the standard size suffixes.
+            Inter-cell gaps can also be setup by using the <span class="code">grid-gap-X</span> classes and
+            replacing the <span class="code">X</span> with the standard size suffixes.
         </p>
         <div class="gap-xs">
             <?php
             foreach(["xs", "m", "l"] as &$gapSize) {
-                echo('<div class="grid col-3 grid-gap-' . $gapSize . ' debug p-xxs mt-m">');
+                echo('<div class="grid grid-col-3 grid-gap-' . $gapSize . ' debug p-xxs mt-m">');
                 for($iGap = 1; $iGap <= 6; $iGap++) {
                     echo('<div class="bkgd-blank-dark debug">Cell #' . $iGap . '</div>');
                 }
                 echo('</div>');
-                echo('<p class="mt-xs"><span class="code">div.grid.col-3.grid-gap-' . $gapSize . '&gt;div*6</span></p>');
+                echo('<p class="mt-xs"><span class="code">div.grid.grid-col-3.grid-gap-' . $gapSize . '&gt;div*6</span></p>');
             }
             ?>
         </div>
@@ -78,9 +77,9 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                     <td>
                         <p><span class="code mr-xs">grid-col-1</span></p>
                     </td>
-                    <td>
+                    <!--<td>
                         <p><span class="code mr-xs">col-1</span></p>
-                    </td>
+                    </td>-->
                     <td rowspan="6">
                         <span class="t-super-muted">Specifies the column count</span></p>
                     </td>
@@ -90,7 +89,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                 foreach($gridColCounts as &$gridColCount){
                     echo('<tr>');
                     echo('<td><p><span class="code mr-xs">grid-col-'.$gridColCount.'</span></p></td>');
-                    echo('<td><p><span class="code mr-xs">col-'.$gridColCount.'</span></p></td>');
+                    //echo('<td><p><span class="code mr-xs">col-'.$gridColCount.'</span></p></td>');
                     echo('</tr>');
                 }
                 ?>
@@ -103,9 +102,9 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                     <td>
                         <p><span class="code mr-xs">grid-gap-xs</span></p>
                     </td>
-                    <td>
+                    <!--<td>
                         <p><span class="code mr-xs">gap-xs</span></p>
-                    </td>
+                    </td>-->
                     <td rowspan="6">
                         <span class="t-super-muted">Specifies the inter-cell gap size</span></p>
                     </td>
@@ -115,15 +114,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                 foreach($gridGapSizes as &$gridGapSize){
                     echo('<tr>');
                     echo('<td><p><span class="code mr-xs">grid-gap-'.$gridGapSize.'</span></p></td>');
-                    echo('<td><p><span class="code mr-xs">gap-'.$gridGapSize.'</span></p></td>');
+                    //echo('<td><p><span class="code mr-xs">gap-'.$gridGapSize.'</span></p></td>');
                     echo('</tr>');
                 }
                 ?>
             </table>
-
-            <?php
-            echo('<hr class="subtle my-s">');
-            ?>
         </div>
     </details>
 

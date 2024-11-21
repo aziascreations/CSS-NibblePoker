@@ -7,13 +7,15 @@
 }
 
 @mixin grid-col-maker($col-count, $middle-part) {
-	.grid-col-#{$middle-part}#{$col-count}, .col-#{$middle-part}#{$col-count} {
+	// , .col-#{$middle-part}#{$col-count}
+	.grid-col-#{$middle-part}#{$col-count} {
 		grid-template-columns: repeat(#{$col-count}, 1fr);
 	}
 }
 
 @mixin grid-gap-maker($gap-size-key, $gap-size-value) {
-	.grid-gap-#{$gap-size-key}, .gap-#{$gap-size-key} {
+	// , .gap-#{$gap-size-key}
+	.grid-gap-#{$gap-size-key} {
 		grid-gap: #{$gap-size-value};
 	}
 }

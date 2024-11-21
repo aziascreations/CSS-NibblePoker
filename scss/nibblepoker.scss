@@ -17,29 +17,6 @@
 /* Variables */
 @import 'variables';
 
-/* Core */
-@import 'core/border'; // Border rules (.border, .bt-0, ...)
-@import 'core/float';  // Floating rules (.f-right, ...)
-@import 'core/sizing'; // Rules for setting elements size (.w-full, ...)
-@import 'core/flex';   // /!\ Needs an overhaul !!!
-@import 'core/grid';   // /!\ Needs an overhaul !!!
-@import 'core/text';   // Text-related rules (.t-bold, t-ucase, t-size-14, ...)
-//@import 'core/containers';  // Cannot remember why it was used, if ever
-@import 'core/display';   // /!\ Needs improvement !!!
-@import 'core/position';   // /!\ Needs improvement !!!
-@import 'core/overflow';   // Defines generic overflow rules (.o-hidden, .ox-scroll, ...)
-@import 'core/lists';
-
-/* Core > Rounding */
-@import 'core/rounding/global';
-@import 'core/rounding/sided';
-@import 'core/rounding/corner';
-
-/* Core > Spacing */
-@import 'core/spacing/global';
-@import 'core/spacing/axis';
-@import 'core/spacing/sided';
-
 /* Site */
 
 /* Site > Layouts */
@@ -70,6 +47,29 @@
 @import 'site/wedge';
 @import 'site/content';  // Uses fixed sizes and floats
 @import 'site/modal';
+
+/* Core */
+@import 'core/border'; // Border rules (.border, .bt-0, ...)
+@import 'core/float';  // Floating rules (.f-right, ...)
+@import 'core/sizing'; // Rules for setting elements size (.w-full, ...)
+@import 'core/flex';   // /!\ Needs an overhaul !!!
+@import 'core/grid';   // /!\ Needs an overhaul !!!
+@import 'core/text';   // Text-related rules (.t-bold, t-ucase, t-size-14, ...)
+//@import 'core/containers';  // Cannot remember why it was used, if ever
+@import 'core/display';   // /!\ Needs improvement !!!
+@import 'core/position';   // /!\ Needs improvement !!!
+@import 'core/overflow';   // Defines generic overflow rules (.o-hidden, .ox-scroll, ...)
+@import 'core/lists';
+
+/* Core > Rounding */
+@import 'core/rounding/global';
+@import 'core/rounding/sided';
+@import 'core/rounding/corner';
+
+/* Core > Spacing */
+@import 'core/spacing/global';
+@import 'core/spacing/axis';
+@import 'core/spacing/sided';
 
 /* Extras */
 @import 'site/splide';
