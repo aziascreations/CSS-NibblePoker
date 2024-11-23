@@ -92,7 +92,7 @@
     <?php include("./parts/grids.php"); ?>
 
     <!-- Tables -->
-    <?php include("./parts/tables.php"); ?>
+    <?php include("./parts/tables_core.php"); ?>
 
     <!-- Horizontal Rulers -->
     <?php include("./parts/horizontal_rulers.php"); ?>
@@ -102,6 +102,9 @@
 
     <!-- Buttons -->
     <?php include("./parts/buttons.php"); ?>
+
+    <!-- Tables -->
+    <?php include("./parts/tables_site.php"); ?>
 </main>
 
 <footer class="d-flex flex-align-center w-full p-s py-xs">

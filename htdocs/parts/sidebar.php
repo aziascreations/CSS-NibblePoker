@@ -75,7 +75,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                     <i class="fa-solid fa-table-cells-large pr-xs t-half-muted"></i>Grids
                 </p>
             </a>
-            <a class="a-hidden" href="#tables">
+            <a class="a-hidden" href="#tables-core">
                 <p class="t-w-500 py-xs sidebar-entry">
                     <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
                 </p>
@@ -99,6 +99,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <a class="a-hidden" href="#buttons">
                 <p class="t-w-500 py-xs sidebar-entry">
                     <i class="fa-solid fa-stop pr-xs t-half-muted"></i>Buttons
+                </p>
+            </a>
+            <a class="a-hidden" href="#tables-site">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
                 </p>
             </a>
         </div>

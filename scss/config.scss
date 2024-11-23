@@ -13,3 +13,11 @@ $nibblepoker-background-root: "./";
 $include-grid-backgrounds: true;
 
 $use-b64-backgrounds: true;
+
+// Toggles the generation of any table cell padding rules.
+// See: core/table.scss
+$generate-table-padding-rules: true;
+
+// Toggles the generation of the header and cell specific padding rules for tables. (Disabled by default)
+// See: core/table.scss
+$generate-table-header-cell-padding-rules: true;

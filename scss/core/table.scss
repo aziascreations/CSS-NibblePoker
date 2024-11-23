@@ -1,0 +1,40 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Core > Tables */
+
+tr, td {
+  vertical-align: top;
+}
+
+.table-v-center {
+  tr, td {
+    vertical-align: middle;
+  }
+}
+
+.table-v-bottom {
+  tr, td {
+    vertical-align: bottom;
+  }
+}
+
+
+/* Core > Tables > Cell Padding */
+
+@mixin table-padding-maker($size-key, $size-value) {
+  .table-p-#{$size-key} {
+    td, th {
+      padding: #{$size-value};
+    }
+  }
+  // TODO: Add header and cell padding rules
+}
+
+@if($generate-table-padding-rules) {
+  @include table-padding-maker("xxs", calc(#{$margin-base-size} * 0.25));
+  @include table-padding-maker("xs", calc(#{$margin-base-size} * 0.5));
+  @include table-padding-maker("s", calc(#{$margin-base-size} * 0.75));
+  @include table-padding-maker("m", #{$margin-base-size});
+  @include table-padding-maker("l", calc(#{$margin-base-size} * 1.5));
+  @include table-padding-maker("xl", calc(#{$margin-base-size} * 2.0));
+}

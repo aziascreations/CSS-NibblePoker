@@ -5,7 +5,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 }
 ?>
 
-<a id="tables"></a>
+<a id="tables-site"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
     <h2 class="t-w-500 t-size-14">Tables
         <i class="fa-solid fa-table f-right"></i>
@@ -17,27 +17,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         ⚠️ These styles will change before the 1.0.0 release ⚠️
     </div>
 
-    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Unstyled table</h3>
-    <div class="px-s">
-        <p class="mb-s">
-            Unstyled tables have no cell gap, no border and no other form of styling.
-        </p>
-        <table>
-            <tr>
-                <td>Cell 1.1</td>
-                <td>Cell 1.2</td>
-            </tr>
-            <tr>
-                <td>Cell 2.1</td>
-                <td>Cell 2.2</td>
-            </tr>
-        </table>
-        <code class="d-block p-xxs border r-s mt-s">
-            <b>table&gt;tr*2&gt;td*2</b>
-        </code>
-    </div>
-
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Stylish table</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xxs">Stylish table</h3>
     <div class="px-s">
         <p class="mb-xxs">
             Tables can quickly be styled by simply using the following classes:
@@ -68,7 +48,5 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             &nbsp;&nbsp;tr*2>td*2
         </code>
     </div>
-
-
-
+    
 </section>

@@ -1,8 +1,6 @@
-// NibblePoker.lu CSS - (C) 2023 Bozet Herwin
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-tr, td {
-	vertical-align: top;
-}
+/* Site > Tables */
 
 table.stylish {
 	th {
@@ -26,32 +24,4 @@ table.stylish {
 	}
 	
 	// See 'site/border.scss' for border fix.
-}
-
-// Applying .p-xs and .p-s to all cells if needed
-// See 'core/spacing' for more info.
-.table-p-xs {
-	td, th {
-		padding: calc(#{$margin-base-size} * 0.5);
-	}
-}
-
-.table-h-p-s {
-	th {
-		padding: calc(#{$margin-base-size} * 0.75);
-	}
-}
-
-.table-p-s {
-	td, th {
-		padding: calc(#{$margin-base-size} * 0.75);
-	}
-}
-
-// FIXME: Move this out in its own alignment section...
-// Centers the cells' content vertically
-.table-v-center {
-	tr, td {
-		vertical-align: middle;
-	}
 }
