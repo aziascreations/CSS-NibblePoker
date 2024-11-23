@@ -12,7 +12,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 </div>
 <section class="p-s">
     <h3 class="t-size-12 mb-xs">Regular anchors</h3>
-    <table class="stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
         <thead>
         <th>Example</th>
         <th>Source</th>
@@ -30,7 +30,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </table>
 
     <h3 class="t-size-12 mb-xs mt-m">Bland anchors</h3>
-    <table class="stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
         <thead>
         <th>Example</th>
         <th>Source</th>
@@ -48,7 +48,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </table>
 
     <h3 class="t-size-12 mb-xs mt-m">Hidden anchors</h3>
-    <table class="stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
         <thead>
         <th>Example</th>
         <th>Source</th>

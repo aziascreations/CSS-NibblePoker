@@ -11,7 +11,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <i class="fa-solid fa-italic f-right"></i></h2>
 </div>
 <section class="p-s">
-    <table class="stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
         <thead>
         <th>Style</th>
         <th>Example</th>

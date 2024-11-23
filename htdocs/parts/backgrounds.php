@@ -39,12 +39,12 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <span class="code">.bkgd-grid</span>
         </div>
         <div>
-            <p class="t-w-500">30% opacity (Unused)</p>
+            <p class="t-w-500">30% opacity</p>
             <div class="p-l border r-xl bkgd-grid30 my-xs"></div>
             <span class="code">.bkgd-grid30</span>
         </div>
         <div>
-            <p class="t-w-500">20% opacity (Unused)</p>
+            <p class="t-w-500">20% opacity</p>
             <div class="p-l border r-xl bkgd-grid20 my-xs"></div>
             <span class="code">.bkgd-grid20</span>
         </div>

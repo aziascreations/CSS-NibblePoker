@@ -2,7 +2,10 @@
 
 /* Site > Tables */
 
-table.stylish {
+.table-stylish {
+	border-collapse: separate;
+	overflow: hidden;
+
 	th {
 		font-weight: bold;
 	}
@@ -10,7 +13,7 @@ table.stylish {
 	tr {
 		background-color: #{$color-background-table-dual};
 	}
-	
+
 	tr:not(:last-of-type), th {
 		border-bottom: 1.5px solid #{$color-table-border};
 	}
@@ -22,6 +25,7 @@ table.stylish {
 	td:not(:last-of-type), th:not(:last-of-type) {
 		border-right: 1.5px solid #{$color-table-border};
 	}
-	
-	// See 'site/border.scss' for border fix.
+
+	// Remark: Tables can be rounded if their parent is.
+	//         Thank the modern web for that...
 }

@@ -56,7 +56,7 @@ global $root_path;
     </div>
 
     <h3 class="t-size-12 mb-xxs mt-m">Downloads</h3>
-    <table class="stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center ml-xs">
+    <table class="table-stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center ml-xs">
         <thead>
         <th>Stylesheet</th>
         <th>Minified CSS</th>
