@@ -13,10 +13,6 @@
 	tr {
 		background-color: #{$color-background-table-dual};
 	}
-
-	tr:not(:last-of-type), th {
-		border-bottom: 1.5px solid #{$color-table-border};
-	}
 	
 	tr:nth-child(2n), th {
 		background-color: #{$color-background-table-main};
@@ -26,6 +22,7 @@
 		border-right: 1.5px solid #{$color-table-border};
 	}
 
-	// Remark: Tables can be rounded if their parent is.
-	//         Thank the modern web for that...
+	tr:not(:last-of-type) td, th {
+		border-bottom: 1.5px solid #{$color-table-border};
+	}
 }
