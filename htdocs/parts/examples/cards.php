@@ -22,7 +22,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 
         <div class="my-s border r-l bkgd-dark grid d-inline-block">
             <div class="bb">
-                <img src="/img/maki-03.jpg" alt="Hungry Kitty Cat" class="r-r p-s px-l" height="128px">
+                <img src="./img/maki-03.jpg" alt="Hungry Kitty Cat" class="r-r p-s px-l" height="128px">
             </div>
             <div class="bkgd-gray t-center">
                 <p>Hungry Cat</p>

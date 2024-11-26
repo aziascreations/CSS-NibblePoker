@@ -8,9 +8,9 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 <nav id="sidebar" class="sidebar">
 
     <div class="p-m pt-l">
-        <a href="/" class="no-select">
+        <a href="#intro" class="no-select">
             <img class="logo-sidebar-v2"
-                 src="/img/logo-large-fluent-unshaded.svg"
+                 src="./img/logo-large-fluent-unshaded.svg"
                  alt="Website's logo"
                  draggable="false">
         </a>

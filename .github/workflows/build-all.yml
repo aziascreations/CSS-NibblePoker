@@ -1,11 +1,11 @@
-name: Compile SASS
+name: Build Everything
 
 on:
   push:
   pull_request:
 
 jobs:
-  deploy:
+  sass_compile:
     runs-on: ubuntu-latest
 
     permissions:
@@ -21,6 +21,12 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: none
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -28,7 +34,7 @@ jobs:
 
       - name: Install SASS Compiler
         run: |
-          npm install -g html-minifier sass
+          npm install -g sass
 
       - name: Compile SASS
         run: |
@@ -57,3 +63,21 @@ jobs:
           if-no-files-found: error
           retention-days: 90
           compression-level: 9
+
+      - name: Pre-render PHP File
+        run: |
+          cd htdocs
+          php ./index.php > ./index.html
+
+      - name: Remove trash
+        run: |
+          cd htdocs
+          rm -rf parts/
+          rm *.php
+
+      - name: Deploy demo page to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./htdocs
