@@ -32,11 +32,13 @@ jobs:
 
       - name: Pre-render PHP File
         run: |
-          php ./htdocs/index.php > ./htdocs/index.raw.html
+          cd htdocs
+          php ./index.php > ./index.raw.html
 
       - name: Beautify HTML
         run: |
-          beautify -o ./htdocs/index.raw.html ./htdocs/index.html
+          cd htdocs
+          beautify -o ./index.raw.html ./index.html
 
       - name: Upload `index.html` build artifact
         uses: actions/upload-artifact@v4
