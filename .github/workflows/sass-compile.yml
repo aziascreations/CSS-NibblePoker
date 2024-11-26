@@ -37,3 +37,13 @@ jobs:
           sass "../../scss/nibblepoker.scss" -q --no-source-map --style compressed > "nibblepoker.min.css"
           sass "../../scss/debugger.scss" -q --no-source-map > "debugger.css"
           sass "../../scss/debugger.scss" -q --no-source-map --style compressed > "debugger.min.css"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        #if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          name: QueryLogsAMQP-Nightly
+          path: "./htdocs/css/nibblepoker.min.css"
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 9
