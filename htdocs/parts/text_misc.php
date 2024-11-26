@@ -20,8 +20,13 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <tbody>
         <tr>
             <td><p class="t-bold">No wrap</p></td>
-            <td><p class="t-nowrap">Cannot really be shown</p></td>
+            <td><p class="t-nowrap">Cannot really be demonstrated</p></td>
             <td><span class="code">.t-nowrap</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">No Select</p></td>
+            <td><p class="t-noselect">Cannot be selected</p></td>
+            <td><span class="code">.t-noselect</span></td>
         </tr>
         <tr>
             <td><p class="t-bold">Half muted</p></td>

@@ -31,7 +31,7 @@
 
 <header class="w-full p-m pl-s">
     <h1 class="t-size-17 t-w-500">
-        <i class="fa-brands fa-css3-alt mr-s"></i>NibbleCSS Documentation
+        <i class="fa-brands fa-css3-alt mr-s"></i>NibbleCSS Documentation v0.0.1
         <a href="https://github.com/aziascreations/CSS-NibblePoker" class="f-right a-bland"><i class="fa-brands fa-github"></i></a>
     </h1>
 </header>
@@ -105,6 +105,9 @@
 
     <!-- Tables -->
     <?php include("./parts/tables_site.php"); ?>
+
+    <!-- Tables -->
+    <?php include("./parts/examples/cards.php"); ?>
 </main>
 
 <footer class="d-flex flex-align-center w-full p-s py-xs">

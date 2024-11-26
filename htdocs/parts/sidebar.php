@@ -112,11 +112,12 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <details class="by t-noselect" open>
         <summary class="p-xs bkgd-grid20 t-w-bold t-size-13">Examples</summary>
         <div class="p-xs px-m bt bkgd-grey t-size-11">
-            <a class="a-hidden" href="#lists-composed">
+            <a class="a-hidden" href="#examples-cards">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-ellipsis pr-xs t-half-muted"></i>Composed
+                    <i class="fa-solid fa-address-card pr-xs t-half-muted"></i>Cards
                 </p>
             </a>
         </div>
     </details>
+
 </nav>

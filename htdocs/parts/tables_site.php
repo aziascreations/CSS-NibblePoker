@@ -44,7 +44,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             </tbody>
         </table>
         <code class="d-block p-xxs border r-s mt-s">
-            table<b>.table-stylish.table-p-s.border.o-hidden</b><br>
+            table<b>.table-stylish.table-p-s.border.r-l</b><br>
             &nbsp;&nbsp;thead>th>td*2<br>
             &nbsp;&nbsp;tbody>tr*2>td*2
         </code>
