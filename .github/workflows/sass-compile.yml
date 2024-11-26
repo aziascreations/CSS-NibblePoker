@@ -28,7 +28,7 @@ jobs:
 
       - name: Install SASS Compiler
         run: |
-          npm install -g html-minifier sass
+          npm install -g sass
 
       - name: Compile SASS
         run: |

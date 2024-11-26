@@ -1,0 +1,49 @@
+name: Render PHP Demo Page
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  prerender:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Git submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Install HTML Beautifier
+        run: |
+          npm install -g beautify -g
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: none
+
+      - name: Pre-render PHP File
+        run: |
+          php ./htdocs/index.php > ./htdocs/index.raw.html
+
+      - name: Beautify HTML
+        run: |
+          beautify -o ./htdocs/index.raw.html ./htdocs/index.html
+
+      - name: Upload `index.html` build artifact
+        uses: actions/upload-artifact@v4
+        if: ${{ github.actor == 'aziascreations' }}
+        with:
+          name: index.html
+          path: "./htdocs/index.html"
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 9
