@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!--<meta name="viewport" content="width=device-width"/>-->
+    <meta name="author" content="Herwin Bozet">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/nibblepoker.min.css">
+    <link rel="stylesheet" href="/css/debugger.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <title>NibblePoker's CSS Theme</title>
+    <meta name="description" content="...">
+    <meta property="og:title" content="NibblePoker"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://css.nibblepoker.com/"/>
+    <meta property="og:image" content="???"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:description" content="..."/>
+</head>
+
+<body class="layout-generic">
+
+<!-- Sidebar -->
+
+<nav id="sidebar" class="sidebar">
+
+    <div class="p-m pt-l">
+        <a href="/" class="no-select">
+            <img class="logo-sidebar-v2"
+                 src="/img/logo-large-fluent-unshaded.svg"
+                 alt="Website's logo"
+                 draggable="false">
+        </a>
+    </div>
+
+    <details class="by t-noselect" open>
+        <summary class="p-xs bkgd-grid20 t-w-bold t-size-13">Core</summary>
+        <div class="p-xs px-m bt bkgd-grey t-size-11">
+            <a class="a-hidden" href="#text-weights">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-text-height pr-xs t-half-muted"></i>Weights
+                </p>
+            </a>
+            <a class="a-hidden" href="#text-styles">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-italic pr-xs t-half-muted"></i>Styles
+                </p>
+            </a>
+            <a class="a-hidden" href="#text-alignment">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-text-width pr-xs t-half-muted"></i>Alignment
+                </p>
+            </a>
+            <a class="a-hidden" href="#text-modifiers">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-subscript pr-xs t-half-muted"></i>Modifiers
+                </p>
+            </a>
+            <a class="a-hidden" href="#text-links">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-link pr-xs t-half-muted"></i>Links
+                </p>
+            </a>
+            <a class="a-hidden" href="#text-misc">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-ellipsis pr-xs t-half-muted"></i>Miscellaneous
+                </p>
+            </a>
+
+            <hr class="subtle">
+
+            <a class="a-hidden" href="#spacing">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-ellipsis pr-xs t-half-muted"></i>Spacing
+                </p>
+            </a>
+            <a class="a-hidden" href="#rounding">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-bezier-curve pr-xs t-half-muted"></i>Rounding
+                </p>
+            </a>
+
+            <hr class="subtle">
+
+            <a class="a-hidden" href="#lists-basic">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-list pr-xs t-half-muted"></i>Lists
+                </p>
+            </a>
+            <a class="a-hidden" href="#grids">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-table-cells-large pr-xs t-half-muted"></i>Grids
+                </p>
+            </a>
+            <a class="a-hidden" href="#tables-core">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
+                </p>
+            </a>
+        </div>
+    </details>
+
+    <details class="by t-noselect" open>
+        <summary class="p-xs bkgd-grid20 t-w-bold t-size-13">Site</summary>
+        <div class="p-xs px-m bt bkgd-grey t-size-11">
+            <a class="a-hidden" href="#horizontal-rulers">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-ruler pr-xs t-half-muted"></i>Horizontal Rulers
+                </p>
+            </a>
+            <a class="a-hidden" href="#backgrounds">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-paint-roller pr-xs t-half-muted"></i>Backgrounds
+                </p>
+            </a>
+            <a class="a-hidden" href="#buttons">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-stop pr-xs t-half-muted"></i>Buttons
+                </p>
+            </a>
+            <a class="a-hidden" href="#tables-site">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
+                </p>
+            </a>
+        </div>
+    </details>
+
+    <details class="by t-noselect" open>
+        <summary class="p-xs bkgd-grid20 t-w-bold t-size-13">Examples</summary>
+        <div class="p-xs px-m bt bkgd-grey t-size-11">
+            <a class="a-hidden" href="#examples-cards">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-address-card pr-xs t-half-muted"></i>Cards
+                </p>
+            </a>
+        </div>
+    </details>
+
+</nav>
+
+<header class="w-full p-m pl-s">
+    <h1 class="t-size-17 t-w-500">
+        <i class="fa-brands fa-css3-alt mr-s"></i>NibbleCSS Documentation v0.0.1
+        <a href="https://github.com/aziascreations/CSS-NibblePoker" class="f-right a-bland"><i class="fa-brands fa-github"></i></a>
+    </h1>
+</header>
+
+<main id="main" class="b br-0 p-m rl-m">
+    <!-- PHP Utils -->
+    
+    <!-- Introduction -->
+    
+<div class="p-xs b r-s bkgd-grid">
+    <h2 class="t-w-500 t-size-14">Introduction</h2>
+</div>
+<section class="p-s">
+    <h3 class="t-size-12 mb-xxs">About the stylesheet</h3>
+    <p class="ml-xs">
+        <i>NibbleCSS</i> was originally conceived for internal use following a bout of performance issues with
+        off-the-shelf stylesheets on low-end and mobile devices.<br>
+        However, it rapidly got used outside its intended environment and was spun-off into a separate a
+        publicly accessible and truly free project.
+    </p>
+    <p class="ml-xs mt-s">
+        <i>NibbleCSS</i> is also released into the public domain as I do not believe forcing people to include licenses
+        or disclaimers is truly free, especially when said licenses propagate themselves like tumorous growths.<br>
+        Following that philosophy, <i>NibbleCSS</i> also makes use of
+        <a href="https://meyerweb.com/eric/tools/css/reset/">Eric A. Meyer's Reset.css</a>
+        which was also released into the public domain in 2011.
+    </p>
+
+    <h3 class="t-size-12 mb-xxs mt-m">Design philosophy</h3>
+    <div class="ml-xs">
+        <h4 class="t-size-11 mt-s mb-xxs">Core stylesheet rules:</h4>
+        <ul class="l-bullets l-bullet-manual">
+            <li>No implicit sizes, margins or paddings</li>
+            <li>No styles from class-less DOM, except for styling elements</li>
+            <li>Self-sufficient and embeddable as a single file or text blob</li>
+            <li>Competitive minified size</li>
+            <li>Standardized &amp; consistent naming scheme</li>
+        </ul>
+
+        <h4 class="t-size-11 mt-s mb-xxs">Site stylesheet rules:</h4>
+        <ul class="l-bullets l-bullet-manual">
+            <li>Prefabs for common elements</li>
+            <ul class="l-bullets l-bullet-manual">
+                <li>Bound to specific elements</li>
+            </ul>
+            <li>No forced smooth transition</li>
+        </ul>
+
+        <h4 class="t-size-11 mt-s mb-xxs">General rules</h4>
+        <ul class="l-bullets l-bullet-manual">
+            <li><b>Must</b> be snappy on low-end hardware, no snagging or slowdowns allowed</li>
+            <ul class="l-bullets l-bullet-manual">
+                <li>Tested on an old Chuwi Ubook X internally</li>
+            </ul>
+        </ul>
+    </div>
+
+    <h3 class="t-size-12 mb-xxs mt-m">Downloads</h3>
+    <table class="table-stylish r-s border o-hidden table-p-xs table-h-p-s table-v-center ml-xs">
+        <thead>
+        <th>Stylesheet</th>
+        <th>Minified CSS</th>
+        <th>Regular CSS</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>NibbleCSS</td>
+                <td>
+                    <a href="/css/nibblepoker.min.css"
+                       title="Download the minified full stylesheet"
+                       class="a-hidden"
+                       download>
+                        <button class="btn-success p-xs b r-m">
+                            <i class="fa fa-download"></i>
+                            nibblepoker.min.css
+                            (29.59 KiB)
+                        </button>
+                    </a>
+                </td>
+                <td>
+                    <a href="/css/nibblepoker.css"
+                       title="Download the full stylesheet"
+                       class="a-hidden"
+                       download>
+                        <button class="p-xs b r-m">
+                            <i class="fa fa-download"></i>
+                            nibblepoker.css
+                            (39.81 KiB)
+                        </button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Debugger</td>
+                <td>
+                    <a href="/css/debugger.min.css"
+                       title="Download the minified debugging stylesheet"
+                       class="a-hidden"
+                       download>
+                        <button class="p-xs b r-m">
+                            <i class="fa fa-download"></i>
+                            debugger.min.css
+                            (288 B)
+                        </button>
+                    </a>
+                </td>
+                <td>
+                    <a href="/css/debugger.css"
+                       title="Download the debugging stylesheet"
+                       class="a-hidden"
+                       download>
+                        <button class="p-xs b r-m">
+                            <i class="fa fa-download"></i>
+                            debugger.css
+                            (330 B)
+                        </button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <!-- Text > Weights -->
+    
+<a id="text-weights"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Text<i class="fa-solid fa-chevron-right mx-xs"></i>Weights
+        <i class="fa-solid fa-text-height f-right"></i></h2>
+</div>
+<section class="p-s">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Style</th>
+        <th>Example</th>
+        <th>Classes</th>
+        </thead>
+        <tbody>
+            <tr><td class="t-bold">100</td><td class="t-w-100">Lorem Ipsum donor.</td><td><span class="code">.t-w-100</span></td></tr><tr><td class="t-bold">200</td><td class="t-w-200">Lorem Ipsum donor.</td><td><span class="code">.t-w-200</span></td></tr><tr><td class="t-bold">300</td><td class="t-w-300">Lorem Ipsum donor.</td><td><span class="code">.t-w-300</span></td></tr><tr><td class="t-bold">400</td><td class="t-w-400">Lorem Ipsum donor.</td><td><span class="code">.t-w-400</span></td></tr><tr><td class="t-bold">500</td><td class="t-w-500">Lorem Ipsum donor.</td><td><span class="code">.t-w-500</span></td></tr><tr><td class="t-bold">600</td><td class="t-w-600">Lorem Ipsum donor.</td><td><span class="code">.t-w-600</span></td></tr><tr><td class="t-bold">700</td><td class="t-w-700">Lorem Ipsum donor.</td><td><span class="code">.t-w-700</span></td></tr><tr><td class="t-bold">800</td><td class="t-w-800">Lorem Ipsum donor.</td><td><span class="code">.t-w-800</span></td></tr><tr><td class="t-bold">900</td><td class="t-w-900">Lorem Ipsum donor.</td><td><span class="code">.t-w-900</span></td></tr>        </tbody>
+    </table>
+
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center mt-l">
+        <thead>
+        <th>Style</th>
+        <th>Example</th>
+        <th>Classes</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><p class="t-bold">Lighter</p></td>
+            <td><p class="t-lighter">Lorem Ipsum 123 !</p></td>
+            <td><span class="code mr-xs">.t-lighter</span><span class="code">.t-w-lighter</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Normal</p></td>
+            <td><p class="t-normal">Lorem Ipsum 123 !</p></td>
+            <td><span class="code mr-xs">.t-normal</span><span class="code">.t-w-normal</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Bold</p></td>
+            <td><p class="t-bold">Lorem Ipsum 123 !</p></td>
+            <td><span class="code mr-xs">.t-bold</span><span class="code">.t-w-bold</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Bolder</p></td>
+            <td><p class="t-bolder">Lorem Ipsum 123 !</p></td>
+            <td><span class="code mr-xs">.t-bolder</span><span class="code">.t-w-bolder</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+    <!-- Text > Styles -->
+    
+<a id="text-styles"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Text<i class="fa-solid fa-chevron-right mx-xs"></i>Styles
+        <i class="fa-solid fa-italic f-right"></i></h2>
+</div>
+<section class="p-s">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Style</th>
+        <th>Example</th>
+        <th>Classes</th>
+        <th>Elements</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><p class="t-bold">Italic</p></td>
+            <td><p class="t-italic">Italic text</p></td>
+            <td><span class="code">.t-italic</span></td>
+            <td><span class="code">i</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Oblique</p></td>
+            <td><p class="t-oblique">Oblique text</p></td>
+            <td><span class="code">.t-oblique</span></td>
+            <td><span class="t-muted">N/A</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Underline</p></td>
+            <td><p class="t-underline">Underlined text</p></td>
+            <td><span class="code">.t-underline</span></td>
+            <td><span class="code">u</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Strikethrough</p></td>
+            <td><p class="t-strikethrough">Struck text</p></td>
+            <td><span class="code">.t-strikethrough</span></td>
+            <td><span class="code">s</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Overline</p></td>
+            <td><p class="t-overline">Overline text</p></td>
+            <td><span class="code">.t-overline</span></td>
+            <td><span class="t-muted">N/A</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+    <!-- Text > Alignment -->
+    
+<a id="text-alignment"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Text<i class="fa-solid fa-chevron-right mx-xs"></i>Alignment
+        <i class="fa-solid fa-text-width f-right"></i></h2>
+</div>
+<section class="p-s">
+    <table class="table-stylish border o-hidden table-p-xs table-v-center r-l">
+        <thead>
+        <th>Style</th>
+        <th>Example</th>
+        <th>Classes</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><p class="t-bold">Left</p></td>
+            <td><p class="t-left text-direction-target">Left</p></td>
+            <td><span class="code">.t-left</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Center</p></td>
+            <td><p class="t-center text-direction-target">Centered</p></td>
+            <td><span class="code">.t-center</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Right</p></td>
+            <td><p class="t-right text-direction-target">Right</p></td>
+            <td><span class="code">.t-right</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Start</p></td>
+            <td><p class="t-start text-direction-target">Start</p></td>
+            <td><span class="code">.t-start</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">End</p></td>
+            <td><p class="t-end text-direction-target">End</p></td>
+            <td><span class="code">.t-end</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Justify</p></td>
+            <td><p class="t-justify">Lorem ipsum.<br>Donor si amet elit.</p></td>
+            <td><span class="code">.t-justify</span></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button class="p-xs r-s border primary mt-s text-direction-switch">Switch text direction</button>
+</section>
+
+    <!-- Text > Modifiers -->
+    
+<a id="text-modifiers"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Text<i class="fa-solid fa-chevron-right mx-xs"></i>Modifiers
+        <i class="fa-solid fa-subscript f-right"></i></h2>
+</div>
+<section class="p-s">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Style</th>
+        <th>Original</th>
+        <th>Transformed</th>
+        <th>Classes</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><p class="t-bold">Uppercase</p></td>
+            <td><p>Regular Case</p></td>
+            <td><p class="t-ucase">Regular Case</p></td>
+            <td><span class="code">.t-ucase</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Lowercase</p></td>
+            <td><p>Regular Case</p></td>
+            <td><p class="t-lcase">Regular Case</p></td>
+            <td><span class="code">.t-lcase</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Capitalize</p></td>
+            <td><p>no case</p></td>
+            <td><span class="t-capitalize">no case</span></td>
+            <td><span class="code">.t-capitalize</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+    <!-- Text > Links -->
+    
+<a id="text-links"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Text<i class="fa-solid fa-chevron-right mx-xs"></i>Links
+        <i class="fa-solid fa-link f-right"></i></h2>
+</div>
+<section class="p-s">
+    <h3 class="t-size-12 mb-xs">Regular anchors</h3>
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Example</th>
+        <th>Source</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="#">Real anchor</a></td>
+            <td><span class="code">a</span></td>
+        </tr>
+        <tr>
+            <td><p class="a">Fake anchor</p></td>
+            <td><span class="code">*.a</span></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3 class="t-size-12 mb-xs mt-m">Bland anchors</h3>
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Example</th>
+        <th>Source</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="#" class="a-bland">Bland anchor</a></td>
+            <td><span class="code">a.a-bland</span></td>
+        </tr>
+        <tr>
+            <td><p class="a a-bland">Bland 'anchor'</p></td>
+            <td><span class="code">*.a.a-bland</span></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3 class="t-size-12 mb-xs mt-m">Hidden anchors</h3>
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Example</th>
+        <th>Source</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="#" class="a-hidden">Hidden anchor</a></td>
+            <td><span class="code">a.a-hidden</span></td>
+        </tr>
+        <tr>
+            <td><p class="a a-hidden">Hidden 'anchor'</p></td>
+            <td><span class="code">*.a.a-hidden</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+    <!-- Text > Misc -->
+    
+<a id="text-misc"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Text<i class="fa-solid fa-chevron-right mx-xs"></i>Miscellaneous
+        <i class="fa-solid fa-ellipsis f-right"></i></h2>
+</div>
+<section class="p-s">
+    <table class="table-stylish r-l border o-hidden table-p-xs table-v-center">
+        <thead>
+        <th>Style</th>
+        <th>Example</th>
+        <th>Classes</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><p class="t-bold">No wrap</p></td>
+            <td><p class="t-nowrap">Cannot really be demonstrated</p></td>
+            <td><span class="code">.t-nowrap</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">No Select</p></td>
+            <td><p class="t-noselect">Cannot be selected</p></td>
+            <td><span class="code">.t-noselect</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Half muted</p></td>
+            <td><p class="t-half-muted">Half muted</p></td>
+            <td><span class="code">.t-half-muted</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Muted</p></td>
+            <td><p class="t-muted">Muted text</p></td>
+            <td><span class="code">.t-muted</span></td>
+        </tr>
+        <tr>
+            <td><p class="t-bold">Super muted</p></td>
+            <td><p class="t-super-muted">Super Muted</p></td>
+            <td><span class="code">.t-super-muted</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+    <!-- Spacing -->
+    
+<a id="spacing"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Spacing
+        <i class="fa-solid fa-ellipsis f-right"></i></h2>
+</div>
+<section class="p-s">
+    <p>
+        Paddings and margins can be applied on a side/axis/global basis using the standard size suffixes.<br>
+        Additionally, the <span class="code">xxs</span> size is also available for those rare tiny spacing needs.
+    </p>
+
+    <p class="mt-s">
+        The examples below have a bordered &amp; padded container, and a regular bordered sub-container.<br>
+        Using margins would have the same effect, if you ignore margin folding.
+    </p>
+
+    <div class="grid grid-col-3 grid-col-medium-2 grid-col-mobile-1 grid-gap-xs mt-s t-center">
+        <div><div class="debug p-xxs"><div class="debug"><p><span class="code">.p-xxs</span></p></div></div></div>
+        <div><div class="debug p-xs"><div class="debug"><p><span class="code">.p-xs</span></p></div></div></div>
+        <div><div class="debug p-s"><div class="debug"><p><span class="code">.p-s</span></p></div></div></div>
+        <div><div class="debug p-m"><div class="debug"><p><span class="code">.p-m</span></p></div></div></div>
+        <div><div class="debug p-l"><div class="debug"><p><span class="code">.p-l</span> </p></div></div></div>
+        <div><div class="debug p-xl"><div class="debug"><p><span class="code">.p-xl</span></p></div></div></div>
+    </div>
+
+    <details class="border bkgd-dark r-m mt-s">
+        <summary class="p-xs">Click to show/hide all classes</summary>
+        <div class="p-xs bt bkgd-grey">
+            <p><span class="code mr-xs">p-0</span><span class="code mr-xs">p-xxs</span><span class="code mr-xs">p-xs</span><span class="code mr-xs">p-s</span><span class="code mr-xs">p-m</span><span class="code mr-xs">p-l</span><span class="code mr-xs">p-xl</span><span class="t-super-muted">General padding</span></p><p><span class="code mr-xs">m-0</span><span class="code mr-xs">m-xxs</span><span class="code mr-xs">m-xs</span><span class="code mr-xs">m-s</span><span class="code mr-xs">m-m</span><span class="code mr-xs">m-l</span><span class="code mr-xs">m-xl</span><span class="t-super-muted">General margin</span></p><hr class="subtle my-s"><p><span class="code mr-xs">px-0</span><span class="code mr-xs">px-xxs</span><span class="code mr-xs">px-xs</span><span class="code mr-xs">px-s</span><span class="code mr-xs">px-m</span><span class="code mr-xs">px-l</span><span class="code mr-xs">px-xl</span><span class="t-super-muted">Horizontal padding</span></p><p><span class="code mr-xs">py-0</span><span class="code mr-xs">py-xxs</span><span class="code mr-xs">py-xs</span><span class="code mr-xs">py-s</span><span class="code mr-xs">py-m</span><span class="code mr-xs">py-l</span><span class="code mr-xs">py-xl</span><span class="t-super-muted">Vertical padding</span></p><p class="mt-xs"><span class="code mr-xs">mx-0</span><span class="code mr-xs">mx-xxs</span><span class="code mr-xs">mx-xs</span><span class="code mr-xs">mx-s</span><span class="code mr-xs">mx-m</span><span class="code mr-xs">mx-l</span><span class="code mr-xs">mx-xl</span><span class="t-super-muted">Horizontal margin</span></p><p><span class="code mr-xs">my-0</span><span class="code mr-xs">my-xxs</span><span class="code mr-xs">my-xs</span><span class="code mr-xs">my-s</span><span class="code mr-xs">my-m</span><span class="code mr-xs">my-l</span><span class="code mr-xs">my-xl</span><span class="t-super-muted">Vertical margin</span></p><hr class="subtle my-s"><p><span class="code mr-xs">pt-0</span><span class="code mr-xs">pt-xxs</span><span class="code mr-xs">pt-xs</span><span class="code mr-xs">pt-s</span><span class="code mr-xs">pt-m</span><span class="code mr-xs">pt-l</span><span class="code mr-xs">pt-xl</span><span class="t-super-muted">Top padding</span></p><p><span class="code mr-xs">pb-0</span><span class="code mr-xs">pb-xxs</span><span class="code mr-xs">pb-xs</span><span class="code mr-xs">pb-s</span><span class="code mr-xs">pb-m</span><span class="code mr-xs">pb-l</span><span class="code mr-xs">pb-xl</span><span class="t-super-muted">Bottom padding</span></p><p><span class="code mr-xs">pl-0</span><span class="code mr-xs">pl-xxs</span><span class="code mr-xs">pl-xs</span><span class="code mr-xs">pl-s</span><span class="code mr-xs">pl-m</span><span class="code mr-xs">pl-l</span><span class="code mr-xs">pl-xl</span><span class="t-super-muted">Left padding</span></p><p><span class="code mr-xs">pr-0</span><span class="code mr-xs">pr-xxs</span><span class="code mr-xs">pr-xs</span><span class="code mr-xs">pr-s</span><span class="code mr-xs">pr-m</span><span class="code mr-xs">pr-l</span><span class="code mr-xs">pr-xl</span><span class="t-super-muted">Right padding</span></p><p class="mt-xs"><span class="code mr-xs">mt-0</span><span class="code mr-xs">mt-xxs</span><span class="code mr-xs">mt-xs</span><span class="code mr-xs">mt-s</span><span class="code mr-xs">mt-m</span><span class="code mr-xs">mt-l</span><span class="code mr-xs">mt-xl</span><span class="t-super-muted">Top margin</span></p><p><span class="code mr-xs">mb-0</span><span class="code mr-xs">mb-xxs</span><span class="code mr-xs">mb-xs</span><span class="code mr-xs">mb-s</span><span class="code mr-xs">mb-m</span><span class="code mr-xs">mb-l</span><span class="code mr-xs">mb-xl</span><span class="t-super-muted">Bottom margin</span></p><p><span class="code mr-xs">ml-0</span><span class="code mr-xs">ml-xxs</span><span class="code mr-xs">ml-xs</span><span class="code mr-xs">ml-s</span><span class="code mr-xs">ml-m</span><span class="code mr-xs">ml-l</span><span class="code mr-xs">ml-xl</span><span class="t-super-muted">Left margin</span></p><p><span class="code mr-xs">mr-0</span><span class="code mr-xs">mr-xxs</span><span class="code mr-xs">mr-xs</span><span class="code mr-xs">mr-s</span><span class="code mr-xs">mr-m</span><span class="code mr-xs">mr-l</span><span class="code mr-xs">mr-xl</span><span class="t-super-muted">Right margin</span></p>        </div>
+    </details>
+</section>
+
+    <!-- Rounding -->
+    
+<a id="rounding"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Rounding
+        <i class="fa-solid fa-bezier-curve f-right"></i></h2>
+</div>
+<section class="p-s">
+    <p>
+        Rounding can be applied on a global/sided/corner basis using the standard size suffixes and some
+        special ones shown below.
+    </p>
+
+    <h3 class="t-w-500 t-size-12 my-s">Regular sizes</h3>
+    <div class="grid grid-col-4 grid-col-medium-3 grid-col-mobile-2 grid-gap-xs t-center">
+        <div class="r-0 p-xs b bkgd-blank-dark debug"><span class="code">.r-0</span></div>
+        <div class="r-xs p-xs b bkgd-blank-dark debug"><span class="code">.r-xs</span></div>
+        <div class="r-s p-xs b bkgd-blank-dark debug"><span class="code">.r-s</span></div>
+        <div class="r-m p-xs b bkgd-blank-dark debug"><span class="code">.r-m</span></div>
+        <div class="r-l p-xs b bkgd-blank-dark debug"><span class="code">.r-l</span></div>
+        <div class="r-xl p-xs b bkgd-blank-dark debug"><span class="code">.r-xl</span></div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Special size</h3>
+    <div class="grid grid-col-4 grid-col-medium-3 grid-col-mobile-2 grid-gap-xs t-center">
+        <div class="r-r p-xs b bkgd-blank-dark debug"><span class="code">.r-r</span></div>
+    </div>
+
+    <details class="border bkgd-dark r-m mt-l">
+        <summary class="p-xs">Click to show/hide all classes</summary>
+        <div class="p-xs bt bkgd-grey">
+            <p><span class="code mr-xs">r-0</span><span class="code mr-xs">r-xs</span><span class="code mr-xs">r-s</span><span class="code mr-xs">r-m</span><span class="code mr-xs">r-l</span><span class="code mr-xs">r-xl</span><span class="code mr-xs">r-r</span><span class="t-super-muted">General rounding</span></p><hr class="subtle my-s"><p><span class="code mr-xs">rt-0</span><span class="code mr-xs">rt-xs</span><span class="code mr-xs">rt-s</span><span class="code mr-xs">rt-m</span><span class="code mr-xs">rt-l</span><span class="code mr-xs">rt-xl</span><span class="code mr-xs">rt-r</span><span class="t-super-muted">Top rounding</span></p><p><span class="code mr-xs">rb-0</span><span class="code mr-xs">rb-xs</span><span class="code mr-xs">rb-s</span><span class="code mr-xs">rb-m</span><span class="code mr-xs">rb-l</span><span class="code mr-xs">rb-xl</span><span class="code mr-xs">rb-r</span><span class="t-super-muted">Bottom rounding</span></p><p><span class="code mr-xs">rl-0</span><span class="code mr-xs">rl-xs</span><span class="code mr-xs">rl-s</span><span class="code mr-xs">rl-m</span><span class="code mr-xs">rl-l</span><span class="code mr-xs">rl-xl</span><span class="code mr-xs">rl-r</span><span class="t-super-muted">Left rounding</span></p><p><span class="code mr-xs">rr-0</span><span class="code mr-xs">rr-xs</span><span class="code mr-xs">rr-s</span><span class="code mr-xs">rr-m</span><span class="code mr-xs">rr-l</span><span class="code mr-xs">rr-xl</span><span class="code mr-xs">rr-r</span><span class="t-super-muted">Right rounding</span></p><hr class="subtle my-s"><p><span class="code mr-xs">rtl-0</span><span class="code mr-xs">rtl-xs</span><span class="code mr-xs">rtl-s</span><span class="code mr-xs">rtl-m</span><span class="code mr-xs">rtl-l</span><span class="code mr-xs">rtl-xl</span><span class="code mr-xs">rtl-r</span><span class="t-super-muted">Top left rounding</span></p><p><span class="code mr-xs">rtr-0</span><span class="code mr-xs">rtr-xs</span><span class="code mr-xs">rtr-s</span><span class="code mr-xs">rtr-m</span><span class="code mr-xs">rtr-l</span><span class="code mr-xs">rtr-xl</span><span class="code mr-xs">rtr-r</span><span class="t-super-muted">Top right rounding</span></p><p><span class="code mr-xs">rbl-0</span><span class="code mr-xs">rbl-xs</span><span class="code mr-xs">rbl-s</span><span class="code mr-xs">rbl-m</span><span class="code mr-xs">rbl-l</span><span class="code mr-xs">rbl-xl</span><span class="code mr-xs">rbl-r</span><span class="t-super-muted">Bottom left rounding</span></p><p><span class="code mr-xs">rbr-0</span><span class="code mr-xs">rbr-xs</span><span class="code mr-xs">rbr-s</span><span class="code mr-xs">rbr-m</span><span class="code mr-xs">rbr-l</span><span class="code mr-xs">rbr-xl</span><span class="code mr-xs">rbr-r</span><span class="t-super-muted">Bottom right rounding</span></p>        </div>
+    </details>
+</section>
+
+    <!-- Lists > Base -->
+    
+<a id="lists-basic"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Basic Lists
+        <i class="fa-solid fa-list f-right"></i></h2>
+</div>
+<section class="p-s">
+
+    <div class="bkgd-orange t-bold t-center w-full r-l border p-xs mt-xxs mb-m">
+        ⚠️ These styles may change before the 1.0.0 release ⚠️
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s">Blank lists</h3>
+    <div class="px-s">
+        <p class="mb-s">
+            By default, ordered and unordered lists have no bullet.<br>
+            This behavior can be used to create custom styled lists that still remain helpful for SEO and accessibility.
+        </p>
+        <ul class="debug">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li class="l-bullet-disc">
+                Item 3 with explicit disc bullet (See below)
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Normal lists</h3>
+    <div class="px-s">
+        <p class="mb-s">
+            Regular-looking lists can be created by simply adding the <span class="code">.l-bullets</span>
+            or <span class="code">.list-bullets</span> class to list's root element.<br>
+            These classes must also be used for any nested children lists !
+        </p>
+        <div class="debug mb-s">
+            <ul class="l-bullets debug l-bullet-manual">
+                <li>Line 1</li>
+                <li>Line 2<br>Line 2 continued after a <i>br</i></li>
+                <li>Line 3</li>
+                <ul class="l-bullets l-bullet-manual">
+                    <li>Line 3.1</li>
+                    <li>Line 3.2</li>
+                </ul>
+                <li>Line 4</li>
+            </ul>
+        </div>
+        <div class="debug">
+            <ol class="l-bullets l-bullet-manual">
+                <li>Salt</li>
+                <li>Packs of crisps</li>
+                <ol class="l-bullets l-bullet-manual">
+                    <li>Salt and pepper</li>
+                    <li>Paprika</li>
+                </ol>
+                <li>Olive oil</li>
+            </ol>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Bullet position</h3>
+    <div class="px-s">
+        <p class="mb-s">
+            By default, the lists do not include their bullet in the parent element.<br>
+            This is due to the fact that the imposed spacings when using
+            <span class="code">list-style-position: inside;</span> looks like absolute trash.
+        </p>
+        <p class="mb-s">
+            This behavior can be changed by using the <span class="code">.l-bullet-inside</span>
+            or <span class="code">list-bullet-inside</span> classes.<br>
+            Alternatively, a nicer manual spacing can be applied by using the <span class="code">.l-bullet-manual</span>
+            or <span class="code">list-bullet-manual</span> classes.
+        </p>
+        <p class="mb-s">
+            Please note that the following classes must be applied to the root element and any nested
+            list's root element too.
+        </p>
+        <div class="grid grid-col-3">
+            <div>
+                <p><b>Outside (Default)</b></p>
+                <ul class="debug l-bullets l-bullet-outside my-xs">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <span class="code">ul.l-bullets<b>.l-bullet-outside</b>&gt;li*3</span>
+            </div>
+            <div>
+                <p><b>Inside</b></p>
+                <ul class="debug l-bullets l-bullet-inside my-xs">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <span class="code">ul.l-bullets<b>.l-bullet-inside</b>&gt;li*3</span>
+            </div>
+            <div>
+                <p><b>Manual (Recommended)</b></p>
+                <ul class="debug l-bullets l-bullet-manual my-xs">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <span class="code">ul.l-bullets<b>.l-bullet-manual</b>&gt;li*3</span>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Bullet styles</h3>
+    <div class="px-s">
+        <p class="mb-s">
+            Each list and its entry can have its bullets' style changed by using the following classes in the
+            <span class="code">ul</span>, <span class="code">ol</span> or <span class="code">li</span> elements.<br>
+            <s>The <span class="code">type</span> property also works as expected in these cases.</s>
+        </p>
+        <p class="mb-s">
+            Please note that some of the more exotic bullet styles may not fit properly when using
+            the manual position as shown below.<br>
+            This is a known issue and won't be fixed as it is an edge-case.
+        </p>
+        <ul class="debug l-bullet-manual">
+            <li class="l-bullet-disc">
+                Disc: <span class="code">.l-bullet-disc</span>, <span class="code">.list-bullet-disc</span>
+            </li>
+            <li class="l-bullet-square">
+                Square: <span class="code">.l-bullet-square</span>, <span class="code">.list-bullet-square</span>
+            </li>
+            <li class="l-bullet-decimal">
+                Decimal: <span class="code">.l-bullet-decimal</span>, <span class="code">.list-bullet-decimal</span>
+            </li>
+            <li class="l-bullet-decimal-leading">
+                Decimal: <span class="code">.l-bullet-decimal-leading</span>, <span class="code">.list-bullet-decimal-leading</span>
+            </li>
+            <li class="l-bullet-georgian">
+                Gregorian: <span class="code">.l-bullet-georgian</span>, <span class="code">.list-bullet-georgian</span>
+            </li>
+            <li class="l-bullet-chinese">
+                Chinese: <span class="code">.l-bullet-chinese</span>, <span class="code">.list-bullet-chinese</span>
+            </li>
+            <li class="l-bullet-kannada">
+                Kannada: <span class="code">.l-bullet-kannada</span>, <span class="code">.list-bullet-kannada</span>
+            </li>
+            <li class="l-bullet-none">
+                None: <span class="code">.l-bullet-none</span>, <span class="code">.list-bullet-none</span>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+    <!-- Lists > Composed
+    
+<a id="lists-composed"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Composed Lists
+        <i class="fa-solid fa-ellipsis f-right"></i></h2>
+</div>
+<section class="p-s">
+    <h3 class="t-w-500 t-size-12 my-s">Blank lists</h3>
+
+</section>
+-->
+
+    <!-- Grids -->
+    
+<a id="grids"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Grids
+        <i class="fa-solid fa-table-cells-large f-right"></i></h2>
+</div>
+<section class="p-s">
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Basic grids</h3>
+    <div class="px-s">
+        <p class="mb-m">
+            Grids are defined by combining the <span class="code">.grid</span> and <span class="code">.grid-col-X</span>
+            classes where <span class="code">X</span> represents the number of columns and can be
+            <span class="code">1</span>, <span class="code">2</span>,
+            <span class="code">3</span>, <span class="code">4</span>,
+            <span class="code">6</span> or <span class="code">8</span>.
+        </p>
+        <div class="grid grid-col-1 debug p-xxs mb-xs">
+            <div class="bkgd-blank-dark debug">Cell #1</div>
+        </div>
+        <p><span class="code">div.grid.grid-col-1&gt;div</span></p>
+        <div class="grid grid-col-2 debug p-xxs mb-xs mt-m">
+            <div class="bkgd-blank-dark debug">Cell #1</div>
+            <div class="bkgd-blank-dark debug">Cell #2</div>
+        </div>
+        <p><span class="code">div.grid.grid-col-2&gt;div*2</span></p>
+        <div class="grid grid-col-6 debug p-xxs mb-xs mt-m">
+            <div class="bkgd-blank-dark debug">Cell #1</div>
+            <div class="bkgd-blank-dark debug">Cell #2</div>
+            <div class="bkgd-blank-dark debug">Cell #3</div>
+            <div class="bkgd-blank-dark debug">Cell #4</div>
+            <div class="bkgd-blank-dark debug">Cell #5</div>
+            <div class="bkgd-blank-dark debug">Cell #6</div>
+        </div>
+        <p><span class="code">div.grid.grid-col-6&gt;div*6</span></p>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-l">Grid gaps</h3>
+    <div class="px-s">
+        <p class="mb-m">
+            Inter-cell gaps can also be setup by using the <span class="code">grid-gap-X</span> classes and
+            replacing the <span class="code">X</span> with the standard size suffixes.
+        </p>
+        <div class="gap-xs">
+            <div class="grid grid-col-3 grid-gap-xs debug p-xxs mt-m"><div class="bkgd-blank-dark debug">Cell #1</div><div class="bkgd-blank-dark debug">Cell #2</div><div class="bkgd-blank-dark debug">Cell #3</div><div class="bkgd-blank-dark debug">Cell #4</div><div class="bkgd-blank-dark debug">Cell #5</div><div class="bkgd-blank-dark debug">Cell #6</div></div><p class="mt-xs"><span class="code">div.grid.grid-col-3.grid-gap-xs&gt;div*6</span></p><div class="grid grid-col-3 grid-gap-m debug p-xxs mt-m"><div class="bkgd-blank-dark debug">Cell #1</div><div class="bkgd-blank-dark debug">Cell #2</div><div class="bkgd-blank-dark debug">Cell #3</div><div class="bkgd-blank-dark debug">Cell #4</div><div class="bkgd-blank-dark debug">Cell #5</div><div class="bkgd-blank-dark debug">Cell #6</div></div><p class="mt-xs"><span class="code">div.grid.grid-col-3.grid-gap-m&gt;div*6</span></p><div class="grid grid-col-3 grid-gap-l debug p-xxs mt-m"><div class="bkgd-blank-dark debug">Cell #1</div><div class="bkgd-blank-dark debug">Cell #2</div><div class="bkgd-blank-dark debug">Cell #3</div><div class="bkgd-blank-dark debug">Cell #4</div><div class="bkgd-blank-dark debug">Cell #5</div><div class="bkgd-blank-dark debug">Cell #6</div></div><p class="mt-xs"><span class="code">div.grid.grid-col-3.grid-gap-l&gt;div*6</span></p>        </div>
+    </div>
+
+
+    <details class="border bkgd-dark r-m mt-l">
+        <summary class="p-xs">Click to show/hide all classes</summary>
+        <div class="p-xs bt bkgd-grey">
+            <p>
+                <span class="code mr-xs">grid</span>
+                <span class="t-super-muted">Defined a grid container</span>
+            </p>
+
+            <hr class="subtle my-s">
+
+            <table>
+                <tr>
+                    <td>
+                        <p><span class="code mr-xs">grid-col-1</span></p>
+                    </td>
+                    <!--<td>
+                        <p><span class="code mr-xs">col-1</span></p>
+                    </td>-->
+                    <td rowspan="6">
+                        <span class="t-super-muted">Specifies the column count</span></p>
+                    </td>
+                </tr>
+                <tr><td><p><span class="code mr-xs">grid-col-2</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-col-3</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-col-4</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-col-6</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-col-8</span></p></td></tr>            </table>
+
+            <hr class="subtle my-s">
+
+            <table>
+                <tr>
+                    <td>
+                        <p><span class="code mr-xs">grid-gap-xs</span></p>
+                    </td>
+                    <!--<td>
+                        <p><span class="code mr-xs">gap-xs</span></p>
+                    </td>-->
+                    <td rowspan="6">
+                        <span class="t-super-muted">Specifies the inter-cell gap size</span></p>
+                    </td>
+                </tr>
+                <tr><td><p><span class="code mr-xs">grid-gap-s</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-gap-m</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-gap-l</span></p></td></tr><tr><td><p><span class="code mr-xs">grid-gap-xl</span></p></td></tr>            </table>
+        </div>
+    </details>
+
+    <p class="mt-m t-bold">TODO: All mobile rules, Add non-identical sizing</p>
+</section>
+
+    <!-- Tables -->
+    
+<a id="tables-core"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Tables
+        <i class="fa-solid fa-table f-right"></i>
+    </h2>
+</div>
+<section class="p-s">
+
+    <div class="bkgd-orange t-bold t-center w-full r-l border p-xs mt-xxs mb-m">
+        ⚠️ These styles may slightly change again before the 1.0.0 release ⚠️
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Default table</h3>
+    <div class="px-s">
+        <p class="mb-s">
+            Tables have no border, cell gap and other form of styling by default.<br>
+            The cell's content are just aligned in the top of the cell.
+        </p>
+        <table>
+            <tr>
+                <td class="debug">Cell 1.1</td>
+                <td class="debug">Cell 1.2</td>
+                <td class="debug">Cell 1.3</td>
+            </tr>
+            <tr>
+                <td class="debug">Cell 2.1</td>
+                <td class="debug">Cell 2.2</td>
+                <td class="debug" rowspan="2">Cell 2.3</td>
+            </tr>
+            <tr>
+                <td class="debug" colspan="2">Cell 3.1</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-l">Cell content alignment</h3>
+    <div class="p-xs">
+        <p class="mb-s">
+            The content of a table's cells can be uniformly changed via the
+            <span class="code">.table-v-center</span> and <span class="code">.table-v-bottom</span> classes.
+        </p>
+        <div class="grid grid-col-3 grid-gap-s">
+            <div>
+                <p>Top (Default)</p>
+                <table class="table-p-xs">
+                    <tr>
+                        <td class="debug">1.1</td>
+                        <td class="debug" rowspan="2">1.2</td>
+                    </tr>
+                    <tr>
+                        <td class="debug">2.1</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p>Middle</p>
+                <table class="table-p-xs table-v-center">
+                    <tr>
+                        <td class="debug">1.1</td>
+                        <td class="debug" rowspan="2">1.2</td>
+                    </tr>
+                    <tr>
+                        <td class="debug">2.1</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p>End</p>
+                <table class="table-p-xs table-v-bottom">
+                    <tr>
+                        <td class="debug">1.1</td>
+                        <td class="debug" rowspan="2">1.2</td>
+                    </tr>
+                    <tr>
+                        <td class="debug">2.1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-l">Cell padding</h3>
+    <p class="mb-s">
+        All of a given table's cells can be padded uniformly by using the
+        <span class="code">.table-p-X</span> class where <span class="code">X</span>
+        can be replaced by any of the standard sizes.<br>
+        Usable sizes:
+        <span class="code">xxs</span>, <span class="code">xs</span>,
+        <span class="code">s</span>, <span class="code">m</span>,
+        <span class="code">l</span>, <span class="code">xl</span>
+    </p>
+    <div class="p-xs">
+        <div class="grid grid-col-3 grid-col-medium-2 grid-gap-s">
+            <div>
+                <table class="table-p-xxs mb-s">
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 1.1</div></td>
+                        <td class="debug"><div class="debug">Cell 1.2</div></td>
+                    </tr>
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 2.1</div></td>
+                        <td class="debug"><div class="debug">Cell 2.2</div></td>
+                    </tr>
+                </table>
+                <span class="code">.table-p-xxs</span>
+            </div>
+            <div>
+                <table class="table-p-xs mb-s">
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 1.1</div></td>
+                        <td class="debug"><div class="debug">Cell 1.2</div></td>
+                    </tr>
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 2.1</div></td>
+                        <td class="debug"><div class="debug">Cell 2.2</div></td>
+                    </tr>
+                </table>
+                <span class="code">.table-p-xs</span>
+            </div>
+            <div>
+                <table class="table-p-s mb-s">
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 1.1</div></td>
+                        <td class="debug"><div class="debug">Cell 1.2</div></td>
+                    </tr>
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 2.1</div></td>
+                        <td class="debug"><div class="debug">Cell 2.2</div></td>
+                    </tr>
+                </table>
+                <span class="code">.table-p-s</span>
+            </div>
+            <div>
+                <table class="table-p-m mb-s">
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 1.1</div></td>
+                        <td class="debug"><div class="debug">Cell 1.2</div></td>
+                    </tr>
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 2.1</div></td>
+                        <td class="debug"><div class="debug">Cell 2.2</div></td>
+                    </tr>
+                </table>
+                <span class="code">.table-p-m</span>
+            </div>
+            <div>
+                <table class="table-p-l mb-s">
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 1.1</div></td>
+                        <td class="debug"><div class="debug">Cell 1.2</div></td>
+                    </tr>
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 2.1</div></td>
+                        <td class="debug"><div class="debug">Cell 2.2</div></td>
+                    </tr>
+                </table>
+                <span class="code">.table-p-l</span>
+            </div>
+            <div>
+                <table class="table-p-xl mb-s">
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 1.1</div></td>
+                        <td class="debug"><div class="debug">Cell 1.2</div></td>
+                    </tr>
+                    <tr>
+                        <td class="debug"><div class="debug">Cell 2.1</div></td>
+                        <td class="debug"><div class="debug">Cell 2.2</div></td>
+                    </tr>
+                </table>
+                <span class="code">.table-p-xl</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+    <!-- Horizontal Rulers -->
+    
+<a id="horizontal-rulers"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Horizontal Rulers
+        <i class="fa-solid fa-ruler f-right"></i></h2>
+</div>
+<section class="p-s">
+    <p>Generic: <span class="code">hr</span></p>
+    <hr>
+
+    <p class="mt-s">Subtle: <span class="code">hr.subtle</span>, <span class="code">hr.hr-subtle</span></p>
+    <hr class="subtle">
+
+    <p class="mt-s">Dashed: <span class="code">hr.dashed</span>, <span class="code">hr.hr-dashed</span></p>
+    <hr class="dashed">
+
+    <p class="mt-s">Dotted: <span class="code">hr.dotted</span>, <span class="code">hr.hr-dotted</span></p>
+    <hr class="dotted">
+
+    <p class="mt-s">Double:
+        <span class="code">hr.double</span>, <span class="code">hr.hr-double</span>,
+        <span class="code">hr.thick</span>, <span class="code">hr.hr-thick</span>
+    </p>
+    <hr class="double">
+
+    <p class="mt-s">Outset: <span class="code">hr.outset</span>, <span class="code">hr.hr-outset</span></p>
+    <hr class="outset">
+    <hr class="subtle outset">
+
+    <p class="mt-s">Cutting indicator: <span class="code">hr.cut-here</span>, <span class="code">hr.hr-cut-here</span></p>
+    <hr class="dotted cut-here">
+    <hr class="dashed cut-here">
+
+</section>
+
+    <!-- Backgrounds -->
+    
+<a id="backgrounds"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Backgrounds
+        <i class="fa-solid fa-paint-roller f-right"></i>
+        </h2>
+</div>
+<section class="p-s">
+
+    <h3 class="t-w-500 t-size-12 mb-xs mt-xxs">Simple colors</h3>
+    <div class="grid grid-col-3 grid-gap-l px-s">
+        <div>
+            <div class="p-l border r-xl bkgd-dark my-xs"></div>
+            <span class="code mb-s">.bkgd-dark</span>
+        </div>
+        <div>
+            <div class="p-l border r-xl bkgd-grey my-xs"></div>
+            <span class="code mb-s">.bkgd-grey</span>
+            <span class="code mb-s">.bkgd-gray</span>
+        </div>
+        <div>
+            <div class="p-l border r-xl bkgd-light my-xs"></div>
+            <span class="code mb-s">.bkgd-light</span>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Grid backgrounds</h3>
+    <div class="grid grid-col-2 grid-gap-l px-s">
+        <div>
+            <p class="t-w-500">40% opacity (Title bars)</p>
+            <div class="p-l border r-xl bkgd-grid40 my-xs"></div>
+            <span class="code">.bkgd-grid40</span>
+            <span class="code">.bkgd-grid</span>
+        </div>
+        <div>
+            <p class="t-w-500">30% opacity</p>
+            <div class="p-l border r-xl bkgd-grid30 my-xs"></div>
+            <span class="code">.bkgd-grid30</span>
+        </div>
+        <div>
+            <p class="t-w-500">20% opacity</p>
+            <div class="p-l border r-xl bkgd-grid20 my-xs"></div>
+            <span class="code">.bkgd-grid20</span>
+        </div>
+        <div>
+            <p class="t-w-500">10% opacity (Surroundings)</p>
+            <div class="p-l border r-xl bkgd-grid10 my-xs"></div>
+            <span class="code">.bkgd-grid10</span>
+            <span class="code">.bkgd-surround</span>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Special backgrounds</h3>
+    <div class="grid grid-col-3 grid-gap-l px-s">
+        <div>
+            <p class="t-w-500">Transparent</p>
+            <div class="p-l border r-xl bkgd-transparent my-xs"></div>
+            <span class="code">.bkgd-transparent</span>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-l">Colored backgrounds</h3>
+    <div class="grid grid-col-4 grid-col-medium-2 grid-gap-l px-s">
+        <div>
+            <p class="t-w-500">Blue</p>
+            <div class="p-l border r-xl bkgd-blue my-xs"></div>
+            <span class="code">.bkgd-blue</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light blue</p>
+            <div class="p-l border r-xl bkgd-blue-light my-xs"></div>
+            <span class="code">.bkgd-blue-light</span>
+        </div>
+        <div>
+            <p class="t-w-500">Green</p>
+            <div class="p-l border r-xl bkgd-green my-xs"></div>
+            <span class="code">.bkgd-green</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light green</p>
+            <div class="p-l border r-xl bkgd-green-light my-xs"></div>
+            <span class="code">.bkgd-green-light</span>
+        </div>
+    </div>
+    <div class="grid grid-col-4 grid-col-medium-2 grid-gap-l px-s mt-m">
+        <div>
+            <p class="t-w-500">Red</p>
+            <div class="p-l border r-xl bkgd-red my-xs"></div>
+            <span class="code">.bkgd-red</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light red</p>
+            <div class="p-l border r-xl bkgd-red-light my-xs"></div>
+            <span class="code">.bkgd-red-light</span>
+        </div>
+        <div>
+            <p class="t-w-500">Orange</p>
+            <div class="p-l border r-xl bkgd-orange my-xs"></div>
+            <span class="code">.bkgd-orange</span>
+        </div>
+        <div>
+            <p class="t-w-500">Light orange</p>
+            <div class="p-l border r-xl bkgd-orange-light my-xs"></div>
+            <span class="code">.bkgd-orange-light</span>
+        </div>
+    </div>
+</section>
+
+    <!-- Buttons -->
+    
+<a id="buttons"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Buttons
+        <i class="fa-solid fa-stop f-right"></i>
+        </h2>
+</div>
+<section class="p-s">
+    <p class="mb-s">
+        Buttons are components that can be formed using existing core classes and a couple of specific classes
+        for colors only.
+    </p>
+
+    <div class="grid grid-col-2 grid-col-medium-1 grid-gap-xs">
+        <div>
+            <h3 class="t-w-500 t-size-12 mt-s">Unstyled button</h3>
+            <div class="m-s">
+                <button class="m-xs">My button</button>
+                <code class="d-block p-xxs border r-s mt-s">
+                    <b>button</b>
+                </code>
+            </div>
+        </div>
+        <div>
+            <h3 class="t-w-500 t-size-12 mt-s">Default styled button</h3>
+            <div class="m-s">
+                <button class="p-xs r-s border">Default button</button>
+                <code class="d-block p-xxs border r-s mt-s">
+                    button<b>.p-xs.r-s.border</b>
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="t-w-500 t-size-12 mt-s">Colored buttons</h3>
+    <div class="m-s">
+        <p class="mb-s">
+            Buttons can also be colored in order to give direct visual feedback
+            on their intended action by simply giving them another class.
+        </p>
+        <div class="grid grid-col-2 grid-col-medium-1 grid-gap-xs">
+            <div>
+                <button class="p-xs r-s border btn-primary">Primary button</button>
+                <code class="d-block p-xxs border r-s mt-s">
+                    button.p-xs.r-s.border<b>.btn-primary</b>
+                </code>
+            </div>
+            <div>
+                <button class="p-xs r-s border btn-success">Success button</button>
+                <code class="d-block p-xxs border r-s mt-s">
+                    button.p-xs.r-s.border<b>.btn-success</b>
+                </code>
+            </div>
+            <div>
+                <button class="p-xs r-s border btn-warning">Warning button</button>
+                <code class="d-block p-xxs border r-s mt-s">
+                    button.p-xs.r-s.border<b>.btn-warning</b>
+                </code>
+            </div>
+            <div>
+                <button class="p-xs r-s border btn-error">Danger/Error button</button>
+                <code class="d-block p-xxs border r-s mt-s">
+                    button.p-xs.r-s.border<b>.btn-error</b>
+                </code>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tables -->
+    
+<a id="tables-site"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Tables
+        <i class="fa-solid fa-table f-right"></i>
+    </h2>
+</div>
+<section class="p-s">
+
+    <div class="bkgd-orange t-bold t-center w-full r-l border p-xs mt-xxs mb-m">
+        ⚠️ These styles require a special workaround to work properly ⚠️
+    </div>
+
+    <h3 class="t-w-500 t-size-12 my-s mt-xxs">Stylish table</h3>
+    <div class="px-s">
+        <p class="mb-xxs">
+            Tables can quickly be styled by simply using the <span class="code">.table-stylish</span> class.
+        </p>
+        <p class="mb-xs">
+            However, due to browsers inability to stay consistent, they cannot be rounded as easily as other elements.<br>
+            Therefore, the <span class="code">.o-hidden</span> is automatically applied to the table itself.<br>
+            A cleaner fix could have been implemented, but it would have decently inflated the stylesheet's size.
+        </p>
+        <table class="table-stylish table-p-s border r-l">
+            <thead>
+                <th>Head 1</th>
+                <th>Head 2</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Cell 1.1</td>
+                <td>Cell 1.2</td>
+            </tr>
+            <tr>
+                <td>Cell 2.1</td>
+                <td>Cell 2.2</td>
+            </tr>
+            </tbody>
+        </table>
+        <code class="d-block p-xxs border r-s mt-s">
+            table<b>.table-stylish.table-p-s.border.r-l</b><br>
+            &nbsp;&nbsp;thead>th>td*2<br>
+            &nbsp;&nbsp;tbody>tr*2>td*2
+        </code>
+    </div>
+
+</section>
+    <!-- Tables -->
+    
+<a id="examples-cards"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Cards
+        <i class="fa-solid fa-address-card f-right"></i>
+    </h2>
+</div>
+<section class="p-s">
+
+    <h3 class="t-w-500 t-size-12 my-s mt-xxs">Vertical Card</h3>
+    <div class="px-s">
+        <p class="mb-xxs">
+            Tables can quickly be styled by simply using the <span class="code">.table-stylish</span> class.
+        </p>
+
+        <div class="my-s border r-l bkgd-dark grid d-inline-block">
+            <div class="bb">
+                <img src="/img/maki-03.jpg" alt="Hungry Kitty Cat" class="r-r p-s px-l" height="128px">
+            </div>
+            <div class="bkgd-gray t-center">
+                <p>Hungry Cat</p>
+                <p>
+                    This kitty needs kibbles to stay healthy and
+                </p>
+            </div>
+            <div class="grid grid-col-3">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <code class="d-block p-xxs border r-s mt-s">
+            table<b>.table-stylish.table-p-s.border.r-l</b><br>
+            &nbsp;&nbsp;thead>th>td*2<br>
+            &nbsp;&nbsp;tbody>tr*2>td*2
+        </code>
+    </div>
+
+</section>
+</main>
+
+<footer class="d-flex flex-align-center w-full p-s py-xs">
+    <button id="sidebar-toggle-footer" class="p-xs border r-s t-size-10"
+            aria-label="Open and close the navigation sidebar.">
+        <i class="fa fa-bars px-xxs" aria-hidden="true"></i>
+    </button>
+    <p class="flex-fill t-center t-size-10 t-w-500 t-half-muted">
+        <a class="a-hidden" href="https://nibblepoker.lu/privacy/">Privacy policy</a>
+    </p>
+    <a href="/">
+        <img id="logo-footer" alt="Website's logo" draggable="false"
+             src="https://nibblepoker.lu/resources/NibblePoker/images/logos/v2_full_unshaded_original.svg">
+    </a>
+</footer>
+
+<script src="/js/sidebar.js"></script>
+<script src="/js/text-direction-switch.js"></script>
+<script src="/js/anchor-fix.js"></script>
+</body>
+</html>
