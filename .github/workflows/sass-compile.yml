@@ -1,0 +1,39 @@
+name: Compile SASS
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    concurrency:
+      group: cicd-docs
+
+    steps:
+      - name: Checkout Git submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Install SASS Compiler
+        run: |
+          npm install -g html-minifier sass
+
+      - name: Compile SASS
+        run: |
+          cd htdocs/css/
+          sass "../../scss/nibblepoker.scss" -q --no-source-map > "nibblepoker.css"
+          sass "../../scss/nibblepoker.scss" -q --no-source-map --style compressed > "nibblepoker.min.css"
+          sass "../../scss/debugger.scss" -q --no-source-map > "debugger.css"
+          sass "../../scss/debugger.scss" -q --no-source-map --style compressed > "debugger.min.css"
