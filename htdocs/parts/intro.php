@@ -67,7 +67,7 @@ global $root_path;
             <tr>
                 <td>NibbleCSS</td>
                 <td>
-                    <a href="/css/nibblepoker.min.css"
+                    <a href="./css/nibblepoker.min.css"
                        title="Download the minified full stylesheet"
                        class="a-hidden"
                        download>
@@ -79,7 +79,7 @@ global $root_path;
                     </a>
                 </td>
                 <td>
-                    <a href="/css/nibblepoker.css"
+                    <a href="./css/nibblepoker.css"
                        title="Download the full stylesheet"
                        class="a-hidden"
                        download>
@@ -94,7 +94,7 @@ global $root_path;
             <tr>
                 <td>Debugger</td>
                 <td>
-                    <a href="/css/debugger.min.css"
+                    <a href="./css/debugger.min.css"
                        title="Download the minified debugging stylesheet"
                        class="a-hidden"
                        download>
@@ -106,7 +106,7 @@ global $root_path;
                     </a>
                 </td>
                 <td>
-                    <a href="/css/debugger.css"
+                    <a href="./css/debugger.css"
                        title="Download the debugging stylesheet"
                        class="a-hidden"
                        download>
