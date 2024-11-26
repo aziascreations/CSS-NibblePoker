@@ -1,19 +1,27 @@
 name: Render PHP Demo Page
 
 on:
-  push:
-  pull_request:
+  workflow_run:
+    workflows:
+      - Compile SASS
+    types:
+      - completed
 
 jobs:
-  prerender:
+  php_render:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Git submodules
-        uses: actions/checkout@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        if: ${{ github.actor == 'aziascreations' }}
         with:
-          submodules: true
-          fetch-depth: 0
+          path: ./htdocs/css
+
+      - name: Display structure of downloaded files
+        run: |
+          cd ./htdocs/css
+          ls -R
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -24,7 +32,7 @@ jobs:
       - name: Pre-render PHP File
         run: |
           cd htdocs
-          php ./index.php > ./index.raw.html
+          php ./index.php > ./index.html
 
       - name: Upload `index.html` build artifact
         uses: actions/upload-artifact@v4
