@@ -484,7 +484,19 @@ button + button, .button-link + .button-link > button {
   min-width: 100%;
 }
 
-textarea.no-resize {
+.ta-resize {
+  resize: both;
+}
+
+.ta-resize-h {
+  resize: horizontal;
+}
+
+.ta-resize-v {
+  resize: vertical;
+}
+
+.ta-resize-none {
   resize: none;
 }
 

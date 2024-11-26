@@ -103,6 +103,11 @@
                     <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
                 </p>
             </a>
+            <a class="a-hidden" href="#core-inputs">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-pen-to-square pr-xs t-half-muted"></i>Inputs
+                </p>
+            </a>
         </div>
     </details>
 
@@ -135,6 +140,11 @@
     <details class="by t-noselect" open>
         <summary class="p-xs bkgd-grid20 t-w-bold t-size-13">Examples</summary>
         <div class="p-xs px-m bt bkgd-grey t-size-11">
+            <a class="a-hidden" href="#examples-inputs">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-pen-to-square pr-xs t-half-muted"></i>Inputs
+                </p>
+            </a>
             <a class="a-hidden" href="#examples-cards">
                 <p class="t-w-500 py-xs sidebar-entry">
                     <i class="fa-solid fa-address-card pr-xs t-half-muted"></i>Cards
@@ -224,7 +234,7 @@
                         <button class="btn-success p-xs b r-m">
                             <i class="fa fa-download"></i>
                             nibblepoker.min.css
-                            (29.59 KiB)
+                            (29.67 KiB)
                         </button>
                     </a>
                 </td>
@@ -236,7 +246,7 @@
                         <button class="p-xs b r-m">
                             <i class="fa fa-download"></i>
                             nibblepoker.css
-                            (39.81 KiB)
+                            (39.91 KiB)
                         </button>
                     </a>
                 </td>
@@ -272,7 +282,8 @@
     </table>
 </section>
 
-    <!-- Text > Weights -->
+
+    <!-- Core > Text > Weights -->
     
 <a id="text-weights"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -321,7 +332,7 @@
     </table>
 </section>
 
-    <!-- Text > Styles -->
+    <!-- Core > Text > Styles -->
     
 <a id="text-styles"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -371,7 +382,7 @@
     </table>
 </section>
 
-    <!-- Text > Alignment -->
+    <!-- Core > Text > Alignment -->
     
 <a id="text-alignment"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -422,7 +433,7 @@
     <button class="p-xs r-s border primary mt-s text-direction-switch">Switch text direction</button>
 </section>
 
-    <!-- Text > Modifiers -->
+    <!-- Core > Text > Modifiers -->
     
 <a id="text-modifiers"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -459,7 +470,7 @@
         </tbody>
     </table>
 </section>
-    <!-- Text > Links -->
+    <!-- Core > Text > Links -->
     
 <a id="text-links"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -522,7 +533,7 @@
     </table>
 </section>
 
-    <!-- Text > Misc -->
+    <!-- Core > Text > Misc -->
     
 <a id="text-misc"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -566,7 +577,7 @@
     </table>
 </section>
 
-    <!-- Spacing -->
+    <!-- Core > Spacing -->
     
 <a id="spacing"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -600,7 +611,7 @@
     </details>
 </section>
 
-    <!-- Rounding -->
+    <!-- Core > Rounding -->
     
 <a id="rounding"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -635,7 +646,7 @@
     </details>
 </section>
 
-    <!-- Lists > Base -->
+    <!-- Core > Lists > Base -->
     
 <a id="lists-basic"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -785,7 +796,7 @@
 
 </section>
 
-    <!-- Lists > Composed
+    <!-- Core > Lists > Composed
     
 <a id="lists-composed"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -798,7 +809,7 @@
 </section>
 -->
 
-    <!-- Grids -->
+    <!-- Core > Grids -->
     
 <a id="grids"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -892,7 +903,7 @@
     <p class="mt-m t-bold">TODO: All mobile rules, Add non-identical sizing</p>
 </section>
 
-    <!-- Tables -->
+    <!-- Core > Tables -->
     
 <a id="tables-core"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -1069,7 +1080,80 @@
     </div>
 
 </section>
-    <!-- Horizontal Rulers -->
+    <!-- Core > Inputs -->
+    
+<a id="core-inputs"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Inputs
+        <i class="fa-solid fa-pen-to-square f-right"></i>
+    </h2>
+</div>
+<section class="p-s">
+
+    <div class="bkgd-blue t-w-400 t-center w-full r-l border p-xs mt-xxs mb-m">
+        ℹ️ Check the <a href="#examples-inputs">Examples &gt; Inputs</a> section for styled examples.
+    </div>
+
+    <div class="px-s mb-m">
+        <label for="demo-core-text">Text Input: </label>
+        <input id="demo-core-text" type="text" value="Lorem ipsum">
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            label+input[type=text]
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <label for="demo-core-password">Password Input: </label>
+        <input id="demo-core-password" type="password" value="12345678">
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            label+input[type=password]
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <label for="demo-core-number">Number Input: </label>
+        <input id="demo-core-number" type="number" value="42">
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            label+input[type=number]
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <input type="radio" id="demo-core-radio-1">
+        <label for="demo-core-radio-1">Radio 1</label><br>
+        <input type="radio" id="demo-core-radio-2">
+        <label for="demo-core-radio-2">Radio 2</label><br>
+        <input type="radio" id="demo-core-radio-3">
+        <label for="demo-core-radio-3">Radio 3</label>
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            (input[type=radio]+label+br)*3
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <input type="checkbox" id="demo-core-combo-1">
+        <label for="demo-core-combo-1">Checkbox 1</label><br>
+        <input type="checkbox" id="demo-core-combo-2">
+        <label for="demo-core-combo-2">Checkbox 2</label><br>
+        <input type="checkbox" id="demo-core-combo-3">
+        <label for="demo-core-combo-3">Checkbox 3</label>
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            (input[type=checkbox]+label+br)*3
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <label for="demo-core-textarea"></label>
+        <textarea id="demo-core-textarea" rows="8">Lorem Ipsum</textarea>
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            label+textarea
+        </code>
+    </div>
+
+</section>
+
+
+    <!-- Site > Horizontal Rulers -->
     
 <a id="horizontal-rulers"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -1105,7 +1189,7 @@
 
 </section>
 
-    <!-- Backgrounds -->
+    <!-- Site > Backgrounds -->
     
 <a id="backgrounds"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -1214,7 +1298,7 @@
     </div>
 </section>
 
-    <!-- Buttons -->
+    <!-- Site > Buttons -->
     
 <a id="buttons"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -1284,7 +1368,7 @@
     </div>
 </section>
 
-    <!-- Tables -->
+    <!-- Site > Tables -->
     
 <a id="tables-site"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
@@ -1332,7 +1416,40 @@
     </div>
 
 </section>
-    <!-- Tables -->
+
+    <!-- Examples > Inputs -->
+    
+<a id="examples-inputs"></a>
+<div class="p-xs b r-s bkgd-grid mt-m">
+    <h2 class="t-w-500 t-size-14">Inputs
+        <i class="fa-solid fa-pen-to-square f-right"></i>
+    </h2>
+</div>
+<section class="p-s">
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Basic inputs</h3>
+
+    <div class="px-s mb-m">
+        <label for="demo-core-text">Text Input: </label>
+        <input id="demo-core-text" type="text" value="Lorem ipsum" class="p-xxs border r-m">
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            label+input[type=text]<b>.p-xxs.border.r-m</b>
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <label for="demo-core-textarea"></label>
+        <textarea id="demo-core-textarea" rows="8" class="p-xxs border r-m w-full ta-resize-v">Lorem Ipsum</textarea>
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            label+textarea<b>.p-xxs.border.r-m.w-full.ta-resize-v</b>
+        </code>
+
+    </div>
+
+    <p class="mt-m t-bold">TODO: Add other types</p>
+</section>
+
+    <!-- Examples > Tables -->
     
 <a id="examples-cards"></a>
 <div class="p-xs b r-s bkgd-grid mt-m">
