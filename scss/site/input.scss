@@ -132,9 +132,20 @@ button + button, .button-link + .button-link > button {
 	//}
 }
 
-textarea {
 
-	&.no-resize {
-		resize: none;
-	}
+// TODO: Move to core !
+.ta-resize {
+	resize: both;
+}
+
+.ta-resize-h {
+	resize: horizontal;
+}
+
+.ta-resize-v {
+	resize: vertical;
+}
+
+.ta-resize-none {
+	resize: none;
 }

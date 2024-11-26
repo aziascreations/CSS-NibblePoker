@@ -80,6 +80,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                     <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
                 </p>
             </a>
+            <a class="a-hidden" href="#core-inputs">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-pen-to-square pr-xs t-half-muted"></i>Inputs
+                </p>
+            </a>
         </div>
     </details>
 
@@ -112,6 +117,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <details class="by t-noselect" open>
         <summary class="p-xs bkgd-grid20 t-w-bold t-size-13">Examples</summary>
         <div class="p-xs px-m bt bkgd-grey t-size-11">
+            <a class="a-hidden" href="#examples-inputs">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fa-solid fa-pen-to-square pr-xs t-half-muted"></i>Inputs
+                </p>
+            </a>
             <a class="a-hidden" href="#examples-cards">
                 <p class="t-w-500 py-xs sidebar-entry">
                     <i class="fa-solid fa-address-card pr-xs t-half-muted"></i>Cards

@@ -58,55 +58,64 @@
     <!-- Introduction -->
     <?php include("./parts/intro.php"); ?>
 
-    <!-- Text > Weights -->
+
+    <!-- Core > Text > Weights -->
     <?php include("./parts/text_weights.php"); ?>
 
-    <!-- Text > Styles -->
+    <!-- Core > Text > Styles -->
     <?php include("./parts/text_styles.php"); ?>
 
-    <!-- Text > Alignment -->
+    <!-- Core > Text > Alignment -->
     <?php include("./parts/text_alignment.php"); ?>
 
-    <!-- Text > Modifiers -->
+    <!-- Core > Text > Modifiers -->
     <?php include("./parts/text_modifiers.php"); ?>
 
-    <!-- Text > Links -->
+    <!-- Core > Text > Links -->
     <?php include("./parts/text_links.php"); ?>
 
-    <!-- Text > Misc -->
+    <!-- Core > Text > Misc -->
     <?php include("./parts/text_misc.php"); ?>
 
-    <!-- Spacing -->
+    <!-- Core > Spacing -->
     <?php include("./parts/spacing.php"); ?>
 
-    <!-- Rounding -->
+    <!-- Core > Rounding -->
     <?php include("./parts/rounding.php"); ?>
 
-    <!-- Lists > Base -->
+    <!-- Core > Lists > Base -->
     <?php include("./parts/lists_base.php"); ?>
 
-    <!-- Lists > Composed
+    <!-- Core > Lists > Composed
     <?php include("./parts/lists_composed.php"); ?>-->
 
-    <!-- Grids -->
+    <!-- Core > Grids -->
     <?php include("./parts/grids.php"); ?>
 
-    <!-- Tables -->
+    <!-- Core > Tables -->
     <?php include("./parts/tables_core.php"); ?>
 
-    <!-- Horizontal Rulers -->
+    <!-- Core > Inputs -->
+    <?php include("./parts/core/inputs.php"); ?>
+
+
+    <!-- Site > Horizontal Rulers -->
     <?php include("./parts/horizontal_rulers.php"); ?>
 
-    <!-- Backgrounds -->
+    <!-- Site > Backgrounds -->
     <?php include("./parts/backgrounds.php"); ?>
 
-    <!-- Buttons -->
+    <!-- Site > Buttons -->
     <?php include("./parts/buttons.php"); ?>
 
-    <!-- Tables -->
+    <!-- Site > Tables -->
     <?php include("./parts/tables_site.php"); ?>
 
-    <!-- Tables -->
+
+    <!-- Examples > Inputs -->
+    <?php include("./parts/examples/inputs.php"); ?>
+
+    <!-- Examples > Tables -->
     <?php include("./parts/examples/cards.php"); ?>
 </main>
 
