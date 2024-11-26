@@ -2,13 +2,13 @@ name: Render PHP Demo Page
 
 on:
   workflow_run:
-    workflows:
-      - Compile SASS
+    workflows: ["Compile SASS"]
     types:
       - completed
 
 jobs:
   php_render:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
