@@ -7,6 +7,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 global $root_path;
 ?>
 
+<a id="intro"></a>
 <div class="p-xs b r-s bkgd-grid">
     <h2 class="t-w-500 t-size-14">Introduction</h2>
 </div>
