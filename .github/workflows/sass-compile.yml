@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: ${{ github.actor == 'aziascreations' }}
         with:
-          name: nibblepoker.min.css
+          name: nibblepoker.css
           path: "./htdocs/css/nibblepoker.css"
           if-no-files-found: error
           retention-days: 90
@@ -50,7 +50,7 @@ jobs:
 
       - name: Upload `.min.css` build artifact
         uses: actions/upload-artifact@v4
-        if: ${{ github.actor == 'not_aziascreations' }}
+        if: ${{ github.actor == 'aziascreations' }}
         with:
           name: nibblepoker.min.css
           path: "./htdocs/css/nibblepoker.min.css"
