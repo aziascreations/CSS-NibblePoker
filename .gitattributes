@@ -1,2 +1,2 @@
 # Preventing this repo from turning into a PHP repository
-*.php -linguist-vendored
+*.php linguist-vendored
