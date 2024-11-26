@@ -1,4 +1,4 @@
-name: Compile SASS
+name: Build Everything
 
 on:
   push:
@@ -20,6 +20,12 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: none
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -57,3 +63,31 @@ jobs:
           if-no-files-found: error
           retention-days: 90
           compression-level: 9
+
+      - name: Pre-render PHP File
+        run: |
+          cd htdocs
+          php ./index.php > ./index.html
+
+      - name: Upload `index.html` build artifact
+        uses: actions/upload-artifact@v4
+        if: ${{ github.actor == 'aziascreations' }}
+        with:
+          name: index.html
+          path: "./htdocs/index.html"
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 9
+
+      - name: Remove trash
+        run: |
+          cd htdocs
+          rm -rf parts/
+          rm *.php
+
+      - name: Deploy demo page to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        #if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./htdocs
