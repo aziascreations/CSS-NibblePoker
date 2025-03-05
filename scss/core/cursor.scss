@@ -1,0 +1,44 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Core > Cursors */
+
+@mixin cursor-maker($cursor-type) {
+  .c-#{$cursor-type}, .cursor-#{$cursor-type} {
+    cursor: #{$cursor-type} !important;
+  }
+}
+
+@include cursor-maker("auto");
+@include cursor-maker("default");
+@include cursor-maker("pointer");
+@include cursor-maker("context-menu");
+@include cursor-maker("help");
+@include cursor-maker("progress");
+@include cursor-maker("wait");
+@include cursor-maker("crosshair");
+@include cursor-maker("not-allowed");
+@include cursor-maker("zoom-in");
+@include cursor-maker("zoom-out");
+@include cursor-maker("grab");
+@include cursor-maker("cell");
+@include cursor-maker("text");
+@include cursor-maker("vertical-text");
+@include cursor-maker("alias");
+@include cursor-maker("copy");
+@include cursor-maker("move");
+@include cursor-maker("no-drop");
+@include cursor-maker("all-scroll");
+@include cursor-maker("col-resize");
+@include cursor-maker("row-resize");
+@include cursor-maker("n-resize");
+@include cursor-maker("e-resize");
+@include cursor-maker("s-resize");
+@include cursor-maker("w-resize");
+@include cursor-maker("ne-resize");
+@include cursor-maker("nw-resize");
+@include cursor-maker("se-resize");
+@include cursor-maker("sw-resize");
+@include cursor-maker("ew-resize");
+@include cursor-maker("ns-resize");
+@include cursor-maker("nesw-resize");
+@include cursor-maker("nwse-resize");
