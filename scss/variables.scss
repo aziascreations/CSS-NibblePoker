@@ -223,6 +223,9 @@ $color-background-inputs: map-get((
 $color-background-checkbox-checked: $color-apollo-08;
 $color-background-checkbox-unchecked: $color-apollo-27;
 
+$color-background-radio-checked: $color-apollo-08;
+$color-background-radio-unchecked: $color-apollo-27;
+
 $color-background-button: map-get((
 		teal: $color-apollo-40,
 		winui: $color-unset,

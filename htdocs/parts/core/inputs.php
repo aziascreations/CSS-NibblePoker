@@ -43,14 +43,14 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     </div>
 
     <div class="px-s mb-m">
-        <input type="radio" id="demo-core-radio-1">
+        <input type="radio" id="demo-core-radio-1" name="demo-core-radio">
         <label for="demo-core-radio-1">Radio 1</label><br>
-        <input type="radio" id="demo-core-radio-2">
+        <input type="radio" id="demo-core-radio-2" name="demo-core-radio">
         <label for="demo-core-radio-2">Radio 2</label><br>
-        <input type="radio" id="demo-core-radio-3">
+        <input type="radio" id="demo-core-radio-3" name="demo-core-radio">
         <label for="demo-core-radio-3">Radio 3</label>
         <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
-            (input[type=radio]+label+br)*3
+            (input[type=radio][name=myRadioInput]+label+br)*3
         </code>
     </div>
 

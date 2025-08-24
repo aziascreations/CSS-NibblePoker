@@ -14,7 +14,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 </div>
 <section class="p-s">
 
-    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Basic inputs</h3>
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Text inputs</h3>
 
     <div class="px-s mb-m">
         <label for="demo-core-text">Text Input: </label>
@@ -33,5 +33,47 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 
     </div>
 
-    <p class="mt-m t-bold">TODO: Add other types</p>
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Checkboxes</h3>
+
+    <div class="px-s mb-m">
+        <input type="checkbox" id="demo-site-combo-1" class="cb-pretty r-m border">
+        <label for="demo-site-combo-1">Checkbox 1</label><br>
+        <input type="checkbox" id="demo-site-combo-2" class="cb-pretty r-m border">
+        <label for="demo-site-combo-2">Checkbox 2</label><br>
+        <input type="checkbox" id="demo-site-combo-3" class="cb-pretty r-m border">
+        <label for="demo-site-combo-3">Checkbox 3</label>
+
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            (input[type=checkbox].cb-pretty.r-m.border+label+br)*3
+        </code>
+    </div>
+
+
+    <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Radio inputs</h3>
+
+    <div class="px-s mb-m">
+        <input type="radio" id="demo-site-radio-1-solid" name="demo-site-radio-solid" class="radio-solid border">
+        <label for="demo-site-radio-1-solid"">Radio 1</label><br>
+        <input type="radio" id="demo-site-radio-2-solid" name="demo-site-radio-solid" class="radio-solid border">
+        <label for="demo-site-radio-2-solid"">Radio 2</label><br>
+        <input type="radio" id="demo-site-radio-3-solid" name="demo-site-radio-solid" class="radio-solid border">
+        <label for="demo-site-radio-3-solid">Radio 3</label>
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            (input[type=radio][name=myRadioInput].radio-solid.border+label+br)*3
+        </code>
+    </div>
+
+    <div class="px-s mb-m">
+        <input type="radio" id="demo-site-radio-1-3d" name="demo-site-radio-3d" class="radio-3d border">
+        <label for="demo-site-radio-1-3d">Radio 1</label><br>
+        <input type="radio" id="demo-site-radio-2-3d" name="demo-site-radio-3d" class="radio-3d border">
+        <label for="demo-site-radio-2-3d">Radio 2</label><br>
+        <input type="radio" id="demo-site-radio-3-3d" name="demo-site-radio-3d" class="radio-3d border">
+        <label for="demo-site-radio-3-3d">Radio 3</label>
+        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+            (input[type=radio][name=myRadioInput].radio-3d.border+label+br)*3
+        </code>
+    </div>
+
 </section>

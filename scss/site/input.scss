@@ -30,9 +30,9 @@ label {
 	user-select: none;
 }
 
-/* Site > Elements > Inputs > Checkbox */
+/* Site > Elements > Inputs > Checkbox & Radio */
 
-input[type=checkbox] {
+input[type=checkbox], input[type=radio] {
 	width: 1.65em;
 	height: 1.65em;
 	background-color: #{$color-background-checkbox-unchecked};
@@ -46,10 +46,79 @@ input[type=checkbox] {
 	position: relative;
 	vertical-align: middle;
 }
-input[type="checkbox"] + label {
+input[type="checkbox"] + label, input[type="radio"] + label {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+/* Site > Elements > Inputs > Checkbox */
+
+input[type=checkbox] {
+	&.cb-pretty, &.checkbox-pretty {
+		text-align: center;
+		padding: 0;
+
+		&:before {
+			content: "✘";
+		}
+
+		&:checked {
+			&:before {
+				content: "✔";
+			}
+		}
+	}
+}
+
+/* Site > Elements > Inputs > Radio */
+
+input[type=radio] {
+	border-radius: 50%;
+
+	&.radio-solid, &.radio-3d {
+		text-align: center;
+		padding: 0;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 60%;
+			height: 60%;
+			border-radius: 50%;
+			background-color: transparent;
+			border-color: white;
+		}
+
+		&:checked {
+			&:before {
+				background-color: white;
+			}
+		}
+	}
+
+	&.radio-solid {
+		&:before {
+			border-style: double;
+			border-width: 2px;
+		}
+	}
+
+	&.radio-3d {
+		&:before {
+			border-style: inset;
+			border-width: 2px;
+		}
+
+		&:checked {
+			&:before {
+				border-style: outset;
+			}
+		}
+	}
 }
 
 /* Site > Elements > Inputs > Buttons */
