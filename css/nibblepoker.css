@@ -403,6 +403,7 @@ button:not(.no-focus):focus, input:not(.no-focus):focus, textarea:not(.no-focus)
 }
 button:disabled, input:disabled, textarea:disabled, select:disabled {
   cursor: not-allowed;
+  background-color: rgb(30.75, 31.75, 36.25) !important;
 }
 
 label {
@@ -415,18 +416,28 @@ input[type=checkbox], input[type=radio] {
   width: 1.65em;
   height: 1.65em;
   background-color: #a53030;
-  cursor: pointer;
   position: relative;
   vertical-align: middle;
 }
 input[type=checkbox]:checked, input[type=radio]:checked {
   background-color: #468232;
 }
+input[type=checkbox]:not(:disabled), input[type=radio]:not(:disabled) {
+  cursor: pointer;
+}
+input[type=checkbox]:disabled:before, input[type=radio]:disabled:before {
+  opacity: 60%;
+}
 
 input[type=checkbox] + label, input[type=radio] + label {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+}
+
+input[type=checkbox]:disabled + label, input[type=radio]:disabled + label {
+  cursor: not-allowed;
+  opacity: 60%;
 }
 
 /* Site > Elements > Inputs > Checkbox */
@@ -444,6 +455,9 @@ input[type=checkbox].cb-pretty:checked:before, input[type=checkbox].checkbox-pre
 /* Site > Elements > Inputs > Radio */
 input[type=radio] {
   border-radius: 50%;
+}
+input[type=radio]:before {
+  box-sizing: border-box;
 }
 input[type=radio].radio-solid, input[type=radio].radio-3d {
   text-align: center;
@@ -474,6 +488,13 @@ input[type=radio].radio-3d:before {
 }
 input[type=radio].radio-3d:checked:before {
   border-style: outset;
+}
+input[type=radio].radio-unchecked-subtle:not(:checked):before {
+  opacity: 50%;
+}
+input[type=radio].radio-unchecked-dashed:not(:checked):before {
+  opacity: 75%;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
 
 /* Site > Elements > Inputs > Buttons */
