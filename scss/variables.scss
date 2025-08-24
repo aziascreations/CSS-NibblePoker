@@ -220,11 +220,6 @@ $color-background-inputs: map-get((
 ), $theme);
 
 // TODO: Implement better ones !
-$color-background-checkbox-checked: $color-apollo-08;
-$color-background-checkbox-unchecked: $color-apollo-27;
-
-$color-background-radio-checked: $color-apollo-08;
-$color-background-radio-unchecked: $color-apollo-27;
 
 $color-background-button: map-get((
 		teal: $color-apollo-40,
@@ -239,6 +234,14 @@ $color-background-button-hover: map-get((
 		moon: $color-unset,
 		nibblepoker: #373841,
 ), $theme);
+
+$color-background-checkbox-checked: $color-apollo-08;
+$color-background-checkbox-unchecked: $color-apollo-27;
+//$color-background-checkbox-disabled: $color-background-button;
+
+$color-background-radio-checked: $color-apollo-08;
+$color-background-radio-unchecked: $color-apollo-27;
+//$color-background-radio-disabled: $color-background-button-hover;
 
 $color-background-button-primary: #{$color-apollo-custom-30};
 $color-background-button-primary-hover: mix($color-apollo-custom-30, $color-apollo-custom-31, 37.5%);

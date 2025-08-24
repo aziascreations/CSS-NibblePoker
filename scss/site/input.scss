@@ -22,6 +22,7 @@ button, input, textarea, select {
 	
 	&:disabled {
 		cursor: not-allowed;
+		background-color: #{$color-background-code} !important;
 	}
 }
 
@@ -37,19 +38,30 @@ input[type=checkbox], input[type=radio] {
 	height: 1.65em;
 	background-color: #{$color-background-checkbox-unchecked};
 	
-	cursor: pointer;
-	
 	&:checked {
 		background-color: #{$color-background-checkbox-checked};
 	}
 	
 	position: relative;
 	vertical-align: middle;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+	&:disabled {
+		&:before {
+			opacity: 60%;
+		}
+	}
 }
 input[type="checkbox"] + label, input[type="radio"] + label {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+}
+input[type="checkbox"]:disabled + label, input[type="radio"]:disabled + label {
+	cursor: not-allowed;
+	opacity: 60%;
 }
 
 /* Site > Elements > Inputs > Checkbox */
@@ -75,6 +87,13 @@ input[type=checkbox] {
 
 input[type=radio] {
 	border-radius: 50%;
+
+	// Special fix required for standalone pages.
+	// This rule somehow gets ignored if the stylesheet is placed in the DOM.
+	// Even tho it is present in reset.css and if it get marked as important...
+	&:before {
+		box-sizing: border-box;
+	}
 
 	&.radio-solid, &.radio-3d {
 		text-align: center;
@@ -116,6 +135,23 @@ input[type=radio] {
 		&:checked {
 			&:before {
 				border-style: outset;
+			}
+		}
+	}
+
+	&.radio-unchecked-subtle {
+		&:not(:checked) {
+			&:before {
+				opacity: 50%;
+			}
+		}
+	}
+
+	&.radio-unchecked-dashed {
+		&:not(:checked) {
+			&:before {
+				opacity: 75%;
+				clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 			}
 		}
 	}
