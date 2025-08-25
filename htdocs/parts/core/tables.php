@@ -13,8 +13,8 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 </div>
 <section class="p-s">
 
-    <div class="bkgd-orange t-bold t-center w-full r-l border p-xs mt-xxs mb-m">
-        ⚠️ These styles may slightly change again before the 1.0.0 release ⚠️
+    <div class="bkgd-blue t-w-400 t-center w-full r-l border p-xs mt-xxs mb-m">
+        ℹ️ Check the <a href="#tables-site">Examples &gt; Tables</a> section for styled examples.
     </div>
 
     <h3 class="t-w-500 t-size-12 my-xs mt-xxs">Default table</h3>

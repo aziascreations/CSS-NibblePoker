@@ -94,7 +94,7 @@
     <?php include("./parts/grids.php"); ?>
 
     <!-- Core > Tables -->
-    <?php include("./parts/tables_core.php"); ?>
+    <?php include("./parts/core/tables.php"); ?>
 
     <!-- Core > Inputs -->
     <?php include("./parts/core/inputs.php"); ?>
@@ -110,7 +110,7 @@
     <?php include("./parts/buttons.php"); ?>
 
     <!-- Site > Tables -->
-    <?php include("./parts/tables_site.php"); ?>
+    <?php include("./parts/examples/tables.php"); ?>
 
 
     <!-- Examples > Inputs -->

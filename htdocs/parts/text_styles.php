@@ -49,6 +49,12 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
             <td><span class="code">.t-overline</span></td>
             <td><span class="t-muted">N/A</span></td>
         </tr>
+        <tr>
+            <td><p class="t-bold">Monospace</p></td>
+            <td><p class="t-monospace">monospace text</p></td>
+            <td><span class="code">.t-monospace</span></td>
+            <td><span class="t-muted">N/A</span></td>
+        </tr>
         </tbody>
     </table>
 </section>
