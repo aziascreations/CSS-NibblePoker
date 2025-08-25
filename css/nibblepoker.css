@@ -589,7 +589,8 @@ button + button, .button-link + .button-link > button {
   border-bottom: 1.5px solid #141417CF;
 }
 
-code, .code, kbd {
+/* Core > Code */
+code, .code, kbd, .t-monospace {
   font-family: Consolas, "Courier New", monospace;
 }
 
@@ -1529,6 +1530,15 @@ tr, td {
 
 .table-v-bottom tr, .table-v-bottom td {
   vertical-align: bottom;
+}
+
+.table-no-wrap,
+.table-no-wrap > td, .table-no-wrap > th,
+.table-no-wrap > tr > td, .table-no-wrap > tr > th,
+.table-no-wrap > thead > tr > td, .table-no-wrap > thead > tr > th,
+.table-no-wrap > tbody > tr > td, .table-no-wrap > tbody > tr > th {
+  white-space: nowrap;
+  text-wrap: nowrap;
 }
 
 /* Core > Tables > Cell Padding */
