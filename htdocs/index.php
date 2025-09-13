@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="./css/nibblepoker.css">
     <!--<link rel="stylesheet" href="./css/nibblepoker.min.css">-->
     <link rel="stylesheet" href="./css/debugger.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.nibblepoker.lu/FontAwesomePro/6.7.2/css/all.min.css">
     <title>NibblePoker's CSS Theme</title>
-    <meta name="description" content="...">
+    <meta name="description"
+          content="Documentation for the standardized CSS theme used across ´NibblePoker.lu´ websites."/>
     <meta property="og:title" content="NibblePoker"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://css.nibblepoker.com/"/>
     <meta property="og:image" content="???"/>
     <meta property="og:image:type" content="image/png"/>
-    <meta property="og:description" content="..."/>
+    <meta property="og:description"
+          content="Documentation for the standardized CSS theme used across ´NibblePoker.lu´ websites."/>
 </head>
 
 <body class="layout-generic">
@@ -83,6 +83,9 @@
 
     <!-- Core > Rounding -->
     <?php include("./parts/rounding.php"); ?>
+
+    <!-- Core > Borders -->
+    <?php include("./parts/core/borders.php"); ?>
 
     <!-- Core > Lists > Base -->
     <?php include("./parts/lists_base.php"); ?>

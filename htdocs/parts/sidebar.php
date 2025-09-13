@@ -21,32 +21,32 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <div class="p-xs px-m bt bkgd-grey t-size-11">
             <a class="a-hidden" href="#text-weights">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-text-height pr-xs t-half-muted"></i>Weights
+                    <i class="fad fa-text-height pr-xs t-half-muted"></i>Weights
                 </p>
             </a>
             <a class="a-hidden" href="#text-styles">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-italic pr-xs t-half-muted"></i>Styles
+                    <i class="fad fa-italic pr-xs t-half-muted"></i>Styles
                 </p>
             </a>
             <a class="a-hidden" href="#text-alignment">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-text-width pr-xs t-half-muted"></i>Alignment
+                    <i class="fad fa-text-width pr-xs t-half-muted"></i>Alignment
                 </p>
             </a>
             <a class="a-hidden" href="#text-modifiers">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-subscript pr-xs t-half-muted"></i>Modifiers
+                    <i class="fad fa-subscript pr-xs t-half-muted"></i>Modifiers
                 </p>
             </a>
             <a class="a-hidden" href="#text-links">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-link pr-xs t-half-muted"></i>Links
+                    <i class="fad fa-link pr-xs t-half-muted"></i>Links
                 </p>
             </a>
             <a class="a-hidden" href="#text-misc">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-ellipsis pr-xs t-half-muted"></i>Miscellaneous
+                    <i class="fad fa-ellipsis pr-xs t-half-muted"></i>Miscellaneous
                 </p>
             </a>
 
@@ -54,12 +54,17 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 
             <a class="a-hidden" href="#spacing">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-ellipsis pr-xs t-half-muted"></i>Spacing
+                    <i class="fad fa-ellipsis pr-xs t-half-muted"></i>Spacing
                 </p>
             </a>
             <a class="a-hidden" href="#rounding">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-bezier-curve pr-xs t-half-muted"></i>Rounding
+                    <i class="fad fa-bezier-curve pr-xs t-half-muted"></i>Rounding
+                </p>
+            </a>
+            <a class="a-hidden" href="#core-borders">
+                <p class="t-w-500 py-xs sidebar-entry">
+                    <i class="fad fa-border-inner pr-xs t-half-muted"></i>Borders
                 </p>
             </a>
 
@@ -67,22 +72,22 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 
             <a class="a-hidden" href="#lists-basic">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-list pr-xs t-half-muted"></i>Lists
+                    <i class="fad fa-list pr-xs t-half-muted"></i>Lists
                 </p>
             </a>
             <a class="a-hidden" href="#grids">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-table-cells-large pr-xs t-half-muted"></i>Grids
+                    <i class="fad fa-table-cells-large pr-xs t-half-muted"></i>Grids
                 </p>
             </a>
             <a class="a-hidden" href="#tables-core">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
+                    <i class="fad fa-table pr-xs t-half-muted"></i>Tables
                 </p>
             </a>
             <a class="a-hidden" href="#core-inputs">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-pen-to-square pr-xs t-half-muted"></i>Inputs
+                    <i class="fad fa-pen-to-square pr-xs t-half-muted"></i>Inputs
                 </p>
             </a>
         </div>
@@ -93,22 +98,22 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <div class="p-xs px-m bt bkgd-grey t-size-11">
             <a class="a-hidden" href="#horizontal-rulers">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-ruler pr-xs t-half-muted"></i>Horizontal Rulers
+                    <i class="fad fa-ruler pr-xs t-half-muted"></i>Horizontal Rulers
                 </p>
             </a>
             <a class="a-hidden" href="#backgrounds">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-paint-roller pr-xs t-half-muted"></i>Backgrounds
+                    <i class="fad fa-paint-roller pr-xs t-half-muted"></i>Backgrounds
                 </p>
             </a>
             <a class="a-hidden" href="#buttons">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-stop pr-xs t-half-muted"></i>Buttons
+                    <i class="fad fa-stop pr-xs t-half-muted"></i>Buttons
                 </p>
             </a>
             <a class="a-hidden" href="#tables-site">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-table pr-xs t-half-muted"></i>Tables
+                    <i class="fad fa-table pr-xs t-half-muted"></i>Tables
                 </p>
             </a>
         </div>
@@ -119,12 +124,12 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <div class="p-xs px-m bt bkgd-grey t-size-11">
             <a class="a-hidden" href="#examples-inputs">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-pen-to-square pr-xs t-half-muted"></i>Inputs
+                    <i class="fad fa-pen-to-square pr-xs t-half-muted"></i>Inputs
                 </p>
             </a>
             <a class="a-hidden" href="#examples-cards">
                 <p class="t-w-500 py-xs sidebar-entry">
-                    <i class="fa-solid fa-address-card pr-xs t-half-muted"></i>Cards
+                    <i class="fad fa-address-card pr-xs t-half-muted"></i>Cards
                 </p>
             </a>
         </div>
