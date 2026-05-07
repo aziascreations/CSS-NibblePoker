@@ -4,6 +4,9 @@
 # NodeJS Trash
 node_modules/
 
+# Corporate-specific stuff
+scss/themes/theme_corp_*
+
 # Build Artifacts
 *.css
 *.min.html

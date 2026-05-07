@@ -10,11 +10,11 @@
 }
 
 *::-webkit-scrollbar-track:vertical {
-	border-left: 1px solid #{$color-scrollbar-border};
+	border-left: 1px solid #{$color-border-scrollbar};
 }
 
 /**::-webkit-scrollbar-track:horizontal {
-	border-top: 1px solid #{$color-scrollbar-border};
+	border-top: 1px solid #{$color-border-scrollbar};
 }*/
 
 *::-webkit-scrollbar-thumb {

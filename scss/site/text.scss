@@ -5,7 +5,7 @@
 /* Site > Text > Commons */
 
 * {
-	color: #{$color-text-regular-normal};
+	color: #{$color-text-generic};
 }
 
 
@@ -21,18 +21,18 @@ p {
 a, .a {
 	// Base
 	text-decoration: underline;
-	color: #{$color-link-blue};
+	color: #{$color-text-link};
 	
 	& * {
-		color: #{$color-link-blue};
+		color: #{$color-text-link};
 	}
 	
 	&:hover {
-		color: #{$color-link-blue-hover};
+		color: #{$color-text-link-hover};
 		cursor: pointer;
 
 		& * {
-			color: #{$color-link-blue-hover};
+			color: #{$color-text-link-hover};
 			text-decoration: underline;
 		}
 	}
@@ -53,18 +53,18 @@ a, .a {
 	//&.casper-link, &.bland-link {
 	&.a-hidden {
 		text-decoration: none;
-		color: #{$color-text-regular-normal};
+		color: #{$color-text-generic};
 		
 		& * {
-			color: #{$color-text-regular-normal};
+			color: #{$color-text-generic};
 		}
 		
 		&:hover {
 			text-decoration: underline;
-			color: #{$color-link-hover};
+			color: #{$color-text-link-hover};
 			
 			& * {
-				color: #{$color-link-hover};
+				color: #{$color-text-link-hover};
 			}
 			
 			// FIXME: Not working, big F

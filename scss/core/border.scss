@@ -5,22 +5,22 @@
 /* Core > Borders > Enabling */
 
 .b, .border {
-	border: 1px solid #{$color-border-all};
+	border: 1px solid #{$color-border-default};
 }
 
 .bx {
-	border-left: 1px solid #{$color-border-all};
-	border-right: 1px solid #{$color-border-all};
+	border-left: 1px solid #{$color-border-default};
+	border-right: 1px solid #{$color-border-default};
 }
 
 .by {
-	border-top: 1px solid #{$color-border-all};
-	border-bottom: 1px solid #{$color-border-all};
+	border-top: 1px solid #{$color-border-default};
+	border-bottom: 1px solid #{$color-border-default};
 }
 
 @mixin border-maker-enable($side-key, $side-css-key) {
 	.b#{$side-key} {
-		border-#{$side-css-key}: 1px solid #{$color-border-all};
+		border-#{$side-css-key}: 1px solid #{$color-border-default};
 	}
 }
 

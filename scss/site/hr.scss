@@ -3,7 +3,7 @@
 /* Site > Elements > Horizontal Rule */
 
 hr {
-	border-color: #{$color-border-all};
+	border-color: #{$color-border-hr};
 
 	&.subtle, &.hr-subtle {
 		//background-color: rgba(0,0,0,0) !important;
@@ -41,7 +41,7 @@ hr {
 			content: '\002702';
 			display: inline-block;
 			position: relative;
-			color: #{$color-border-all};
+			color: #{$color-border-hr};
 			font-size: 18px;
 			top: -8px;
 			left: 40px;

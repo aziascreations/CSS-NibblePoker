@@ -1,0 +1,87 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+@use 'sass:color';
+
+// The only goal for this file is to set all colors to `deeppink`.
+// Other theme files should override all the colors variables defined in here.
+
+
+// Flat colors
+$color-background-gray-light: deeppink;
+$color-background-gray-medium: deeppink;
+$color-background-gray-dark: deeppink;
+
+$color-background-blue: deeppink;
+$color-background-blue-light: deeppink;
+
+$color-background-green: deeppink;
+$color-background-green-light: deeppink;
+
+$color-background-red: deeppink;
+$color-background-red-light: deeppink;
+
+$color-background-orange: deeppink;
+$color-background-orange-light: deeppink;
+
+
+// Body parts
+$color-background-main: deeppink;
+$color-background-surround: deeppink;
+$color-background-body: deeppink;
+
+// Cards & Other elements
+$color-background-heading: deeppink;
+$color-background-code: deeppink;
+
+$color-background-table-tr-main: deeppink;
+$color-background-table-tr-alt: deeppink;
+
+$color-background-input: deeppink;
+$color-background-input-checked: deeppink;
+$color-background-input-unchecked: deeppink;
+$color-background-input-disabled: deeppink;
+
+$color-background-button: deeppink;
+$color-background-button-hover: deeppink;
+
+$color-background-button-primary: deeppink;
+$color-background-button-primary-hover: deeppink;
+
+$color-background-button-success: deeppink;
+$color-background-button-success-hover: deeppink;
+
+$color-background-button-error: deeppink;
+$color-background-button-error-hover: deeppink;
+
+$color-background-button-warning: deeppink;
+$color-background-button-warning-hover: deeppink;
+
+$color-background-grid-image: deeppink;
+
+
+// Borders
+$color-border-light: #00EB6C;
+$color-border-normal: #00EB6C;
+$color-border-dark: #00EB6C;
+
+$color-border-default: #00EB6C;
+
+$color-border-main: #00EB6C;
+$color-border-nav: #00EB6C;
+$color-border-hr: #00EB6C;
+$color-border-scrollbar: #00EB6C;
+$color-border-table: #00EB6C;
+$color-border-code: #00EB6C;
+
+
+// Text
+$color-text-generic: #00EB6C;
+$color-text-inputs: #00EB6C;
+$color-text-muted: #{$color-text-generic}E0;
+$color-text-muted-super: #{$color-text-generic}C0;
+
+$color-text-link: #00EB6C;
+$color-text-link-hover: #00EB6C;
+
+
+// Specials
+$color-glow-input: yellow;

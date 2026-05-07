@@ -11,18 +11,18 @@
 	}
 	
 	tr {
-		background-color: #{$color-background-table-dual};
+		background-color: #{$color-background-table-tr-alt};
 	}
 	
 	tr:nth-child(2n), th {
-		background-color: #{$color-background-table-main};
+		background-color: #{$color-background-table-tr-main};
 	}
 	
 	td:not(:last-of-type), th:not(:last-of-type) {
-		border-right: 1.5px solid #{$color-table-border};
+		border-right: 1.5px solid #{$color-border-table};
 	}
 
 	tr:not(:last-of-type) td, th {
-		border-bottom: 1.5px solid #{$color-table-border};
+		border-bottom: 1.5px solid #{$color-border-table};
 	}
 }

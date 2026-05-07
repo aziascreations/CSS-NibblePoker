@@ -57,7 +57,7 @@ body.layout-generic {
 	body.layout-generic {
 		& > nav {
 			//border-right: 1px solid #{$color-border-all};
-			border-right: 1px solid #{$color-border-main};
+			border-right: 1px solid #{$color-border-nav};
 		}
 		
 		& > header {
