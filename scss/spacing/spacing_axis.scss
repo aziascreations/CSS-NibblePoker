@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Utilities > Spacing > Sided */
+
+/* Spacing > Sided */
 @mixin axis-spacing-maker($type-key, $type-property, $size-key, $size-value) {
 	.#{$type-key}x-#{$size-key} {
 		#{$type-property}-left: #{$size-value};
@@ -13,7 +14,7 @@
 }
 
 
-/* Utilities > Spacing > Sided > Variable Sizes */
+/* Spacing > Sided > Variable Sizes */
 @include axis-spacing-maker("m", "margin", "xxs", calc(#{$margin-base-size} * 0.25));
 @include axis-spacing-maker("m", "margin", "xs", calc(#{$margin-base-size} * 0.5));
 @include axis-spacing-maker("m", "margin", "s", calc(#{$margin-base-size} * 0.75));
@@ -29,11 +30,11 @@
 @include axis-spacing-maker("p", "padding", "xl", calc(#{$margin-base-size} * 2.0));
 
 
-/* Utilities > Spacing > Sided > Fixed Sizes */
+/* Spacing > Sided > Fixed Sizes */
 @include axis-spacing-maker("m", "margin", "0", 0);
 @include axis-spacing-maker("p", "padding", "0", 0);
 
 
-/* Utilities > Spacing > Sided > Others */
+/* Spacing > Sided > Others */
 @include axis-spacing-maker("m", "margin", "auto", auto);
 @include axis-spacing-maker("p", "padding", "auto", auto);

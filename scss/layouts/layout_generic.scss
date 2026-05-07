@@ -1,8 +1,8 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Site > Layouts > Generic */
+/* Layouts > Generic */
 
-/* Site > Layouts > Generic > Main Grid */
+/* Layouts > Generic > Main Grid */
 
 body.layout-generic {
 	display: grid;
@@ -51,7 +51,7 @@ body.layout-generic {
 }
 
 
-/* Site > Layouts > Generic > Mobile Fixes */
+/* Layouts > Generic > Mobile Fixes */
 
 @media only screen and (max-width: 768px) {
 	body.layout-generic {
@@ -72,7 +72,7 @@ body.layout-generic {
 }
 
 
-/* Site > Layouts > Generic > Sidebar */
+/* Layouts > Generic > Sidebar */
 
 body.layout-generic {
 	.sidebar {
@@ -96,7 +96,7 @@ body.layout-generic {
 }
 
 
-/* Site > Layouts > Generic > Sidebar > Mobile Fixes */
+/* Layouts > Generic > Sidebar > Mobile Fixes */
 
 // Inverting the sidebar's states for mobile devices
 @media only screen and (max-width: 768px) {
@@ -128,7 +128,7 @@ body.layout-generic {
 }
 
 
-/* Site > Layouts > Generic > Main Extras */
+/* Layouts > Generic > Main Extras */
 
 @media only screen and (max-width: 768px) {
 	body.layout-generic {
@@ -151,7 +151,7 @@ body.layout-generic {
 }
 
 
-/* Site > Layouts > Generic > Transitions */
+/* Layouts > Generic > Transitions */
 
 body.layout-generic {
 	main, .sidebar {

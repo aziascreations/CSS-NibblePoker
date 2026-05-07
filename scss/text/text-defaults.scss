@@ -1,0 +1,10 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Text > Defaults */
+
+@if $text-weight-header != -1 {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: #{$text-weight-header};
+    }
+}

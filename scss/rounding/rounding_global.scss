@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Utilities > Rounding > Global */
+
+/*  Rounding > Global */
 @mixin global-rounding-maker($size-key, $size-value) {
 	//, .rounding-#{$size-key}
 	.r-#{$size-key} {
@@ -9,7 +10,7 @@
 }
 
 
-/* Utilities > Rounding > Global > Variable Sizes */
+/*  Rounding > Global > Variable Sizes */
 @include global-rounding-maker("xs", calc(#{$border-base-radius} * 0.5));
 @include global-rounding-maker("s", calc(#{$border-base-radius} * 0.75));
 @include global-rounding-maker("m", #{$border-base-radius});
@@ -17,6 +18,6 @@
 @include global-rounding-maker("xl", calc(#{$border-base-radius} * 2.0));
 
 
-/* Utilities > Rounding > Global > Fixed Sizes */
+/*  Rounding > Global > Fixed Sizes */
 @include global-rounding-maker("0", 0);
 @include global-rounding-maker("r", 50%);

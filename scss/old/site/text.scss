@@ -8,6 +8,12 @@
 	color: #{$color-text-generic};
 }
 
+nav, footer, header, .bkgd-grid {
+	* {
+		color: #{$color-text-surround};
+	}
+}
+
 
 /* Site > Text > Paragraphs */
 
@@ -71,6 +77,34 @@ a, .a {
 			//i {
 			//	text-decoration: none !important;
 			//}
+		}
+	}
+}
+
+nav, footer, header {
+	a, .a {
+		color: #{$color-text-surround-link};
+		& * {
+			color: #{$color-text-surround-link};
+		}
+		&:hover {
+			color: #{$color-text-surround-link-hover};
+			& * {
+				color: #{$color-text-surround-link-hover};
+			}
+		}
+		&.a-hidden {
+			text-decoration: none;
+			color: #{$color-text-surround};
+			& * {
+				color: #{$color-text-surround};
+			}
+			&:hover {
+				color: #{$color-text-surround-link-hover};
+				& * {
+					color: #{$color-text-surround-link-hover};
+				}
+			}
 		}
 	}
 }

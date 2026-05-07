@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Utilities > Spacing > Global */
+
+/* Spacing > Global */
 @mixin global-spacing-maker($type-key, $type-property, $size-key, $size-value) {
 	.#{$type-key}-#{$size-key} {
 		#{$type-property}: #{$size-value};
@@ -8,7 +9,7 @@
 }
 
 
-/* Utilities > Spacing > Global > Variable Sizes */
+/* Spacing > Global > Variable Sizes */
 @include global-spacing-maker("m", "margin", "xxs", calc(#{$margin-base-size} * 0.25));
 @include global-spacing-maker("m", "margin", "xs", calc(#{$margin-base-size} * 0.5));
 @include global-spacing-maker("m", "margin", "s", calc(#{$margin-base-size} * 0.75));
@@ -24,17 +25,17 @@
 @include global-spacing-maker("p", "padding", "xl", calc(#{$margin-base-size} * 2.0));
 
 
-/* Utilities > Spacing > Global > Fixed Sizes */
+/* Spacing > Global > Fixed Sizes */
 @include global-spacing-maker("m", "margin", "0", 0);
 @include global-spacing-maker("p", "padding", "0", 0);
 
 
-/* Utilities > Spacing > Global > Others */
+/* Spacing > Global > Others */
 @include global-spacing-maker("m", "margin", "auto", auto);
 @include global-spacing-maker("p", "padding", "auto", auto);
 
 
-/* Utilities > Spacing > Global > Manual Extras */
+/* Spacing > Global > Manual Extras */
 .p-xxxs {
 	padding: calc(#{$margin-base-size} * 0.125);
 }

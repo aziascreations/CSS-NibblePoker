@@ -94,12 +94,16 @@ $color-border-code: $color-border-normal;
 
 // Text
 $color-text-generic: $color-apollo-45;
+$color-text-surround: $color-text-generic;
 $color-text-inputs: $color-text-generic;
 $color-text-muted: #{$color-text-generic}E0;
 $color-text-muted-super: #{$color-text-generic}C0;
 
 $color-text-link: #{$color-apollo-04};
 $color-text-link-hover: #{$color-apollo-05};
+
+$color-text-surround-link: #{$color-apollo-04};
+$color-text-surround-link-hover: #{$color-apollo-05};
 
 
 // Specials

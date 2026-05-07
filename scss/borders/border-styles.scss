@@ -1,0 +1,23 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Borders > Styles */
+
+// TODO: Improve if per-side border styles are required.
+
+@mixin border-style-maker($style-key, $style-css-value) {
+	.border-#{$style-key}, .b-#{$style-key} {
+		border-style: #{$style-css-value};
+	}
+}
+
+@include border-style-maker("none", "none");
+@include border-style-maker("hidden", "hidden");
+@include border-style-maker("dotted", "dotted");
+@include border-style-maker("dashed", "dashed");
+@include border-style-maker("solid", "solid");
+@include border-style-maker("double", "double");
+@include border-style-maker("groove", "groove");
+@include border-style-maker("ridge", "ridge");
+@include border-style-maker("inset", "inset");
+@include border-style-maker("outset", "outset");

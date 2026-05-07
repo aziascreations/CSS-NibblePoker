@@ -1,0 +1,29 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Text > Styling */
+
+i, .t-italic {
+    font-style: italic;
+}
+
+.t-oblique {
+    font-style: oblique;
+}
+
+u, .t-underline {
+    text-decoration: underline;
+}
+
+s, .t-strikethrough {
+    text-decoration: line-through;
+}
+
+.t-overline {
+    text-decoration: overline;
+}
+
+// Defined in core/code.scss !
+//.t-monospace {
+//	font-family: monospace, monospace;
+//}

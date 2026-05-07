@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Utilities > Rounding > Corner */
+
+/*  Rounding > Corner */
 @mixin corner-rounding-maker($size-key, $size-value) {
 	.rtl-#{$size-key} {
 		border-top-left-radius: #{$size-value};
@@ -17,7 +18,7 @@
 }
 
 
-/* Utilities > Rounding > Corner > Variable Sizes */
+/*  Rounding > Corner > Variable Sizes */
 @include corner-rounding-maker("xs", calc(#{$border-base-radius} * 0.5));
 @include corner-rounding-maker("s", calc(#{$border-base-radius} * 0.75));
 @include corner-rounding-maker("m", #{$border-base-radius});
@@ -25,6 +26,6 @@
 @include corner-rounding-maker("xl", calc(#{$border-base-radius} * 2.0));
 
 
-/* Utilities > Rounding > Corner > Fixed Sizes */
+/*  Rounding > Corner > Fixed Sizes */
 @include corner-rounding-maker("0", 0);
 @include corner-rounding-maker("r", 50%);

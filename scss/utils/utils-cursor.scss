@@ -1,6 +1,6 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Core > Cursors */
+/* Utils > Cursors */
 
 @mixin cursor-maker($cursor-type) {
   .c-#{$cursor-type}, .cursor-#{$cursor-type} {
