@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Core > Display */
+
+/* Utils > Display */
 
 .d-none {
 	display: none;
@@ -14,9 +15,5 @@
 	display: inline-block;
 }
 
-.o-hidden {
-	overflow: hidden;
-}
-
 // Notes:
-// * 'core/grid.scss' defines '.d-grid' !  (Add here if grids are disabled !)
+// * 'core/core-grids.scss' defines '.d-grid' !  (Add here if grids are disabled !)

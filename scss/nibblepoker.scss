@@ -26,57 +26,45 @@
 @import 'layouts/layout_generic';  // Theme used for websites with a toggleable sidebar (Similar to WinUI apps)
 
 
-/* Site */
+/* Defaults */
+@import 'defaults/defaults-backgrounds';  // Defines some basic styling/coloring rules
+@import 'defaults/defaults-fonts';
+@import 'defaults/defaults-text';    // Some optional default styling
+@import 'defaults/defaults-images';
+@import 'defaults/defaults-code';    // Uses forced borders, roundings and paddings
+@import 'defaults/defaults-tables';  // Uses copied paddings for cells & ugly rounding fix
 
+
+/* Site */
 /* Site > Styles */
-@import 'old/site/base';  // Needs a rework, Defines some basic common broad styling/coloring rules
 @import 'old/site/text';  // Has some hardcoded width for font-awesome icons in sidebar and headings
 
 /* Site > Elements */
-@import 'elements/hr';         // Custom horizontal rulers
-@import 'old/site/scrollbar';  // Personalizes the scrollbars (Horizontal is still unfinished !)
 @import 'old/site/input';      // Has ugly fix for download buttons
-@import 'old/site/table';      // Uses copied paddings for cells & ugly rounding fix
-@import 'old/site/code';       // Uses forced borders, roundings and paddings
 
 /* Site > Misc */
 @import 'old/site/backgrounds';
 
-/* Site > Fixes */
-@import 'old/site/mobile';  // Has !important utils for obvious reasons
-
-/* Site > Unsorted */
-@import 'old/site/image';
-@import 'old/site/wedge';
-@import 'old/site/content';  // Uses fixed sizes and floats
-@import 'old/site/modal';
 
 /* Core */
-@import 'old/core/sizing'; // Rules for setting elements size (.w-full, ...)
-@import 'old/core/flex';   // /!\ Needs an overhaul !!!
-@import 'old/core/grid';   // /!\ Needs an overhaul !!!
-@import 'old/core/text';   // Text-related rules (.t-bold, t-ucase, t-size-14, ...)
-//@import 'core/containers';  // Cannot remember why it was used, if ever
-@import 'old/core/display';   // /!\ Needs improvement !!!
-@import 'old/core/position';   // /!\ Needs improvement !!!
-@import 'old/core/overflow';   // Defines generic overflow rules (.o-hidden, .ox-scroll, ...)
-@import 'lists/lists';
-@import 'old/core/table';
-
-
+@import 'core/core-grids';  // /!\ Needs an overhaul, especially for mobile !!!
 
 /* Elements */
-@import 'elements/hr';  // Custom horizontal rulers
-@import 'elements/video';
+@import 'elements/elements-lists';
+@import 'elements/elements-wedge';  // Wedges shown in code blocks and other notifications.
+@import 'elements/elements-hr';  // Custom horizontal rulers
+@import 'elements/elements-video';
+@import 'elements/elements-scrollbar';  // /!\ Horizontal unfinished, and thy look bad in some contexts /!\
 
+/* Tables */
+@import 'tables/tables-modifiers';
 
 /* Borders */
 @import 'borders/border-targeting';  // Border rules (.border, .bt-0, ...)
-@import 'borders/border-styles';  // Types of borders
-@import 'borders/border-colors';  // Default colors for some elements (Overrides global color in border-targeting)
+@import 'borders/border-styles';     // Types of borders
+@import 'borders/border-colors';     // Default colors for some elements (Overrides global color in border-targeting)
 
 /* Text */
-@import 'text/text-defaults';  // Some optional default styling
 @import 'text/text-sizes';
 @import 'text/text-weights';
 @import 'text/text-alignment';
@@ -94,9 +82,19 @@
 @import 'rounding/rounding_corner';
 
 /* Overrides */
-@import 'utils/utils-float';  // Floating rules (.f-right, ...)
+@import 'utils/utils-float';     // Floating rules (.f-right, ...)
 @import 'utils/utils-cursor';
 @import 'utils/utils-text';
+@import 'utils/utils-display';   // /!\ Needs more classes !
+@import 'utils/utils-overflow';  // Defines generic overflow rules (.o-hidden, .ox-scroll, ...)
+@import 'utils/utils-flex';      // /!\ Needs an overhaul !!!
+@import 'utils/utils-sizing';    // Rules for setting elements size (.w-full, ...)
+@import 'utils/utils-position';
+@import 'utils/utils-mobile';
 
 /* Extras */
-@import 'old/site/splide';
+@import 'extra/extra-splide';  // Picture gallery
+@import 'extra/extra-np-content';  // Uses fixed sizes and floats
+
+/* Fixes */
+@import 'fixes/fixes-mobile';  // Hotfixes for mobile-related issues

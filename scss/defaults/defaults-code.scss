@@ -1,17 +1,18 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Core > Code */
+
+/* Defaults > Code */
 
 code, .code, kbd, .t-monospace {
 	font-family: Consolas, "Courier New", monospace;
 }
 
 // For large blocks
-code {
+//code { }
 
-}
-
-// For spans
+// For inline spans
+// We're applying the equivalent of `.r-s.px-xs.px-s`
+// Kinda goes against the core ideas, but it would be annoying without it.
 .code, kbd {
 	background-color: #{$color-background-code};
 	
@@ -30,6 +31,7 @@ code {
 	background: rgba(0,0,0,0) !important;
 }
 
+// FIXME: Makes the inline block ugly !!!
 code, .code, .code-line {
 	line-height: 1.35;
 }

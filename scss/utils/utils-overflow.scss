@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Core > Overflow */
+
+/* Utils > Overflow */
 
 @mixin overflow-maker($overflow-type) {
 	.o-#{$overflow-type} {

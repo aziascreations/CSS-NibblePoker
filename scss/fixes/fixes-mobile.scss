@@ -1,6 +1,7 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
-/* Site > Fixes > Mobile */
+
+/* Fixes > Mobile */
 
 @media only screen and (max-width: 768px) {
 	// Overrides the ".p-l" class used on "main".
@@ -8,12 +9,8 @@
 		padding: calc(#{$margin-base-size} * 0.5) !important;
 	}
 	
-	// Overrides a style in "site/content.scss".
+	// Overrides a style in "site/extra-np-content.scss".
 	.content-search-entry > p {
 		width: 100% !important;
-	}
-	
-	.mobile-hide {
-		display: none;
 	}
 }

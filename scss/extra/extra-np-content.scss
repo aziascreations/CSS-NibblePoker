@@ -1,5 +1,9 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
+
+/* Extras > NP Website Content */
+// Overrides all other rules since this style is fixed.
+
 .content-search-entry {
 	min-height: #{$content-search-image-size};
 }
