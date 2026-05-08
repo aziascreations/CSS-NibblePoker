@@ -27,9 +27,13 @@
 
 
 /* Defaults */
+/* Defaults > Text */
+@import 'defaults/text/defaults-text-basics';
+@import 'defaults/text/defaults-text-links';
+@import 'defaults/text/defaults-text-weights';
+
 @import 'defaults/defaults-backgrounds';  // Defines some basic styling/coloring rules
 @import 'defaults/defaults-fonts';
-@import 'defaults/defaults-text';    // Some optional default styling
 @import 'defaults/defaults-images';
 @import 'defaults/defaults-code';    // Uses forced borders, roundings and paddings
 @import 'defaults/defaults-tables';  // Uses copied paddings for cells & ugly rounding fix
@@ -37,7 +41,7 @@
 
 /* Site */
 /* Site > Styles */
-@import 'old/site/text';  // Has some hardcoded width for font-awesome icons in sidebar and headings
+@import 'defaults/text/defaults-text-basics';  // Has some hardcoded width for font-awesome icons in sidebar and headings
 
 /* Site > Elements */
 @import 'old/site/input';      // Has ugly fix for download buttons
