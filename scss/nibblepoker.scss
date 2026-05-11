@@ -35,30 +35,25 @@
 @import 'defaults/defaults-backgrounds';  // Defines some basic styling/coloring rules
 @import 'defaults/defaults-fonts';
 @import 'defaults/defaults-images';
+@import 'defaults/defaults-inputs';  // Has ugly fix for download buttons
 @import 'defaults/defaults-code';    // Uses forced borders, roundings and paddings
 @import 'defaults/defaults-tables';  // Uses copied paddings for cells & ugly rounding fix
-
-
-/* Site */
-/* Site > Styles */
-@import 'defaults/text/defaults-text-basics';  // Has some hardcoded width for font-awesome icons in sidebar and headings
-
-/* Site > Elements */
-@import 'old/site/input';      // Has ugly fix for download buttons
-
-/* Site > Misc */
-@import 'old/site/backgrounds';
 
 
 /* Core */
 @import 'core/core-grids';  // /!\ Needs an overhaul, especially for mobile !!!
 
 /* Elements */
+@import 'elements/elements-backgrounds';
 @import 'elements/elements-lists';
 @import 'elements/elements-wedge';  // Wedges shown in code blocks and other notifications.
 @import 'elements/elements-hr';  // Custom horizontal rulers
 @import 'elements/elements-video';
 @import 'elements/elements-scrollbar';  // /!\ Horizontal unfinished, and thy look bad in some contexts /!\
+
+/* Inputs */
+@import 'inputs/inputs-langs';
+@import 'inputs/inputs-textarea';
 
 /* Tables */
 @import 'tables/tables-modifiers';
@@ -102,3 +97,4 @@
 
 /* Fixes */
 @import 'fixes/fixes-mobile';  // Hotfixes for mobile-related issues
+@import 'fixes/fixes-buttons';  // Ugly fix for download buttons

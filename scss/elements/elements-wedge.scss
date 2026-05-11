@@ -2,7 +2,7 @@
 
 /* Custom Elements > Wedge */
 
-wedge, .wedge {
+.wedge {
 	position: absolute;
 	//top: 0;
 	//right: 0;
@@ -25,7 +25,7 @@ wedge, .wedge {
 	}
 	
 	&.wedge-shadow {
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
 	}
 	
 	&.primary {

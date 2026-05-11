@@ -32,7 +32,7 @@
 
 /* Spacing > Global > Others */
 @include global-spacing-maker("m", "margin", "auto", auto);
-@include global-spacing-maker("p", "padding", "auto", auto);
+//@include global-spacing-maker("p", "padding", "auto", auto);
 
 
 /* Spacing > Global > Manual Extras */

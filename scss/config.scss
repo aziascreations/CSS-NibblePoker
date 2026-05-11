@@ -1,5 +1,6 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
+
 /* Config > NibbleCSS */
 
 // Toggles the inclusion of pixel-based sizing utility classes. ("w-000px", "h-000px", ...)
@@ -9,7 +10,7 @@ $add-px-sizing-rules: false;
 $nibblepoker-background-root: "./";
 
 // Toggles the inclusion of the ".bkgd-grid" background rules.
-// See: site/backgrounds.scss
+// See: site/elements-backgrounds.scss
 $include-grid-backgrounds: true;
 
 $use-b64-backgrounds: true;
