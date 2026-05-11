@@ -1,0 +1,38 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Text > Sizes */
+
+// ".t-size-6", ".t-size-8", ..., "t-size-40"
+@for $_ from 3 through 20 {
+    $sizeKey: $_ * 2;
+    $sizeValue: $sizeKey / 10;
+
+    .t-size-#{$sizeKey} {
+        font-size: #{$sizeValue}rem !important;
+    }
+}
+
+// Adding special odd values
+.t-size-11 {
+    font-size: 1.1rem !important;
+}
+.t-size-13 {
+    font-size: 1.3rem !important;
+}
+.t-size-15 {
+    font-size: 1.5rem !important;
+}
+.t-size-17 {
+    font-size: 1.7rem !important;
+}
+
+// Jumbo sizes
+// ".t-size-35" & ".t-size-40"
+@for $_ from 7 through 8 {
+    $size: $_ * 5;
+
+    .t-size-#{$size} {
+        font-size: #{$size / 10}rem !important;
+    }
+}

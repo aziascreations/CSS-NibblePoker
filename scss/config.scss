@@ -1,23 +1,24 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
 
+
 /* Config > NibbleCSS */
 
 // Toggles the inclusion of pixel-based sizing utility classes. ("w-000px", "h-000px", ...)
-// See: core/sizing.scss
+// See: core/utils-sizing.scss
 $add-px-sizing-rules: false;
 
 $nibblepoker-background-root: "./";
 
 // Toggles the inclusion of the ".bkgd-grid" background rules.
-// See: site/backgrounds.scss
+// See: site/elements-backgrounds.scss
 $include-grid-backgrounds: true;
 
 $use-b64-backgrounds: true;
 
 // Toggles the generation of any table cell padding rules.
-// See: core/table.scss
+// See: core/tables-modifiers.scss
 $generate-table-padding-rules: true;
 
 // Toggles the generation of the header and cell specific padding rules for tables. (Disabled by default)
-// See: core/table.scss
+// See: core/tables-modifiers.scss
 $generate-table-header-cell-padding-rules: true;

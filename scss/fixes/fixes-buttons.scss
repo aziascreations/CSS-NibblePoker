@@ -1,0 +1,9 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Fixes > Buttons */
+
+// Ugly fix for download buttons
+button + button, .button-link + .button-link > button {
+    margin-left: 0.75rem;
+}

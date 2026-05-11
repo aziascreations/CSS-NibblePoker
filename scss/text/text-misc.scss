@@ -1,0 +1,40 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Text > Misc */
+
+.t-ucase {
+    text-transform: uppercase;
+}
+
+.t-lcase {
+    text-transform: lowercase;
+}
+
+.t-capitalize {
+    text-transform: capitalize;
+}
+
+.t-nowrap {
+    white-space: nowrap;
+    text-wrap: nowrap;
+}
+
+.t-half-muted {
+    opacity: 65%;
+}
+
+.t-muted {
+    //@if $undefined-toggle-css-variables {
+    //	color: var(--color-white-muted);
+    //} @else {
+    //	color: #{$color-white-muted};
+    //}
+    //color: #A9A9Aa;
+    opacity: 50%;
+}
+
+.t-super-muted {
+    // Should be 35% TBH
+    opacity: 45%;
+}

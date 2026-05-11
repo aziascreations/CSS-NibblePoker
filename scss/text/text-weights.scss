@@ -1,0 +1,32 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Text > Weights */
+
+.t-w-normal, .t-normal {
+    font-weight: normal !important;
+}
+
+b, .t-w-bold, .t-bold {
+    font-weight: bold !important;
+}
+
+.t-w-bolder, .t-bolder {
+    font-weight: bolder !important;
+}
+
+.t-w-lighter, .t-lighter {
+    font-weight: lighter !important;
+}
+
+// ".t-w-100", ".t-w-200", ..., ".t-w-900"
+@for $_ from 1 through 9 {
+    $size: $_ * 100;
+
+    .t-w-#{$size} {
+        font-weight: #{$size} !important;
+    }
+}
+
+// /!\ Firefox moment /!\
+// * The ".t-w-200" to ".t-w-500" classes barely have any visible effect...

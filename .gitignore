@@ -5,11 +5,12 @@
 node_modules/
 
 # Corporate-specific stuff
-scss/themes/theme_corp_*
+*_corp_*
 
 # Build Artifacts
 *.css
 *.min.html
+*.html
 *.7z
 *.zip
 *.tar

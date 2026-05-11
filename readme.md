@@ -17,7 +17,7 @@ spacing and whatnot. \
 Internally, they are defined after everything else in order to let them override rules
 applied to the custom elements and site-centric rules.
 
-**See:** [scss/core/](scss/core)
+**See:** [scss/core/](scss/old/core)
 
 ### Site
 

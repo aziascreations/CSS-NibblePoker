@@ -1,0 +1,89 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Defaults > Text > Links */
+
+a, .a {
+    // Base
+    text-decoration: underline;
+    color: #{$color-text-link};
+
+    & * {
+        color: #{$color-text-link};
+    }
+
+    &:hover {
+        color: #{$color-text-link-hover};
+        cursor: pointer;
+
+        & * {
+            color: #{$color-text-link-hover};
+            text-decoration: underline;
+        }
+    }
+
+    // Special case for buttons
+    //&.casper-link, &.button-link, &.text-link {
+    &.a-bland {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;  // Only really applies to content listing entries...
+            & * {
+                text-decoration: none;
+            }
+        }
+    }
+
+    // Bland links
+    //&.casper-link, &.bland-link {
+    &.a-hidden {
+        text-decoration: none;
+        color: #{$color-text-generic};
+
+        & * {
+            color: #{$color-text-generic};
+        }
+
+        &:hover {
+            text-decoration: underline;
+            color: #{$color-text-link-hover};
+
+            & * {
+                color: #{$color-text-link-hover};
+            }
+
+            // FIXME: Not working, big F
+            //i {
+            //	text-decoration: none !important;
+            //}
+        }
+    }
+}
+
+nav, footer, header {
+    a, .a {
+        color: #{$color-text-surround-link};
+        & * {
+            color: #{$color-text-surround-link};
+        }
+        &:hover {
+            color: #{$color-text-surround-link-hover};
+            & * {
+                color: #{$color-text-surround-link-hover};
+            }
+        }
+        &.a-hidden {
+            text-decoration: none;
+            color: #{$color-text-surround};
+            & * {
+                color: #{$color-text-surround};
+            }
+            &:hover {
+                color: #{$color-text-surround-link-hover};
+                & * {
+                    color: #{$color-text-surround-link-hover};
+                }
+            }
+        }
+    }
+}

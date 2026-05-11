@@ -1,5 +1,12 @@
 // NibblePoker CSS Theme - CC0 1.0 (Public Domain)
-@use 'sass:color';
+
+
+/* Variables */
+
+// If not set to `-1`, will auto define a low-priority size for headers.
+$text-weight-header: 600;
+
+
 
 
 $scrollbar-size: 1.25em;
@@ -30,4 +37,4 @@ $z-index-modal: 99;
 
 /* Variables > Themes & Overrides */
 //@import "themes/theme_unset";
-@import "themes/theme_nibblepoker";
+@import "old/parts/theme_nibblepoker";

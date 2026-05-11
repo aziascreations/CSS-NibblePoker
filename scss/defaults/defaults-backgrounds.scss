@@ -1,0 +1,19 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+/* Defaults > Backgrounds */
+
+body {
+	background-color: #{$color-background-body};
+}
+
+header, nav, footer {
+	background-color: #{$color-background-surround};
+}
+
+main {
+	background-color: #{$color-background-main};
+	
+	// FIXME: Adapt when sidebar is closed !
+	// FIXME: Move it to the proper layout file then !!!
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.375) inset;
+}

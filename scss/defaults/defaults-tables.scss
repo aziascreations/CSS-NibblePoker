@@ -1,0 +1,29 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+
+
+/* Tables > Defaults */
+
+.table-stylish {
+	border-collapse: separate;
+	overflow: hidden;
+
+	th {
+		font-weight: bold;
+	}
+	
+	tr {
+		background-color: #{$color-background-table-tr-alt};
+	}
+	
+	tr:nth-child(2n), th {
+		background-color: #{$color-background-table-tr-main};
+	}
+	
+	td:not(:last-of-type), th:not(:last-of-type) {
+		border-right: 1.5px solid #{$color-border-table};
+	}
+
+	tr:not(:last-of-type) td, th {
+		border-bottom: 1.5px solid #{$color-border-table};
+	}
+}
