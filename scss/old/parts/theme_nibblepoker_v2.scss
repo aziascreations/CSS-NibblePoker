@@ -42,9 +42,12 @@ $color-background-orange-light: #{$color-apollo-21};
 
 
 // Body parts
-$color-background-main: $color-background-gray-light;
+$color-background-body: $color-background-gray-dark;
+
+$color-background-main: $color-background-gray-medium;
 $color-background-surround: $color-background-gray-dark;
-$color-background-body: $color-background-surround;
+
+$color-background-grid-image: $color-background-surround;
 
 
 // Cards & Other elements
@@ -73,8 +76,6 @@ $color-background-button-error-hover: $color-background-red-light;
 
 $color-background-button-warning: $color-background-orange;
 $color-background-button-warning-hover: $color-background-orange-light;
-
-$color-background-grid-image: $color-background-gray-medium;
 
 
 // Borders

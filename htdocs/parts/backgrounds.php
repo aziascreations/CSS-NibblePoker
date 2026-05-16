@@ -14,23 +14,35 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 <section class="p-s">
 
     <h3 class="t-w-500 t-size-12 mb-xs mt-xxs">Simple colors</h3>
-    <div class="grid grid-col-3 grid-gap-l px-s">
+    <div class="grid grid-col-2 grid-gap-l px-s">
         <div>
-            <div class="p-l border r-xl bkgd-dark my-xs"></div>
-            <span class="code mb-s">.bkgd-dark</span>
-        </div>
-        <div>
-            <div class="p-l border r-xl bkgd-grey my-xs"></div>
-            <span class="code mb-s">.bkgd-grey</span>
-            <span class="code mb-s">.bkgd-gray</span>
+            <div class="p-l border r-xl bkgd-lightest my-xs"></div>
+            <span class="code mb-s">.bkgd-lightest</span>
         </div>
         <div>
             <div class="p-l border r-xl bkgd-light my-xs"></div>
             <span class="code mb-s">.bkgd-light</span>
         </div>
     </div>
+    <div class="grid grid-col-2 grid-gap-l px-s">
+        <div>
+            <div class="p-l border r-xl bkgd-grey my-xs"></div>
+            <span class="code mb-s">.bkgd-grey</span>
+            <span class="code mb-s">.bkgd-gray</span>
+        </div>
+    </div>
+    <div class="grid grid-col-2 grid-gap-l px-s">
+        <div>
+            <div class="p-l border r-xl bkgd-dark my-xs"></div>
+            <span class="code mb-s">.bkgd-dark</span>
+        </div>
+        <div>
+            <div class="p-l border r-xl bkgd-darkest my-xs"></div>
+            <span class="code mb-s">.bkgd-darkest</span>
+        </div>
+    </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Grid backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xl">Grid backgrounds</h3>
     <div class="grid grid-col-2 grid-gap-l px-s">
         <div>
             <p class="t-w-500">40% opacity (Title bars)</p>
@@ -56,7 +68,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </div>
     </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Special backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xl">Special backgrounds</h3>
     <div class="grid grid-col-3 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Transparent</p>
@@ -65,7 +77,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         </div>
     </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Colored backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xl">Colored backgrounds</h3>
     <div class="grid grid-col-4 grid-col-medium-2 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Blue</p>

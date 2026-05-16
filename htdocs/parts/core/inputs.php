@@ -21,7 +21,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <div class="px-s mb-m">
         <label for="demo-core-text">Text Input: </label>
         <input id="demo-core-text" type="text" value="Lorem ipsum">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=text]
         </code>
     </div>
@@ -29,7 +29,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <div class="px-s mb-m">
         <label for="demo-core-password">Password Input: </label>
         <input id="demo-core-password" type="password" value="12345678">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=password]
         </code>
     </div>
@@ -37,7 +37,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <div class="px-s mb-m">
         <label for="demo-core-number">Number Input: </label>
         <input id="demo-core-number" type="number" value="42">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=number]
         </code>
     </div>
@@ -49,7 +49,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <label for="demo-core-radio-2">Radio 2</label><br>
         <input type="radio" id="demo-core-radio-3" name="demo-core-radio" disabled>
         <label for="demo-core-radio-3">Radio 3</label>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=radio][name=myRadioInput]+label+br)*3
         </code>
     </div>
@@ -61,7 +61,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
         <label for="demo-core-combo-2">Checkbox 2</label><br>
         <input type="checkbox" id="demo-core-combo-3" disabled>
         <label for="demo-core-combo-3">Checkbox 3</label>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=checkbox]+label+br)*3
         </code>
     </div>
@@ -69,7 +69,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     <div class="px-s mb-m">
         <label for="demo-core-textarea"></label>
         <textarea id="demo-core-textarea" rows="8">Lorem Ipsum</textarea>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+textarea
         </code>
     </div>

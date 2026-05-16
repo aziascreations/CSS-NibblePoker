@@ -120,7 +120,7 @@
     <?php include("./parts/examples/inputs.php"); ?>
 
     <!-- Examples > Tables -->
-    <?php include("./parts/examples/cards.php"); ?>
+    <?php /* include("./parts/examples/cards.php"); */ ?>
 </main>
 
 <footer class="d-flex flex-align-center w-full p-s py-xs">

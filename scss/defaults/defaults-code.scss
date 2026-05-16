@@ -9,13 +9,14 @@ code, .code, kbd, .t-monospace {
 
 // For large blocks
 //code { }
+.code, kbd, code {
+	background-color: #{$color-background-code};
+}
 
 // For inline spans
 // We're applying the equivalent of `.r-s.px-xs.px-s`
 // Kinda goes against the core ideas, but it would be annoying without it.
 .code, kbd {
-	background-color: #{$color-background-code};
-	
 	border: 1px solid;
 	
 	// Using '.r-s'
@@ -33,10 +34,13 @@ code, .code, kbd, .t-monospace {
 
 // FIXME: Makes the inline block ugly !!!
 code, .code, .code-line {
-	line-height: 1.35;
+	line-height: 1.175;
 }
 
 // FIXME: Use a proper class !!!
 .code:not(code) {
-	padding: calc(#{$border-base-radius} * 0.625);
+	//padding: calc(#{$border-base-radius} * 0.625);
+	padding: calc(#{$border-base-radius} * 0.55);
+	padding-top: calc(#{$border-base-radius} * 0.25);
+	padding-bottom: calc(#{$border-base-radius} * 0.25);
 }

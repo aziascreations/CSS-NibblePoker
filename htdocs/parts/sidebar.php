@@ -127,11 +127,11 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
                     <i class="fad fa-pen-to-square pr-xs t-half-muted"></i>Inputs
                 </p>
             </a>
-            <a class="a-hidden" href="#examples-cards">
+            <!--<a class="a-hidden" href="#examples-cards">
                 <p class="t-w-500 py-xs sidebar-entry">
                     <i class="fad fa-address-card pr-xs t-half-muted"></i>Cards
                 </p>
-            </a>
+            </a>-->
         </div>
     </details>
 

@@ -1,0 +1,237 @@
+// NibblePoker CSS Theme - CC0 1.0 (Public Domain)
+@use 'sass:color';
+
+
+// External palettes
+
+/* Variables > Palettes > Apollo */
+// https://lospec.com/palette-list/apollo
+$color-apollo-00: #172038;
+$color-apollo-01: #253a5e;
+$color-apollo-02: #3c5e8b;
+$color-apollo-03: #4f8fba;
+$color-apollo-04: #73bed3;
+$color-apollo-05: #a4dddb;
+$color-apollo-06: #19332d;
+$color-apollo-07: #25562e;
+$color-apollo-08: #468232;
+$color-apollo-09: #75a743;
+$color-apollo-10: #a8ca58;
+$color-apollo-11: #d0da91;
+$color-apollo-12: #4d2b32;
+$color-apollo-13: #7a4841;
+$color-apollo-14: #ad7757;
+$color-apollo-15: #c09473;
+$color-apollo-16: #d7b594;
+$color-apollo-17: #e7d5b3;
+$color-apollo-18: #341c27;
+$color-apollo-19: #602c2c;
+$color-apollo-20: #884b2b;
+$color-apollo-21: #be772b;
+$color-apollo-22: #de9e41;
+$color-apollo-23: #e8c170;
+$color-apollo-24: #241527;
+$color-apollo-25: #411d31;
+$color-apollo-26: #752438;
+$color-apollo-27: #a53030;
+$color-apollo-28: #cf573c;
+$color-apollo-29: #da863e;
+$color-apollo-30: #1e1d39;
+$color-apollo-31: #402751;
+$color-apollo-32: #7a367b;
+$color-apollo-33: #a23e8c;
+$color-apollo-34: #c65197;
+$color-apollo-35: #df84a5;
+$color-apollo-36: #090a14;
+$color-apollo-37: #10141f;
+$color-apollo-38: #151d28;
+$color-apollo-39: #202e37;
+$color-apollo-40: #394a50;
+$color-apollo-41: #577277;
+$color-apollo-42: #819796;
+$color-apollo-43: #a8b5b2;
+$color-apollo-44: #c7cfcc;
+$color-apollo-45: #ebede9;
+
+// https://lospec.com/palette-list/endesga-32
+
+// https://lospec.com/palette-list/endesga-64
+$color-endesga64-00: #ff0040;
+$color-endesga64-01: #131313;
+$color-endesga64-02: #1b1b1b;
+$color-endesga64-03: #272727;
+$color-endesga64-04: #3d3d3d;
+$color-endesga64-05: #5d5d5d;
+$color-endesga64-06: #858585;
+$color-endesga64-07: #b4b4b4;
+$color-endesga64-08: #ffffff;
+$color-endesga64-09: #c7cfdd;
+$color-endesga64-10: #92a1b9;
+$color-endesga64-11: #657392;
+$color-endesga64-12: #424c6e;
+$color-endesga64-13: #2a2f4e;
+$color-endesga64-14: #1a1932;
+$color-endesga64-15: #0e071b;
+$color-endesga64-16: #1c121c;
+$color-endesga64-17: #391f21;
+$color-endesga64-18: #5d2c28;
+$color-endesga64-19: #8a4836;
+$color-endesga64-20: #bf6f4a;
+$color-endesga64-21: #e69c69;
+$color-endesga64-22: #f6ca9f;
+$color-endesga64-23: #f9e6cf;
+$color-endesga64-24: #edab50;
+$color-endesga64-25: #e07438;
+$color-endesga64-26: #c64524;
+$color-endesga64-27: #8e251d;
+$color-endesga64-28: #ff5000;
+$color-endesga64-29: #ed7614;
+$color-endesga64-30: #ffa214;
+$color-endesga64-31: #ffc825;
+$color-endesga64-32: #ffeb57;
+$color-endesga64-33: #d3fc7e;
+$color-endesga64-34: #99e65f;
+$color-endesga64-35: #5ac54f;
+$color-endesga64-36: #33984b;
+$color-endesga64-37: #1e6f50;
+$color-endesga64-38: #134c4c;
+$color-endesga64-39: #0c2e44;
+$color-endesga64-40: #00396d;
+$color-endesga64-41: #0069aa;
+$color-endesga64-42: #0098dc;
+$color-endesga64-43: #00cdf9;
+$color-endesga64-44: #0cf1ff;
+$color-endesga64-45: #94fdff;
+$color-endesga64-46: #fdd2ed;
+$color-endesga64-47: #f389f5;
+$color-endesga64-48: #db3ffd;
+$color-endesga64-49: #7a09fa;
+$color-endesga64-50: #3003d9;
+$color-endesga64-51: #0c0293;
+$color-endesga64-52: #03193f;
+$color-endesga64-53: #3b1443;
+$color-endesga64-54: #622461;
+$color-endesga64-55: #93388f;
+$color-endesga64-56: #ca52c9;
+$color-endesga64-57: #c85086;
+$color-endesga64-58: #f68187;
+$color-endesga64-59: #f5555d;
+$color-endesga64-60: #ea323c;
+$color-endesga64-61: #c42430;
+$color-endesga64-62: #891e2b;
+$color-endesga64-63: #571c27;
+
+$color-apollo-custom-30: mix($color-apollo-01, $color-apollo-03, 80%);  // Primary button
+$color-apollo-custom-31: mix($color-apollo-01, $color-apollo-03, 65%);  // Primary button hover
+
+
+
+
+// Flat colors
+
+//$color-background-gray-light: #404040;
+//$color-background-gray-idk01: #2e2e2e;
+//$color-background-gray-medium: mix(#232323, #2e2e2e, 33.3%);
+//$color-background-gray-dark: #232323;
+
+$color-background-gray-lightest: mix($color-endesga64-05, $color-endesga64-06, 50%);
+$color-background-gray-light: mix($color-endesga64-04, $color-endesga64-05, 50%);
+$color-background-gray-lm: $color-endesga64-04;
+$color-background-gray-medium: mix($color-endesga64-03, $color-endesga64-04, 50%);
+$color-background-gray-md: $color-endesga64-03;
+$color-background-gray-dark: mix($color-endesga64-02, $color-endesga64-03, 50%);
+$color-background-gray-darkest: $color-endesga64-01;
+
+$color-background-light-10: #f7f7f7;
+$color-background-light-20: #c4c4c4;
+$color-background-light-30: #7f7f7f;
+
+$color-background-purple-10: #3E3546;
+$color-background-purple-20: #6B3E75;
+$color-background-purple-30: #905EA9;
+
+
+$color-background-blue: #{$color-apollo-custom-30};
+$color-background-blue-light: mix($color-apollo-custom-30, $color-apollo-custom-31, 37.5%);
+
+$color-background-green: #{$color-apollo-07};
+$color-background-green-light: mix($color-apollo-07, $color-apollo-08, 50%);
+
+$color-background-red: #{$color-apollo-26};
+$color-background-red-light: #{$color-apollo-27};
+
+$color-background-orange: #{$color-apollo-20};
+$color-background-orange-light: #{$color-apollo-21};
+
+
+// Body parts
+$color-background-body: $color-background-gray-dark;
+
+$color-background-main: $color-background-gray-medium;
+$color-background-surround: $color-background-gray-dark;
+
+$color-background-grid-image: $color-background-surround;
+
+
+// Cards & Other elements
+$color-background-heading: $color-background-surround;
+$color-background-code: $color-background-surround;
+
+$color-background-table-tr-main: mix($color-background-main, $color-background-surround, 50%);
+$color-background-table-tr-alt: mix($color-background-main, $color-background-surround, 12.5%);
+
+$color-background-input: $color-background-surround;
+$color-background-input-checked: $color-apollo-08;
+$color-background-input-unchecked: $color-apollo-27;
+$color-background-input-disabled: $color-background-surround;
+
+//$color-background-button: #2d2f36;
+//$color-background-button-hover: #373841;
+
+$color-background-button: $color-background-gray-md;
+$color-background-button-hover: $color-background-gray-lm;
+
+$color-background-button-primary: $color-background-blue;
+$color-background-button-primary-hover: $color-background-blue-light;
+
+$color-background-button-success: $color-background-green;
+$color-background-button-success-hover: $color-background-green-light;
+
+$color-background-button-error: $color-background-red;
+$color-background-button-error-hover: $color-background-red-light;
+
+$color-background-button-warning: $color-background-orange;
+$color-background-button-warning-hover: $color-background-orange-light;
+
+
+// Borders
+$color-border-light: $color-background-gray-darkest;
+$color-border-normal: $color-background-gray-darkest;
+$color-border-dark: $color-background-gray-darkest;
+
+$color-border-default: $color-border-normal;
+
+$color-border-main: $color-border-normal;
+$color-border-nav: $color-border-normal;
+$color-border-hr: $color-border-normal;
+$color-border-scrollbar: $color-border-normal;
+$color-border-table: $color-border-normal;
+$color-border-code: $color-border-normal;
+
+
+// Text
+$color-text-generic: $color-apollo-45;
+$color-text-surround: $color-text-generic;
+$color-text-inputs: $color-text-generic;
+$color-text-muted: #{$color-text-generic}E0;
+$color-text-muted-super: #{$color-text-generic}C0;
+
+$color-text-link: #{$color-apollo-04};
+$color-text-link-hover: #{$color-apollo-05};
+
+$color-text-surround-link: #{$color-apollo-04};
+$color-text-surround-link-hover: #{$color-apollo-05};
+
+
+// Specials
+$color-glow-input: $color-apollo-02;

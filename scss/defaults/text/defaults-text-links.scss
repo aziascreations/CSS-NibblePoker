@@ -46,10 +46,12 @@ a, .a {
 
         &:hover {
             text-decoration: underline;
-            color: #{$color-text-link-hover};
+            //color: #{$color-text-link-hover};
+            color: #{$color-text-generic};
 
             & * {
-                color: #{$color-text-link-hover};
+                //color: #{$color-text-link-hover};
+                color: #{$color-text-generic};
             }
 
             // FIXME: Not working, big F

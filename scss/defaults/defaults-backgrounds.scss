@@ -6,6 +6,7 @@ body {
 	background-color: #{$color-background-body};
 }
 
+// Can be overriden in `elements/elements-backgrounds.scss` for the grids.
 header, nav, footer {
 	background-color: #{$color-background-surround};
 }

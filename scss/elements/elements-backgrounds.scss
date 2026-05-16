@@ -3,6 +3,10 @@
 
 /* Elements > Backgrounds */
 
+.bkgd-darkest {
+	background: $color-background-gray-darkest;
+}
+
 .bkgd-dark {
 	background: $color-background-gray-dark;
 }
@@ -13,6 +17,10 @@
 
 .bkgd-light {
 	background: $color-background-gray-light;
+}
+
+.bkgd-lightest {
+	background: $color-background-gray-lightest;
 }
 
 @if($include-grid-backgrounds) {
