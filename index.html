@@ -151,11 +151,11 @@
                     <i class="fad fa-pen-to-square pr-xs t-half-muted"></i>Inputs
                 </p>
             </a>
-            <a class="a-hidden" href="#examples-cards">
+            <!--<a class="a-hidden" href="#examples-cards">
                 <p class="t-w-500 py-xs sidebar-entry">
                     <i class="fad fa-address-card pr-xs t-half-muted"></i>Cards
                 </p>
-            </a>
+            </a>-->
         </div>
     </details>
 
@@ -241,7 +241,7 @@
                         <button class="btn-success p-xs b r-m">
                             <i class="fa fa-download"></i>
                             nibblepoker.min.css
-                            (43.54 KiB)
+                            (43.6 KiB)
                         </button>
                     </a>
                 </td>
@@ -253,7 +253,7 @@
                         <button class="p-xs b r-m">
                             <i class="fa fa-download"></i>
                             nibblepoker.css
-                            (53.74 KiB)
+                            (53.85 KiB)
                         </button>
                     </a>
                 </td>
@@ -1202,7 +1202,7 @@
     <div class="px-s mb-m">
         <label for="demo-core-text">Text Input: </label>
         <input id="demo-core-text" type="text" value="Lorem ipsum">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=text]
         </code>
     </div>
@@ -1210,7 +1210,7 @@
     <div class="px-s mb-m">
         <label for="demo-core-password">Password Input: </label>
         <input id="demo-core-password" type="password" value="12345678">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=password]
         </code>
     </div>
@@ -1218,7 +1218,7 @@
     <div class="px-s mb-m">
         <label for="demo-core-number">Number Input: </label>
         <input id="demo-core-number" type="number" value="42">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=number]
         </code>
     </div>
@@ -1230,7 +1230,7 @@
         <label for="demo-core-radio-2">Radio 2</label><br>
         <input type="radio" id="demo-core-radio-3" name="demo-core-radio" disabled>
         <label for="demo-core-radio-3">Radio 3</label>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=radio][name=myRadioInput]+label+br)*3
         </code>
     </div>
@@ -1242,7 +1242,7 @@
         <label for="demo-core-combo-2">Checkbox 2</label><br>
         <input type="checkbox" id="demo-core-combo-3" disabled>
         <label for="demo-core-combo-3">Checkbox 3</label>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=checkbox]+label+br)*3
         </code>
     </div>
@@ -1250,7 +1250,7 @@
     <div class="px-s mb-m">
         <label for="demo-core-textarea"></label>
         <textarea id="demo-core-textarea" rows="8">Lorem Ipsum</textarea>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+textarea
         </code>
     </div>
@@ -1305,23 +1305,35 @@
 <section class="p-s">
 
     <h3 class="t-w-500 t-size-12 mb-xs mt-xxs">Simple colors</h3>
-    <div class="grid grid-col-3 grid-gap-l px-s">
+    <div class="grid grid-col-2 grid-gap-l px-s">
         <div>
-            <div class="p-l border r-xl bkgd-dark my-xs"></div>
-            <span class="code mb-s">.bkgd-dark</span>
-        </div>
-        <div>
-            <div class="p-l border r-xl bkgd-grey my-xs"></div>
-            <span class="code mb-s">.bkgd-grey</span>
-            <span class="code mb-s">.bkgd-gray</span>
+            <div class="p-l border r-xl bkgd-lightest my-xs"></div>
+            <span class="code mb-s">.bkgd-lightest</span>
         </div>
         <div>
             <div class="p-l border r-xl bkgd-light my-xs"></div>
             <span class="code mb-s">.bkgd-light</span>
         </div>
     </div>
+    <div class="grid grid-col-2 grid-gap-l px-s">
+        <div>
+            <div class="p-l border r-xl bkgd-grey my-xs"></div>
+            <span class="code mb-s">.bkgd-grey</span>
+            <span class="code mb-s">.bkgd-gray</span>
+        </div>
+    </div>
+    <div class="grid grid-col-2 grid-gap-l px-s">
+        <div>
+            <div class="p-l border r-xl bkgd-dark my-xs"></div>
+            <span class="code mb-s">.bkgd-dark</span>
+        </div>
+        <div>
+            <div class="p-l border r-xl bkgd-darkest my-xs"></div>
+            <span class="code mb-s">.bkgd-darkest</span>
+        </div>
+    </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Grid backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xl">Grid backgrounds</h3>
     <div class="grid grid-col-2 grid-gap-l px-s">
         <div>
             <p class="t-w-500">40% opacity (Title bars)</p>
@@ -1347,7 +1359,7 @@
         </div>
     </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Special backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xl">Special backgrounds</h3>
     <div class="grid grid-col-3 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Transparent</p>
@@ -1356,7 +1368,7 @@
         </div>
     </div>
 
-    <h3 class="t-w-500 t-size-12 my-s mt-l">Colored backgrounds</h3>
+    <h3 class="t-w-500 t-size-12 my-s mt-xl">Colored backgrounds</h3>
     <div class="grid grid-col-4 grid-col-medium-2 grid-gap-l px-s">
         <div>
             <p class="t-w-500">Blue</p>
@@ -1610,7 +1622,7 @@
     <div class="px-s mb-m">
         <label for="demo-core-text">Text Input: </label>
         <input id="demo-core-text" type="text" value="Lorem ipsum" class="p-xxs border r-m">
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+input[type=text]<b>.p-xxs.border.r-m</b>
         </code>
     </div>
@@ -1618,10 +1630,9 @@
     <div class="px-s mb-m">
         <label for="demo-core-textarea"></label>
         <textarea id="demo-core-textarea" rows="8" class="p-xxs border r-m w-full ta-resize-v">Lorem Ipsum</textarea>
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             label+textarea<b>.p-xxs.border.r-m.w-full.ta-resize-v</b>
         </code>
-
     </div>
 
 
@@ -1635,7 +1646,7 @@
         <input type="checkbox" id="demo-site-combo-3" class="cb-pretty r-m border" disabled>
         <label for="demo-site-combo-3">Checkbox 3</label>
 
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=checkbox]<b>.cb-pretty.r-m.border</b>+label+br)*3
         </code>
     </div>
@@ -1659,7 +1670,7 @@
         <input type="radio" id="demo-site-radio-5-solid" name="demo-site-radio-solid" class="radio-solid border" disabled>
         <label for="demo-site-radio-5-solid">Radio 5</label>
 
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=radio][name=myRadioInput]<b>.radio-solid.border</b>+label+br)*3
         </code>
     </div>
@@ -1680,7 +1691,7 @@
         <input type="radio" id="demo-site-radio-5-3d" name="demo-site-radio-3d" class="radio-3d border" disabled>
         <label for="demo-site-radio-5-3d">Radio 5</label>
 
-        <code class="d-block p-xxs border r-s mt-xs bkgd-gray">
+        <code class="d-block p-xxs border r-s mt-xs">
             (input[type=radio][name=myRadioInput]<b>.radio-3d.border</b>+label+br)*3
         </code>
     </div>
@@ -1688,47 +1699,7 @@
 </section>
 
     <!-- Examples > Tables -->
-    
-<a id="examples-cards"></a>
-<div class="p-xs b r-s bkgd-grid mt-m">
-    <h2 class="t-w-500 t-size-14">Cards
-        <i class="fa-solid fa-address-card f-right"></i>
-    </h2>
-</div>
-<section class="p-s">
-
-    <h3 class="t-w-500 t-size-12 my-s mt-xxs">Vertical Card</h3>
-    <div class="px-s">
-        <p class="mb-xxs">
-            Tables can quickly be styled by simply using the <span class="code">.table-stylish</span> class.
-        </p>
-
-        <div class="my-s border r-l bkgd-dark grid d-inline-block">
-            <div class="bb">
-                <img src="./img/maki-03.jpg" alt="Hungry Kitty Cat" class="r-r p-s px-l" height="128px">
-            </div>
-            <div class="bkgd-gray t-center">
-                <p>Hungry Cat</p>
-                <p>
-                    This kitty needs kibbles to stay healthy and
-                </p>
-            </div>
-            <div class="grid grid-col-3">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <code class="d-block p-xxs border r-s mt-s">
-            table<b>.table-stylish.table-p-s.border.r-l</b><br>
-            &nbsp;&nbsp;thead>th>td*2<br>
-            &nbsp;&nbsp;tbody>tr*2>td*2
-        </code>
-    </div>
-
-</section>
-</main>
+    </main>
 
 <footer class="d-flex flex-align-center w-full p-s py-xs">
     <button id="sidebar-toggle-footer" class="p-xs border r-s t-size-10"
